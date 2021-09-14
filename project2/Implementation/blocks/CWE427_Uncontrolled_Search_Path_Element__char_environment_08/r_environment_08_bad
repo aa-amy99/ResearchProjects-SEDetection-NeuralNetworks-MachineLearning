@@ -1,0 +1,67 @@
+<Block for 0x40001e, 82 bytes>
+0x40001e:	endbr64	
+0x400022:	push	rbp
+0x400023:	mov	rbp, rsp
+0x400026:	sub	rsp, 0x130
+0x40002d:	mov	rax, qword ptr fs:[0x28]
+0x400036:	mov	qword ptr [rbp - 8], rax
+0x40003a:	xor	eax, eax
+0x40003c:	movabs	rax, 0x3d48544150
+0x400046:	mov	edx, 0
+0x40004b:	mov	qword ptr [rbp - 0x110], rax
+0x400052:	mov	qword ptr [rbp - 0x108], rdx
+0x400059:	lea	rdx, [rbp - 0x100]
+0x400060:	mov	eax, 0
+0x400065:	mov	ecx, 0x1d
+0x40006a:	mov	rdi, rdx
+0x40006d:	rep stosq	qword ptr [rdi], rax
+<Block for 0x400070, 34 bytes>
+0x400070:	mov	rdx, rdi
+0x400073:	mov	word ptr [rdx], ax
+0x400076:	add	rdx, 2
+0x40007a:	lea	rax, [rbp - 0x110]
+0x400081:	mov	qword ptr [rbp - 0x128], rax
+0x400088:	mov	eax, 0
+0x40008d:	call	0x400000
+<Block for 0x40006d, 3 bytes>
+0x40006d:	rep stosq	qword ptr [rdi], rax
+<Block for 0x400092, 4 bytes>
+0x400092:	test	eax, eax
+0x400094:	je	0x4000fb
+<Block for 0x4000fb, 15 bytes>
+0x4000fb:	mov	rax, qword ptr [rbp - 0x128]
+0x400102:	mov	rdi, rax
+0x400105:	call	0x500018
+<Block for 0x400096, 15 bytes>
+0x400096:	mov	rax, qword ptr [rbp - 0x128]
+0x40009d:	mov	rdi, rax
+0x4000a0:	call	0x500000
+<Block for 0x40010a, 16 bytes>
+0x40010a:	nop	
+0x40010b:	mov	rax, qword ptr [rbp - 8]
+0x40010f:	xor	rax, qword ptr fs:[0x28]
+0x400118:	je	0x40011f
+<Block for 0x4000a5, 19 bytes>
+0x4000a5:	mov	qword ptr [rbp - 0x120], rax
+0x4000ac:	lea	rdi, [rip + 0x249]
+0x4000b3:	call	0x500008
+<Block for 0x40011f, 2 bytes>
+0x40011f:	leave	
+0x400120:	ret	
+<Block for 0x40011a, 5 bytes>
+0x40011a:	call	0x500020
+<Block for 0x4000b8, 17 bytes>
+0x4000b8:	mov	qword ptr [rbp - 0x118], rax
+0x4000bf:	cmp	qword ptr [rbp - 0x118], 0
+0x4000c7:	je	0x4000fb
+<Block for 0x4000c9, 50 bytes>
+0x4000c9:	mov	eax, 0xf9
+0x4000ce:	sub	rax, qword ptr [rbp - 0x120]
+0x4000d5:	mov	rdx, rax
+0x4000d8:	mov	rcx, qword ptr [rbp - 0x128]
+0x4000df:	mov	rax, qword ptr [rbp - 0x120]
+0x4000e6:	add	rcx, rax
+0x4000e9:	mov	rax, qword ptr [rbp - 0x118]
+0x4000f0:	mov	rsi, rax
+0x4000f3:	mov	rdi, rcx
+0x4000f6:	call	0x500010

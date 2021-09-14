@@ -1,0 +1,68 @@
+<Block for 0x4000ab, 40 bytes>
+0x4000ab:	endbr64	
+0x4000af:	push	rbp
+0x4000b0:	mov	rbp, rsp
+0x4000b3:	sub	rsp, 0x120
+0x4000ba:	mov	rax, qword ptr fs:[0x28]
+0x4000c3:	mov	qword ptr [rbp - 8], rax
+0x4000c7:	xor	eax, eax
+0x4000c9:	mov	eax, 0
+0x4000ce:	call	0x500038
+<Block for 0x4000d3, 4 bytes>
+0x4000d3:	test	eax, eax
+0x4000d5:	je	0x4000e8
+<Block for 0x4000e8, 39 bytes>
+0x4000e8:	pxor	xmm0, xmm0
+0x4000ec:	movsd	qword ptr [rbp - 0x118], xmm0
+0x4000f4:	mov	rdx, qword ptr [rip + 0xfff0d]
+0x4000fb:	lea	rax, [rbp - 0x110]
+0x400102:	mov	esi, 0x100
+0x400107:	mov	rdi, rax
+0x40010a:	call	0x500010
+<Block for 0x4000d7, 12 bytes>
+0x4000d7:	lea	rdi, [rip + 0x1d2]
+0x4000de:	call	0x500020
+<Block for 0x40010f, 5 bytes>
+0x40010f:	test	rax, rax
+0x400112:	je	0x400131
+<Block for 0x4000e3, 5 bytes>
+0x4000e3:	jmp	0x400182
+<Block for 0x400131, 12 bytes>
+0x400131:	lea	rdi, [rip + 0x168]
+0x400138:	call	0x500020
+<Block for 0x400114, 15 bytes>
+0x400114:	lea	rax, [rbp - 0x110]
+0x40011b:	mov	rdi, rax
+0x40011e:	call	0x500018
+<Block for 0x400182, 16 bytes>
+0x400182:	nop	
+0x400183:	mov	rax, qword ptr [rbp - 8]
+0x400187:	xor	rax, qword ptr fs:[0x28]
+0x400190:	je	0x400197
+<Block for 0x40013d, 18 bytes>
+0x40013d:	movsd	xmm0, qword ptr [rbp - 0x118]
+0x400145:	comisd	xmm0, xmmword ptr [rip + 0x1b3]
+0x40014d:	ja	0x400161
+<Block for 0x400123, 14 bytes>
+0x400123:	movq	rax, xmm0
+0x400128:	mov	qword ptr [rbp - 0x118], rax
+0x40012f:	jmp	0x40013d
+<Block for 0x400197, 2 bytes>
+0x400197:	leave	
+0x400198:	ret	
+<Block for 0x400192, 5 bytes>
+0x400192:	call	0x500030
+<Block for 0x40014f, 18 bytes>
+0x40014f:	movsd	xmm0, qword ptr [rip + 0x1b1]
+0x400157:	comisd	xmm0, xmmword ptr [rbp - 0x118]
+0x40015f:	jbe	0x40016f
+<Block for 0x400161, 12 bytes>
+0x400161:	lea	rdi, [rip + 0x160]
+0x400168:	call	0x500020
+<Block for 0x40016f, 19 bytes>
+0x40016f:	movsd	xmm0, qword ptr [rbp - 0x118]
+0x400177:	cvttsd2si	eax, xmm0
+0x40017b:	mov	edi, eax
+0x40017d:	call	0x500028
+<Block for 0x40016d, 2 bytes>
+0x40016d:	jmp	0x400182

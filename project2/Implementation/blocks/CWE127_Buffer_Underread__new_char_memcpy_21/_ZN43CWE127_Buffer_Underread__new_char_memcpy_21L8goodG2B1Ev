@@ -1,0 +1,66 @@
+<Block for 0x4001bf, 67 bytes>
+0x4001bf:	endbr64	
+0x4001c3:	push	rbp
+0x4001c4:	mov	rbp, rsp
+0x4001c7:	push	rbx
+0x4001c8:	sub	rsp, 0x88
+0x4001cf:	mov	rax, qword ptr fs:[0x28]
+0x4001d8:	mov	qword ptr [rbp - 0x18], rax
+0x4001dc:	xor	eax, eax
+0x4001de:	mov	qword ptr [rbp - 0x88], 0
+0x4001e9:	mov	dword ptr [rip + 0x23d], 0
+0x4001f3:	mov	rax, qword ptr [rbp - 0x88]
+0x4001fa:	mov	rdi, rax
+0x4001fd:	call	0x40015a
+<Block for 0x400202, 29 bytes>
+0x400202:	mov	qword ptr [rbp - 0x88], rax
+0x400209:	lea	rax, [rbp - 0x80]
+0x40020d:	mov	edx, 0x63
+0x400212:	mov	esi, 0x43
+0x400217:	mov	rdi, rax
+0x40021a:	call	0x500008
+<Block for 0x40021f, 128 bytes>
+0x40021f:	mov	byte ptr [rbp - 0x1d], 0
+0x400223:	mov	rax, qword ptr [rbp - 0x88]
+0x40022a:	mov	rcx, qword ptr [rax]
+0x40022d:	mov	rbx, qword ptr [rax + 8]
+0x400231:	mov	qword ptr [rbp - 0x80], rcx
+0x400235:	mov	qword ptr [rbp - 0x78], rbx
+0x400239:	mov	rcx, qword ptr [rax + 0x10]
+0x40023d:	mov	rbx, qword ptr [rax + 0x18]
+0x400241:	mov	qword ptr [rbp - 0x70], rcx
+0x400245:	mov	qword ptr [rbp - 0x68], rbx
+0x400249:	mov	rcx, qword ptr [rax + 0x20]
+0x40024d:	mov	rbx, qword ptr [rax + 0x28]
+0x400251:	mov	qword ptr [rbp - 0x60], rcx
+0x400255:	mov	qword ptr [rbp - 0x58], rbx
+0x400259:	mov	rcx, qword ptr [rax + 0x30]
+0x40025d:	mov	rbx, qword ptr [rax + 0x38]
+0x400261:	mov	qword ptr [rbp - 0x50], rcx
+0x400265:	mov	qword ptr [rbp - 0x48], rbx
+0x400269:	mov	rcx, qword ptr [rax + 0x40]
+0x40026d:	mov	rbx, qword ptr [rax + 0x48]
+0x400271:	mov	qword ptr [rbp - 0x40], rcx
+0x400275:	mov	qword ptr [rbp - 0x38], rbx
+0x400279:	mov	rcx, qword ptr [rax + 0x50]
+0x40027d:	mov	rbx, qword ptr [rax + 0x58]
+0x400281:	mov	qword ptr [rbp - 0x30], rcx
+0x400285:	mov	qword ptr [rbp - 0x28], rbx
+0x400289:	mov	eax, dword ptr [rax + 0x60]
+0x40028c:	mov	dword ptr [rbp - 0x20], eax
+0x40028f:	mov	byte ptr [rbp - 0x1d], 0
+0x400293:	lea	rax, [rbp - 0x80]
+0x400297:	mov	rdi, rax
+0x40029a:	call	0x500010
+<Block for 0x40029f, 16 bytes>
+0x40029f:	nop	
+0x4002a0:	mov	rax, qword ptr [rbp - 0x18]
+0x4002a4:	xor	rax, qword ptr fs:[0x28]
+0x4002ad:	je	0x4002b4
+<Block for 0x4002b4, 10 bytes>
+0x4002b4:	add	rsp, 0x88
+0x4002bb:	pop	rbx
+0x4002bc:	pop	rbp
+0x4002bd:	ret	
+<Block for 0x4002af, 5 bytes>
+0x4002af:	call	0x500018

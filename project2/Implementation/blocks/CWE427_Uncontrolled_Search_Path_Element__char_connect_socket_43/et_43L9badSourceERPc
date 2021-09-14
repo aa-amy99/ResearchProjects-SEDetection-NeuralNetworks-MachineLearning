@@ -1,0 +1,132 @@
+<Block for 0x400000, 53 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x50
+0x40000c:	mov	qword ptr [rbp - 0x48], rdi
+0x400010:	mov	rax, qword ptr fs:[0x28]
+0x400019:	mov	qword ptr [rbp - 8], rax
+0x40001d:	xor	eax, eax
+0x40001f:	mov	dword ptr [rbp - 0x38], 0xffffffff
+0x400026:	mov	rax, qword ptr [rbp - 0x48]
+0x40002a:	mov	rax, qword ptr [rax]
+0x40002d:	mov	rdi, rax
+0x400030:	call	0x500000
+<Block for 0x400035, 24 bytes>
+0x400035:	mov	qword ptr [rbp - 0x30], rax
+0x400039:	mov	edx, 6
+0x40003e:	mov	esi, 1
+0x400043:	mov	edi, 2
+0x400048:	call	0x500008
+<Block for 0x40004d, 13 bytes>
+0x40004d:	mov	dword ptr [rbp - 0x38], eax
+0x400050:	cmp	dword ptr [rbp - 0x38], -1
+0x400054:	je	0x400158
+<Block for 0x400158, 3 bytes>
+0x400158:	nop	
+0x400159:	jmp	0x40015c
+<Block for 0x40005a, 22 bytes>
+0x40005a:	lea	rax, [rbp - 0x20]
+0x40005e:	mov	edx, 0x10
+0x400063:	mov	esi, 0
+0x400068:	mov	rdi, rax
+0x40006b:	call	0x500010
+<Block for 0x40015c, 6 bytes>
+0x40015c:	cmp	dword ptr [rbp - 0x38], -1
+0x400160:	je	0x40016c
+<Block for 0x400070, 18 bytes>
+0x400070:	mov	word ptr [rbp - 0x20], 2
+0x400076:	lea	rdi, [rip + 0x298]
+0x40007d:	call	0x500018
+<Block for 0x40016c, 16 bytes>
+0x40016c:	nop	
+0x40016d:	mov	rax, qword ptr [rbp - 8]
+0x400171:	xor	rax, qword ptr fs:[0x28]
+0x40017a:	je	0x400181
+<Block for 0x400162, 10 bytes>
+0x400162:	mov	eax, dword ptr [rbp - 0x38]
+0x400165:	mov	edi, eax
+0x400167:	call	0x500040
+<Block for 0x400082, 13 bytes>
+0x400082:	mov	dword ptr [rbp - 0x1c], eax
+0x400085:	mov	edi, 0x6987
+0x40008a:	call	0x500020
+<Block for 0x400181, 2 bytes>
+0x400181:	leave	
+0x400182:	ret	
+<Block for 0x40017c, 5 bytes>
+0x40017c:	call	0x500048
+<Block for 0x40008f, 26 bytes>
+0x40008f:	mov	word ptr [rbp - 0x1e], ax
+0x400093:	lea	rcx, [rbp - 0x20]
+0x400097:	mov	eax, dword ptr [rbp - 0x38]
+0x40009a:	mov	edx, 0x10
+0x40009f:	mov	rsi, rcx
+0x4000a2:	mov	edi, eax
+0x4000a4:	call	0x500028
+<Block for 0x4000a9, 14 bytes>
+0x4000a9:	cmp	eax, -1
+0x4000ac:	sete	al
+0x4000af:	test	al, al
+0x4000b1:	jne	0x40015b
+<Block for 0x4000b7, 42 bytes>
+0x4000b7:	mov	eax, 0xf9
+0x4000bc:	sub	rax, qword ptr [rbp - 0x30]
+0x4000c0:	mov	rdx, rax
+0x4000c3:	mov	rax, qword ptr [rbp - 0x48]
+0x4000c7:	mov	rcx, qword ptr [rax]
+0x4000ca:	mov	rax, qword ptr [rbp - 0x30]
+0x4000ce:	lea	rsi, [rcx + rax]
+0x4000d2:	mov	eax, dword ptr [rbp - 0x38]
+0x4000d5:	mov	ecx, 0
+0x4000da:	mov	edi, eax
+0x4000dc:	call	0x500030
+<Block for 0x40015b, 1 bytes>
+0x40015b:	nop	
+<Block for 0x4000e1, 9 bytes>
+0x4000e1:	mov	dword ptr [rbp - 0x34], eax
+0x4000e4:	cmp	dword ptr [rbp - 0x34], -1
+0x4000e8:	je	0x40015c
+<Block for 0x4000ea, 6 bytes>
+0x4000ea:	cmp	dword ptr [rbp - 0x34], 0
+0x4000ee:	je	0x40015c
+<Block for 0x4000f0, 46 bytes>
+0x4000f0:	mov	rax, qword ptr [rbp - 0x48]
+0x4000f4:	mov	rax, qword ptr [rax]
+0x4000f7:	mov	edx, dword ptr [rbp - 0x34]
+0x4000fa:	movsxd	rcx, edx
+0x4000fd:	mov	rdx, qword ptr [rbp - 0x30]
+0x400101:	add	rdx, rcx
+0x400104:	add	rax, rdx
+0x400107:	mov	byte ptr [rax], 0
+0x40010a:	mov	rax, qword ptr [rbp - 0x48]
+0x40010e:	mov	rax, qword ptr [rax]
+0x400111:	mov	esi, 0xd
+0x400116:	mov	rdi, rax
+0x400119:	call	0x500038
+<Block for 0x40011e, 11 bytes>
+0x40011e:	mov	qword ptr [rbp - 0x28], rax
+0x400122:	cmp	qword ptr [rbp - 0x28], 0
+0x400127:	je	0x400130
+<Block for 0x400130, 20 bytes>
+0x400130:	mov	rax, qword ptr [rbp - 0x48]
+0x400134:	mov	rax, qword ptr [rax]
+0x400137:	mov	esi, 0xa
+0x40013c:	mov	rdi, rax
+0x40013f:	call	0x500038
+<Block for 0x400129, 27 bytes>
+0x400129:	mov	rax, qword ptr [rbp - 0x28]
+0x40012d:	mov	byte ptr [rax], 0
+0x400130:	mov	rax, qword ptr [rbp - 0x48]
+0x400134:	mov	rax, qword ptr [rax]
+0x400137:	mov	esi, 0xa
+0x40013c:	mov	rdi, rax
+0x40013f:	call	0x500038
+<Block for 0x400144, 11 bytes>
+0x400144:	mov	qword ptr [rbp - 0x28], rax
+0x400148:	cmp	qword ptr [rbp - 0x28], 0
+0x40014d:	je	0x40015c
+<Block for 0x40014f, 9 bytes>
+0x40014f:	mov	rax, qword ptr [rbp - 0x28]
+0x400153:	mov	byte ptr [rax], 0
+0x400156:	jmp	0x40015c

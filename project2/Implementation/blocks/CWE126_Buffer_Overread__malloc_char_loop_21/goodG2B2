@@ -1,0 +1,65 @@
+<Block for 0x4002ee, 60 bytes>
+0x4002ee:	endbr64	
+0x4002f2:	push	rbp
+0x4002f3:	mov	rbp, rsp
+0x4002f6:	sub	rsp, 0x90
+0x4002fd:	mov	rax, qword ptr fs:[0x28]
+0x400306:	mov	qword ptr [rbp - 8], rax
+0x40030a:	xor	eax, eax
+0x40030c:	mov	qword ptr [rbp - 0x80], 0
+0x400314:	mov	dword ptr [rip + 0xda], 1
+0x40031e:	mov	rax, qword ptr [rbp - 0x80]
+0x400322:	mov	rdi, rax
+0x400325:	call	0x40028e
+<Block for 0x40032a, 26 bytes>
+0x40032a:	mov	qword ptr [rbp - 0x80], rax
+0x40032e:	lea	rax, [rbp - 0x70]
+0x400332:	mov	edx, 0x63
+0x400337:	mov	esi, 0x43
+0x40033c:	mov	rdi, rax
+0x40033f:	call	0x500010
+<Block for 0x400344, 16 bytes>
+0x400344:	mov	byte ptr [rbp - 0xd], 0
+0x400348:	lea	rax, [rbp - 0x70]
+0x40034c:	mov	rdi, rax
+0x40034f:	call	0x500018
+<Block for 0x400354, 17 bytes>
+0x400354:	mov	qword ptr [rbp - 0x78], rax
+0x400358:	mov	qword ptr [rbp - 0x88], 0
+0x400363:	jmp	0x40038e
+<Block for 0x40038e, 13 bytes>
+0x40038e:	mov	rax, qword ptr [rbp - 0x88]
+0x400395:	cmp	rax, qword ptr [rbp - 0x78]
+0x400399:	jb	0x400365
+<Block for 0x400365, 54 bytes>
+0x400365:	mov	rdx, qword ptr [rbp - 0x80]
+0x400369:	mov	rax, qword ptr [rbp - 0x88]
+0x400370:	add	rax, rdx
+0x400373:	movzx	eax, byte ptr [rax]
+0x400376:	lea	rcx, [rbp - 0x70]
+0x40037a:	mov	rdx, qword ptr [rbp - 0x88]
+0x400381:	add	rdx, rcx
+0x400384:	mov	byte ptr [rdx], al
+0x400386:	add	qword ptr [rbp - 0x88], 1
+0x40038e:	mov	rax, qword ptr [rbp - 0x88]
+0x400395:	cmp	rax, qword ptr [rbp - 0x78]
+0x400399:	jb	0x400365
+<Block for 0x40039b, 16 bytes>
+0x40039b:	mov	byte ptr [rbp - 0xd], 0
+0x40039f:	lea	rax, [rbp - 0x70]
+0x4003a3:	mov	rdi, rax
+0x4003a6:	call	0x500020
+<Block for 0x4003ab, 12 bytes>
+0x4003ab:	mov	rax, qword ptr [rbp - 0x80]
+0x4003af:	mov	rdi, rax
+0x4003b2:	call	0x500028
+<Block for 0x4003b7, 16 bytes>
+0x4003b7:	nop	
+0x4003b8:	mov	rax, qword ptr [rbp - 8]
+0x4003bc:	xor	rax, qword ptr fs:[0x28]
+0x4003c5:	je	0x4003cc
+<Block for 0x4003cc, 2 bytes>
+0x4003cc:	leave	
+0x4003cd:	ret	
+<Block for 0x4003c7, 5 bytes>
+0x4003c7:	call	0x500030

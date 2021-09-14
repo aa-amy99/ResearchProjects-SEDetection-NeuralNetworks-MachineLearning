@@ -1,0 +1,63 @@
+<Block for 0x4001b6, 185 bytes>
+0x4001b6:	endbr64	
+0x4001ba:	push	rbp
+0x4001bb:	mov	rbp, rsp
+0x4001be:	sub	rsp, 0x90
+0x4001c5:	mov	rax, qword ptr fs:[0x28]
+0x4001ce:	mov	qword ptr [rbp - 8], rax
+0x4001d2:	xor	eax, eax
+0x4001d4:	mov	qword ptr [rbp - 0x70], 0
+0x4001dc:	mov	qword ptr [rbp - 0x68], 0
+0x4001e4:	mov	qword ptr [rbp - 0x60], 0
+0x4001ec:	mov	qword ptr [rbp - 0x58], 0
+0x4001f4:	mov	qword ptr [rbp - 0x50], 0
+0x4001fc:	mov	qword ptr [rbp - 0x48], 0
+0x400204:	mov	qword ptr [rbp - 0x40], 0
+0x40020c:	mov	qword ptr [rbp - 0x38], 0
+0x400214:	mov	qword ptr [rbp - 0x30], 0
+0x40021c:	mov	qword ptr [rbp - 0x28], 0
+0x400224:	mov	qword ptr [rbp - 0x20], 0
+0x40022c:	mov	qword ptr [rbp - 0x18], 0
+0x400234:	mov	dword ptr [rbp - 0x10], 0
+0x40023b:	lea	rax, [rbp - 0x70]
+0x40023f:	mov	qword ptr [rbp - 0x78], rax
+0x400243:	mov	rax, qword ptr [rbp - 0x78]
+0x400247:	mov	word ptr [rax], 0x3531
+0x40024c:	mov	byte ptr [rax + 2], 0
+0x400250:	lea	rdx, [rbp - 0x84]
+0x400257:	mov	rax, qword ptr [rbp - 0x78]
+0x40025b:	lea	rsi, [rip + 0x247]
+0x400262:	mov	rdi, rax
+0x400265:	mov	eax, 0
+0x40026a:	call	0x500020
+<Block for 0x40026f, 5 bytes>
+0x40026f:	cmp	eax, 1
+0x400272:	jne	0x4002a1
+<Block for 0x400274, 16 bytes>
+0x400274:	mov	dword ptr [rbp - 0x7c], 0
+0x40027b:	mov	dword ptr [rbp - 0x80], 0
+0x400282:	jmp	0x40028c
+<Block for 0x4002a1, 16 bytes>
+0x4002a1:	nop	
+0x4002a2:	mov	rax, qword ptr [rbp - 8]
+0x4002a6:	xor	rax, qword ptr fs:[0x28]
+0x4002af:	je	0x4002b6
+<Block for 0x40028c, 11 bytes>
+0x40028c:	mov	eax, dword ptr [rbp - 0x84]
+0x400292:	cmp	dword ptr [rbp - 0x80], eax
+0x400295:	jl	0x400284
+<Block for 0x4002b6, 2 bytes>
+0x4002b6:	leave	
+0x4002b7:	ret	
+<Block for 0x4002b1, 5 bytes>
+0x4002b1:	call	0x500030
+<Block for 0x400284, 19 bytes>
+0x400284:	add	dword ptr [rbp - 0x7c], 1
+0x400288:	add	dword ptr [rbp - 0x80], 1
+0x40028c:	mov	eax, dword ptr [rbp - 0x84]
+0x400292:	cmp	dword ptr [rbp - 0x80], eax
+0x400295:	jl	0x400284
+<Block for 0x400297, 10 bytes>
+0x400297:	mov	eax, dword ptr [rbp - 0x7c]
+0x40029a:	mov	edi, eax
+0x40029c:	call	0x500028

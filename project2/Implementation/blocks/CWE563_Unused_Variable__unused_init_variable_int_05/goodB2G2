@@ -1,0 +1,17 @@
+<Block for 0x40004a, 29 bytes>
+0x40004a:	endbr64	
+0x40004e:	push	rbp
+0x40004f:	mov	rbp, rsp
+0x400052:	sub	rsp, 0x10
+0x400056:	mov	dword ptr [rbp - 4], 5
+0x40005d:	mov	eax, dword ptr [rip + 0x31]
+0x400063:	test	eax, eax
+0x400065:	je	0x400071
+<Block for 0x400071, 3 bytes>
+0x400071:	nop	
+0x400072:	leave	
+0x400073:	ret	
+<Block for 0x400067, 10 bytes>
+0x400067:	mov	eax, dword ptr [rbp - 4]
+0x40006a:	mov	edi, eax
+0x40006c:	call	0x500008

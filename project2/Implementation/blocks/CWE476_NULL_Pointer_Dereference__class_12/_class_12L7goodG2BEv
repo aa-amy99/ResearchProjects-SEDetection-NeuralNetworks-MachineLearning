@@ -1,0 +1,74 @@
+<Block for 0x40016c, 17 bytes>
+0x40016c:	endbr64	
+0x400170:	push	rbp
+0x400171:	mov	rbp, rsp
+0x400174:	sub	rsp, 0x20
+0x400178:	call	0x500000
+<Block for 0x40017d, 9 bytes>
+0x40017d:	test	eax, eax
+0x40017f:	setne	al
+0x400182:	test	al, al
+0x400184:	je	0x4001b3
+<Block for 0x4001b3, 10 bytes>
+0x4001b3:	mov	edi, 8
+0x4001b8:	call	0x500008
+<Block for 0x400186, 10 bytes>
+0x400186:	mov	edi, 8
+0x40018b:	call	0x500008
+<Block for 0x4001bd, 38 bytes>
+0x4001bd:	mov	qword ptr [rbp - 0x10], rax
+0x4001c1:	mov	rax, qword ptr [rbp - 0x10]
+0x4001c5:	mov	dword ptr [rax], 0
+0x4001cb:	mov	rax, qword ptr [rbp - 0x10]
+0x4001cf:	mov	dword ptr [rax + 4], 0
+0x4001d6:	mov	rax, qword ptr [rbp - 0x10]
+0x4001da:	mov	qword ptr [rbp - 0x18], rax
+0x4001de:	call	0x500000
+<Block for 0x400190, 35 bytes>
+0x400190:	mov	qword ptr [rbp - 8], rax
+0x400194:	mov	rax, qword ptr [rbp - 8]
+0x400198:	mov	dword ptr [rax], 0
+0x40019e:	mov	rax, qword ptr [rbp - 8]
+0x4001a2:	mov	dword ptr [rax + 4], 0
+0x4001a9:	mov	rax, qword ptr [rbp - 8]
+0x4001ad:	mov	qword ptr [rbp - 0x18], rax
+0x4001b1:	jmp	0x4001de
+<Block for 0x4001e3, 9 bytes>
+0x4001e3:	test	eax, eax
+0x4001e5:	setne	al
+0x4001e8:	test	al, al
+0x4001ea:	je	0x400211
+<Block for 0x4001de, 5 bytes>
+0x4001de:	call	0x500000
+<Block for 0x400211, 13 bytes>
+0x400211:	mov	rax, qword ptr [rbp - 0x18]
+0x400215:	mov	eax, dword ptr [rax]
+0x400217:	mov	edi, eax
+0x400219:	call	0x500010
+<Block for 0x4001ec, 13 bytes>
+0x4001ec:	mov	rax, qword ptr [rbp - 0x18]
+0x4001f0:	mov	eax, dword ptr [rax]
+0x4001f2:	mov	edi, eax
+0x4001f4:	call	0x500010
+<Block for 0x40021e, 9 bytes>
+0x40021e:	mov	rax, qword ptr [rbp - 0x18]
+0x400222:	test	rax, rax
+0x400225:	je	0x400234
+<Block for 0x4001f9, 9 bytes>
+0x4001f9:	mov	rax, qword ptr [rbp - 0x18]
+0x4001fd:	test	rax, rax
+0x400200:	je	0x400234
+<Block for 0x400234, 3 bytes>
+0x400234:	nop	
+0x400235:	leave	
+0x400236:	ret	
+<Block for 0x400227, 13 bytes>
+0x400227:	mov	esi, 8
+0x40022c:	mov	rdi, rax
+0x40022f:	call	0x500018
+<Block for 0x400202, 13 bytes>
+0x400202:	mov	esi, 8
+0x400207:	mov	rdi, rax
+0x40020a:	call	0x500018
+<Block for 0x40020f, 2 bytes>
+0x40020f:	jmp	0x400234

@@ -1,0 +1,17 @@
+<Block for 0x4001de, 21 bytes>
+0x4001de:	endbr64	
+0x4001e2:	push	rbp
+0x4001e3:	mov	rbp, rsp
+0x4001e6:	mov	dword ptr [rbp - 4], edi
+0x4001e9:	mov	eax, dword ptr [rip + 0xd9]
+0x4001ef:	test	eax, eax
+0x4001f1:	je	0x4001fa
+<Block for 0x4001fa, 5 bytes>
+0x4001fa:	mov	eax, dword ptr [rbp - 4]
+0x4001fd:	pop	rbp
+0x4001fe:	ret	
+<Block for 0x4001f3, 12 bytes>
+0x4001f3:	mov	dword ptr [rbp - 4], 0x14
+0x4001fa:	mov	eax, dword ptr [rbp - 4]
+0x4001fd:	pop	rbp
+0x4001fe:	ret	

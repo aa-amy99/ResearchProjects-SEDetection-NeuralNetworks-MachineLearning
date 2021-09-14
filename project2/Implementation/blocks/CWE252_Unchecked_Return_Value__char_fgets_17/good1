@@ -1,0 +1,64 @@
+<Block for 0x4000eb, 39 bytes>
+0x4000eb:	endbr64	
+0x4000ef:	push	rbp
+0x4000f0:	mov	rbp, rsp
+0x4000f3:	add	rsp, -0x80
+0x4000f7:	mov	rax, qword ptr fs:[0x28]
+0x400100:	mov	qword ptr [rbp - 8], rax
+0x400104:	xor	eax, eax
+0x400106:	mov	dword ptr [rbp - 0x7c], 0
+0x40010d:	jmp	0x4001d0
+<Block for 0x4001d0, 10 bytes>
+0x4001d0:	cmp	dword ptr [rbp - 0x7c], 0
+0x4001d4:	jle	0x400112
+<Block for 0x400112, 123 bytes>
+0x400112:	mov	qword ptr [rbp - 0x70], 0
+0x40011a:	mov	qword ptr [rbp - 0x68], 0
+0x400122:	mov	qword ptr [rbp - 0x60], 0
+0x40012a:	mov	qword ptr [rbp - 0x58], 0
+0x400132:	mov	qword ptr [rbp - 0x50], 0
+0x40013a:	mov	qword ptr [rbp - 0x48], 0
+0x400142:	mov	qword ptr [rbp - 0x40], 0
+0x40014a:	mov	qword ptr [rbp - 0x38], 0
+0x400152:	mov	qword ptr [rbp - 0x30], 0
+0x40015a:	mov	qword ptr [rbp - 0x28], 0
+0x400162:	mov	qword ptr [rbp - 0x20], 0
+0x40016a:	mov	qword ptr [rbp - 0x18], 0
+0x400172:	mov	dword ptr [rbp - 0x10], 0
+0x400179:	lea	rax, [rbp - 0x70]
+0x40017d:	mov	qword ptr [rbp - 0x78], rax
+0x400181:	lea	rdi, [rip + 0x7e]
+0x400188:	call	0x500000
+<Block for 0x4001da, 16 bytes>
+0x4001da:	nop	
+0x4001db:	mov	rax, qword ptr [rbp - 8]
+0x4001df:	xor	rax, qword ptr fs:[0x28]
+0x4001e8:	je	0x4001ef
+<Block for 0x40018d, 24 bytes>
+0x40018d:	mov	rdx, qword ptr [rip + 0xffe74]
+0x400194:	mov	rax, qword ptr [rbp - 0x78]
+0x400198:	mov	esi, 0x64
+0x40019d:	mov	rdi, rax
+0x4001a0:	call	0x500010
+<Block for 0x4001ef, 2 bytes>
+0x4001ef:	leave	
+0x4001f0:	ret	
+<Block for 0x4001ea, 5 bytes>
+0x4001ea:	call	0x500018
+<Block for 0x4001a5, 5 bytes>
+0x4001a5:	test	rax, rax
+0x4001a8:	jne	0x4001c0
+<Block for 0x4001aa, 12 bytes>
+0x4001aa:	lea	rdi, [rip + 0x6d]
+0x4001b1:	call	0x500000
+<Block for 0x4001c0, 12 bytes>
+0x4001c0:	mov	rax, qword ptr [rbp - 0x78]
+0x4001c4:	mov	rdi, rax
+0x4001c7:	call	0x500000
+<Block for 0x4001b6, 10 bytes>
+0x4001b6:	mov	edi, 1
+0x4001bb:	call	0x500020
+<Block for 0x4001cc, 14 bytes>
+0x4001cc:	add	dword ptr [rbp - 0x7c], 1
+0x4001d0:	cmp	dword ptr [rbp - 0x7c], 0
+0x4001d4:	jle	0x400112

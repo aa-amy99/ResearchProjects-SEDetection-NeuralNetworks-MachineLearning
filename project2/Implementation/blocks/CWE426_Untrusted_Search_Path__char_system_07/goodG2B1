@@ -1,0 +1,63 @@
+<Block for 0x4000e6, 149 bytes>
+0x4000e6:	endbr64	
+0x4000ea:	push	rbp
+0x4000eb:	mov	rbp, rsp
+0x4000ee:	add	rsp, -0x80
+0x4000f2:	mov	rax, qword ptr fs:[0x28]
+0x4000fb:	mov	qword ptr [rbp - 8], rax
+0x4000ff:	xor	eax, eax
+0x400101:	mov	qword ptr [rbp - 0x70], 0
+0x400109:	mov	qword ptr [rbp - 0x68], 0
+0x400111:	mov	qword ptr [rbp - 0x60], 0
+0x400119:	mov	qword ptr [rbp - 0x58], 0
+0x400121:	mov	qword ptr [rbp - 0x50], 0
+0x400129:	mov	qword ptr [rbp - 0x48], 0
+0x400131:	mov	qword ptr [rbp - 0x40], 0
+0x400139:	mov	qword ptr [rbp - 0x38], 0
+0x400141:	mov	qword ptr [rbp - 0x30], 0
+0x400149:	mov	qword ptr [rbp - 0x28], 0
+0x400151:	mov	qword ptr [rbp - 0x20], 0
+0x400159:	mov	qword ptr [rbp - 0x18], 0
+0x400161:	mov	dword ptr [rbp - 0x10], 0
+0x400168:	lea	rax, [rbp - 0x70]
+0x40016c:	mov	qword ptr [rbp - 0x78], rax
+0x400170:	mov	eax, dword ptr [rip + 0x182]
+0x400176:	cmp	eax, 5
+0x400179:	je	0x400189
+<Block for 0x400189, 43 bytes>
+0x400189:	mov	rax, qword ptr [rbp - 0x78]
+0x40018d:	movabs	rdx, 0x6e69622f7273752f
+0x400197:	movabs	rcx, 0x616c2d20736c2f
+0x4001a1:	mov	qword ptr [rax], rdx
+0x4001a4:	mov	qword ptr [rax + 8], rcx
+0x4001a8:	mov	rax, qword ptr [rbp - 0x78]
+0x4001ac:	mov	rdi, rax
+0x4001af:	call	0x500000
+<Block for 0x40017b, 12 bytes>
+0x40017b:	lea	rdi, [rip + 0x194]
+0x400182:	call	0x500008
+<Block for 0x4001b4, 4 bytes>
+0x4001b4:	test	eax, eax
+0x4001b6:	jg	0x4001ce
+<Block for 0x400187, 2 bytes>
+0x400187:	jmp	0x4001a8
+<Block for 0x4001b8, 12 bytes>
+0x4001b8:	lea	rdi, [rip + 0x13d]
+0x4001bf:	call	0x500008
+<Block for 0x4001ce, 16 bytes>
+0x4001ce:	nop	
+0x4001cf:	mov	rax, qword ptr [rbp - 8]
+0x4001d3:	xor	rax, qword ptr fs:[0x28]
+0x4001dc:	je	0x4001e3
+<Block for 0x4001a8, 12 bytes>
+0x4001a8:	mov	rax, qword ptr [rbp - 0x78]
+0x4001ac:	mov	rdi, rax
+0x4001af:	call	0x500000
+<Block for 0x4001c4, 10 bytes>
+0x4001c4:	mov	edi, 1
+0x4001c9:	call	0x500010
+<Block for 0x4001e3, 2 bytes>
+0x4001e3:	leave	
+0x4001e4:	ret	
+<Block for 0x4001de, 5 bytes>
+0x4001de:	call	0x500018

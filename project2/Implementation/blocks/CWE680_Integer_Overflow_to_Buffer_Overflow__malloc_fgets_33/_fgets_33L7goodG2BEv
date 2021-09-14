@@ -1,0 +1,65 @@
+<Block for 0x400110, 75 bytes>
+0x400110:	endbr64	
+0x400114:	push	rbp
+0x400115:	mov	rbp, rsp
+0x400118:	sub	rsp, 0x30
+0x40011c:	mov	rax, qword ptr fs:[0x28]
+0x400125:	mov	qword ptr [rbp - 8], rax
+0x400129:	xor	eax, eax
+0x40012b:	lea	rax, [rbp - 0x28]
+0x40012f:	mov	qword ptr [rbp - 0x18], rax
+0x400133:	mov	dword ptr [rbp - 0x28], 0xffffffff
+0x40013a:	mov	dword ptr [rbp - 0x28], 0x14
+0x400141:	mov	rax, qword ptr [rbp - 0x18]
+0x400145:	mov	eax, dword ptr [rax]
+0x400147:	mov	dword ptr [rbp - 0x24], eax
+0x40014a:	mov	eax, dword ptr [rbp - 0x24]
+0x40014d:	cdqe	
+0x40014f:	shl	rax, 2
+0x400153:	mov	rdi, rax
+0x400156:	call	0x500020
+<Block for 0x40015b, 11 bytes>
+0x40015b:	mov	qword ptr [rbp - 0x10], rax
+0x40015f:	cmp	qword ptr [rbp - 0x10], 0
+0x400164:	jne	0x400170
+<Block for 0x400166, 10 bytes>
+0x400166:	mov	edi, 0xffffffff
+0x40016b:	call	0x500028
+<Block for 0x400170, 19 bytes>
+0x400170:	mov	qword ptr [rbp - 0x20], 0
+0x400178:	mov	eax, dword ptr [rbp - 0x24]
+0x40017b:	cdqe	
+0x40017d:	cmp	qword ptr [rbp - 0x20], rax
+0x400181:	jae	0x4001a3
+<Block for 0x400183, 32 bytes>
+0x400183:	mov	rax, qword ptr [rbp - 0x20]
+0x400187:	lea	rdx, [rax*4]
+0x40018f:	mov	rax, qword ptr [rbp - 0x10]
+0x400193:	add	rax, rdx
+0x400196:	mov	dword ptr [rax], 0
+0x40019c:	add	qword ptr [rbp - 0x20], 1
+0x4001a1:	jmp	0x400178
+<Block for 0x4001a3, 13 bytes>
+0x4001a3:	mov	rax, qword ptr [rbp - 0x10]
+0x4001a7:	mov	eax, dword ptr [rax]
+0x4001a9:	mov	edi, eax
+0x4001ab:	call	0x500030
+<Block for 0x400178, 11 bytes>
+0x400178:	mov	eax, dword ptr [rbp - 0x24]
+0x40017b:	cdqe	
+0x40017d:	cmp	qword ptr [rbp - 0x20], rax
+0x400181:	jae	0x4001a3
+<Block for 0x4001b0, 12 bytes>
+0x4001b0:	mov	rax, qword ptr [rbp - 0x10]
+0x4001b4:	mov	rdi, rax
+0x4001b7:	call	0x500038
+<Block for 0x4001bc, 16 bytes>
+0x4001bc:	nop	
+0x4001bd:	mov	rax, qword ptr [rbp - 8]
+0x4001c1:	xor	rax, qword ptr fs:[0x28]
+0x4001ca:	je	0x4001d1
+<Block for 0x4001d1, 2 bytes>
+0x4001d1:	leave	
+0x4001d2:	ret	
+<Block for 0x4001cc, 5 bytes>
+0x4001cc:	call	0x500040

@@ -1,0 +1,68 @@
+<Block for 0x4000b9, 22 bytes>
+0x4000b9:	endbr64	
+0x4000bd:	push	rbp
+0x4000be:	mov	rbp, rsp
+0x4000c1:	sub	rsp, 0x30
+0x4000c5:	mov	eax, 0
+0x4000ca:	call	0x500000
+<Block for 0x4000cf, 4 bytes>
+0x4000cf:	test	eax, eax
+0x4000d1:	je	0x40012d
+<Block for 0x40012d, 10 bytes>
+0x40012d:	mov	edi, 8
+0x400132:	call	0x500008
+<Block for 0x4000d3, 10 bytes>
+0x4000d3:	mov	edi, 8
+0x4000d8:	call	0x500008
+<Block for 0x400137, 11 bytes>
+0x400137:	mov	qword ptr [rbp - 0x30], rax
+0x40013b:	cmp	qword ptr [rbp - 0x30], 0
+0x400140:	jne	0x40014c
+<Block for 0x4000dd, 11 bytes>
+0x4000dd:	mov	qword ptr [rbp - 0x18], rax
+0x4000e1:	cmp	qword ptr [rbp - 0x18], 0
+0x4000e6:	jne	0x4000f2
+<Block for 0x400142, 10 bytes>
+0x400142:	mov	edi, 0xffffffff
+0x400147:	call	0x500010
+<Block for 0x40014c, 45 bytes>
+0x40014c:	lea	rax, [rip + 0x4a]
+0x400153:	mov	qword ptr [rbp - 0x28], rax
+0x400157:	mov	rax, qword ptr [rbp - 0x30]
+0x40015b:	mov	rdx, qword ptr [rbp - 0x28]
+0x40015f:	mov	qword ptr [rax], rdx
+0x400162:	mov	rax, qword ptr [rbp - 0x30]
+0x400166:	mov	rax, qword ptr [rax]
+0x400169:	mov	qword ptr [rbp - 0x20], rax
+0x40016d:	mov	rax, qword ptr [rbp - 0x20]
+0x400171:	mov	rdi, rax
+0x400174:	call	0x500020
+<Block for 0x4000e8, 10 bytes>
+0x4000e8:	mov	edi, 0xffffffff
+0x4000ed:	call	0x500010
+<Block for 0x4000f2, 45 bytes>
+0x4000f2:	lea	rax, [rip + 0xa4]
+0x4000f9:	mov	qword ptr [rbp - 0x10], rax
+0x4000fd:	mov	rax, qword ptr [rbp - 0x18]
+0x400101:	mov	rdx, qword ptr [rbp - 0x10]
+0x400105:	mov	qword ptr [rax], rdx
+0x400108:	mov	rax, qword ptr [rbp - 0x18]
+0x40010c:	mov	rax, qword ptr [rax]
+0x40010f:	mov	qword ptr [rbp - 8], rax
+0x400113:	mov	rax, qword ptr [rbp - 8]
+0x400117:	mov	rdi, rax
+0x40011a:	call	0x500020
+<Block for 0x400179, 12 bytes>
+0x400179:	mov	rax, qword ptr [rbp - 0x30]
+0x40017d:	mov	rdi, rax
+0x400180:	call	0x500018
+<Block for 0x40011f, 12 bytes>
+0x40011f:	mov	rax, qword ptr [rbp - 0x18]
+0x400123:	mov	rdi, rax
+0x400126:	call	0x500018
+<Block for 0x400185, 3 bytes>
+0x400185:	nop	
+0x400186:	leave	
+0x400187:	ret	
+<Block for 0x40012b, 2 bytes>
+0x40012b:	jmp	0x400185

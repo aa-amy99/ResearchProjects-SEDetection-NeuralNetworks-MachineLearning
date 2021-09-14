@@ -1,0 +1,14 @@
+<Block for 0x40002e, 46 bytes>
+0x40002e:	endbr64	
+0x400032:	push	rbp
+0x400033:	mov	rbp, rsp
+0x400036:	mov	qword ptr [rbp - 8], rdi
+0x40003a:	mov	rax, qword ptr [rbp - 8]
+0x40003e:	mov	rax, qword ptr [rax]
+0x400041:	movabs	rdx, 0x7453206465786946
+0x40004b:	mov	qword ptr [rax], rdx
+0x40004e:	mov	dword ptr [rax + 8], 0x676e6972
+0x400055:	mov	byte ptr [rax + 0xc], 0
+0x400059:	nop	
+0x40005a:	pop	rbp
+0x40005b:	ret	

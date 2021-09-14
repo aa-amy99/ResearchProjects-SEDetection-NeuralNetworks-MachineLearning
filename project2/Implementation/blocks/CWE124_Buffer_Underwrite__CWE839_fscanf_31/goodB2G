@@ -1,0 +1,64 @@
+<Block for 0x400188, 65 bytes>
+0x400188:	endbr64	
+0x40018c:	push	rbp
+0x40018d:	mov	rbp, rsp
+0x400190:	sub	rsp, 0x40
+0x400194:	mov	rax, qword ptr fs:[0x28]
+0x40019d:	mov	qword ptr [rbp - 8], rax
+0x4001a1:	xor	eax, eax
+0x4001a3:	mov	dword ptr [rbp - 0x40], 0xffffffff
+0x4001aa:	mov	rax, qword ptr [rip + 0xffe4f]
+0x4001b1:	lea	rdx, [rbp - 0x40]
+0x4001b5:	lea	rsi, [rip + 0xc4]
+0x4001bc:	mov	rdi, rax
+0x4001bf:	mov	eax, 0
+0x4001c4:	call	0x500008
+<Block for 0x4001c9, 58 bytes>
+0x4001c9:	mov	eax, dword ptr [rbp - 0x40]
+0x4001cc:	mov	dword ptr [rbp - 0x38], eax
+0x4001cf:	mov	eax, dword ptr [rbp - 0x38]
+0x4001d2:	mov	dword ptr [rbp - 0x34], eax
+0x4001d5:	mov	qword ptr [rbp - 0x30], 0
+0x4001dd:	mov	qword ptr [rbp - 0x28], 0
+0x4001e5:	mov	qword ptr [rbp - 0x20], 0
+0x4001ed:	mov	qword ptr [rbp - 0x18], 0
+0x4001f5:	mov	qword ptr [rbp - 0x10], 0
+0x4001fd:	cmp	dword ptr [rbp - 0x34], 0
+0x400201:	js	0x40023b
+<Block for 0x40023b, 12 bytes>
+0x40023b:	lea	rdi, [rip + 0x66]
+0x400242:	call	0x500018
+<Block for 0x400203, 6 bytes>
+0x400203:	cmp	dword ptr [rbp - 0x34], 9
+0x400207:	jg	0x40023b
+<Block for 0x400247, 16 bytes>
+0x400247:	nop	
+0x400248:	mov	rax, qword ptr [rbp - 8]
+0x40024c:	xor	rax, qword ptr fs:[0x28]
+0x400255:	je	0x40025c
+<Block for 0x400209, 22 bytes>
+0x400209:	mov	eax, dword ptr [rbp - 0x34]
+0x40020c:	cdqe	
+0x40020e:	mov	dword ptr [rbp + rax*4 - 0x30], 1
+0x400216:	mov	dword ptr [rbp - 0x3c], 0
+0x40021d:	jmp	0x400233
+<Block for 0x40025c, 2 bytes>
+0x40025c:	leave	
+0x40025d:	ret	
+<Block for 0x400257, 5 bytes>
+0x400257:	call	0x500020
+<Block for 0x400233, 6 bytes>
+0x400233:	cmp	dword ptr [rbp - 0x3c], 9
+0x400237:	jle	0x40021f
+<Block for 0x40021f, 16 bytes>
+0x40021f:	mov	eax, dword ptr [rbp - 0x3c]
+0x400222:	cdqe	
+0x400224:	mov	eax, dword ptr [rbp + rax*4 - 0x30]
+0x400228:	mov	edi, eax
+0x40022a:	call	0x500010
+<Block for 0x400239, 2 bytes>
+0x400239:	jmp	0x400247
+<Block for 0x40022f, 10 bytes>
+0x40022f:	add	dword ptr [rbp - 0x3c], 1
+0x400233:	cmp	dword ptr [rbp - 0x3c], 9
+0x400237:	jle	0x40021f

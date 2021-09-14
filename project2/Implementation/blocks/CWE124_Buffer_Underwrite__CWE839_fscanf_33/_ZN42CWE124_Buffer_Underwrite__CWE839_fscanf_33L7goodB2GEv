@@ -1,0 +1,67 @@
+<Block for 0x40019c, 73 bytes>
+0x40019c:	endbr64	
+0x4001a0:	push	rbp
+0x4001a1:	mov	rbp, rsp
+0x4001a4:	sub	rsp, 0x50
+0x4001a8:	mov	rax, qword ptr fs:[0x28]
+0x4001b1:	mov	qword ptr [rbp - 8], rax
+0x4001b5:	xor	eax, eax
+0x4001b7:	lea	rax, [rbp - 0x44]
+0x4001bb:	mov	qword ptr [rbp - 0x38], rax
+0x4001bf:	mov	dword ptr [rbp - 0x44], 0xffffffff
+0x4001c6:	mov	rax, qword ptr [rip + 0xffe33]
+0x4001cd:	lea	rdx, [rbp - 0x44]
+0x4001d1:	lea	rsi, [rip + 0xb8]
+0x4001d8:	mov	rdi, rax
+0x4001db:	mov	eax, 0
+0x4001e0:	call	0x500008
+<Block for 0x4001e5, 55 bytes>
+0x4001e5:	mov	rax, qword ptr [rbp - 0x38]
+0x4001e9:	mov	eax, dword ptr [rax]
+0x4001eb:	mov	dword ptr [rbp - 0x3c], eax
+0x4001ee:	mov	qword ptr [rbp - 0x30], 0
+0x4001f6:	mov	qword ptr [rbp - 0x28], 0
+0x4001fe:	mov	qword ptr [rbp - 0x20], 0
+0x400206:	mov	qword ptr [rbp - 0x18], 0
+0x40020e:	mov	qword ptr [rbp - 0x10], 0
+0x400216:	cmp	dword ptr [rbp - 0x3c], 0
+0x40021a:	js	0x400252
+<Block for 0x400252, 12 bytes>
+0x400252:	lea	rdi, [rip + 0x5f]
+0x400259:	call	0x500018
+<Block for 0x40021c, 6 bytes>
+0x40021c:	cmp	dword ptr [rbp - 0x3c], 9
+0x400220:	jg	0x400252
+<Block for 0x40025e, 2 bytes>
+0x40025e:	jmp	0x400261
+<Block for 0x400222, 26 bytes>
+0x400222:	mov	eax, dword ptr [rbp - 0x3c]
+0x400225:	cdqe	
+0x400227:	mov	dword ptr [rbp + rax*4 - 0x30], 1
+0x40022f:	mov	dword ptr [rbp - 0x40], 0
+0x400236:	cmp	dword ptr [rbp - 0x40], 9
+0x40023a:	jg	0x400260
+<Block for 0x400261, 16 bytes>
+0x400261:	nop	
+0x400262:	mov	rax, qword ptr [rbp - 8]
+0x400266:	xor	rax, qword ptr fs:[0x28]
+0x40026f:	je	0x400276
+<Block for 0x40023c, 16 bytes>
+0x40023c:	mov	eax, dword ptr [rbp - 0x40]
+0x40023f:	cdqe	
+0x400241:	mov	eax, dword ptr [rbp + rax*4 - 0x30]
+0x400245:	mov	edi, eax
+0x400247:	call	0x500010
+<Block for 0x400260, 1 bytes>
+0x400260:	nop	
+<Block for 0x400276, 2 bytes>
+0x400276:	leave	
+0x400277:	ret	
+<Block for 0x400271, 5 bytes>
+0x400271:	call	0x500020
+<Block for 0x40024c, 6 bytes>
+0x40024c:	add	dword ptr [rbp - 0x40], 1
+0x400250:	jmp	0x400236
+<Block for 0x400236, 6 bytes>
+0x400236:	cmp	dword ptr [rbp - 0x40], 9
+0x40023a:	jg	0x400260

@@ -1,0 +1,67 @@
+<Block for 0x4000b9, 45 bytes>
+0x4000b9:	endbr64	
+0x4000bd:	push	rbp
+0x4000be:	mov	rbp, rsp
+0x4000c1:	sub	rsp, 0x120
+0x4000c8:	mov	rax, qword ptr fs:[0x28]
+0x4000d1:	mov	qword ptr [rbp - 8], rax
+0x4000d5:	xor	eax, eax
+0x4000d7:	mov	dword ptr [rbp - 0x11c], 0
+0x4000e1:	jmp	0x400187
+<Block for 0x400187, 13 bytes>
+0x400187:	cmp	dword ptr [rbp - 0x11c], 0
+0x40018e:	jle	0x4000e6
+<Block for 0x4000e6, 39 bytes>
+0x4000e6:	pxor	xmm0, xmm0
+0x4000ea:	movsd	qword ptr [rbp - 0x118], xmm0
+0x4000f2:	mov	rdx, qword ptr [rip + 0xfff07]
+0x4000f9:	lea	rax, [rbp - 0x110]
+0x400100:	mov	esi, 0x100
+0x400105:	mov	rdi, rax
+0x400108:	call	0x500008
+<Block for 0x400194, 16 bytes>
+0x400194:	nop	
+0x400195:	mov	rax, qword ptr [rbp - 8]
+0x400199:	xor	rax, qword ptr fs:[0x28]
+0x4001a2:	je	0x4001a9
+<Block for 0x40010d, 5 bytes>
+0x40010d:	test	rax, rax
+0x400110:	je	0x40012f
+<Block for 0x4001a9, 2 bytes>
+0x4001a9:	leave	
+0x4001aa:	ret	
+<Block for 0x4001a4, 5 bytes>
+0x4001a4:	call	0x500028
+<Block for 0x40012f, 12 bytes>
+0x40012f:	lea	rdi, [rip + 0x8a]
+0x400136:	call	0x500018
+<Block for 0x400112, 15 bytes>
+0x400112:	lea	rax, [rbp - 0x110]
+0x400119:	mov	rdi, rax
+0x40011c:	call	0x500010
+<Block for 0x40013b, 18 bytes>
+0x40013b:	movsd	xmm0, qword ptr [rbp - 0x118]
+0x400143:	comisd	xmm0, xmmword ptr [rip + 0xbd]
+0x40014b:	ja	0x40015f
+<Block for 0x400121, 14 bytes>
+0x400121:	movq	rax, xmm0
+0x400126:	mov	qword ptr [rbp - 0x118], rax
+0x40012d:	jmp	0x40013b
+<Block for 0x40014d, 18 bytes>
+0x40014d:	movsd	xmm0, qword ptr [rip + 0xbb]
+0x400155:	comisd	xmm0, xmmword ptr [rbp - 0x118]
+0x40015d:	jbe	0x40016d
+<Block for 0x40015f, 12 bytes>
+0x40015f:	lea	rdi, [rip + 0x6a]
+0x400166:	call	0x500018
+<Block for 0x40016d, 19 bytes>
+0x40016d:	movsd	xmm0, qword ptr [rbp - 0x118]
+0x400175:	cvttsd2si	eax, xmm0
+0x400179:	mov	edi, eax
+0x40017b:	call	0x500020
+<Block for 0x40016b, 2 bytes>
+0x40016b:	jmp	0x400180
+<Block for 0x400180, 20 bytes>
+0x400180:	add	dword ptr [rbp - 0x11c], 1
+0x400187:	cmp	dword ptr [rbp - 0x11c], 0
+0x40018e:	jle	0x4000e6

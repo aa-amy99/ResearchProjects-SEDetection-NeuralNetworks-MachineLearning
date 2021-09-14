@@ -1,0 +1,65 @@
+<Block for 0x400000, 37 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x30
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	mov	edi, 0x64
+0x400020:	call	0x500000
+<Block for 0x400025, 11 bytes>
+0x400025:	mov	qword ptr [rbp - 0x28], rax
+0x400029:	cmp	qword ptr [rbp - 0x28], 0
+0x40002e:	jne	0x40003a
+<Block for 0x400030, 10 bytes>
+0x400030:	mov	edi, 0xffffffff
+0x400035:	call	0x500008
+<Block for 0x40003a, 19 bytes>
+0x40003a:	mov	rax, qword ptr [rbp - 0x28]
+0x40003e:	mov	byte ptr [rax], 0
+0x400041:	mov	rax, qword ptr [rbp - 0x28]
+0x400045:	mov	rdi, rax
+0x400048:	call	0x500010
+<Block for 0x40004d, 16 bytes>
+0x40004d:	mov	qword ptr [rbp - 0x20], rax
+0x400051:	lea	rdi, [rip + 0x15c]
+0x400058:	call	0x500018
+<Block for 0x40005d, 11 bytes>
+0x40005d:	mov	qword ptr [rbp - 0x18], rax
+0x400061:	cmp	qword ptr [rbp - 0x18], 0
+0x400066:	je	0x40008e
+<Block for 0x40008e, 45 bytes>
+0x40008e:	lea	rax, [rip + 0xfffa3]
+0x400095:	mov	qword ptr [rbp - 0x30], rax
+0x400099:	lea	rax, [rbp - 0x30]
+0x40009d:	mov	qword ptr [rbp - 0x10], rax
+0x4000a1:	mov	rax, qword ptr [rbp - 0x10]
+0x4000a5:	mov	rax, qword ptr [rax]
+0x4000a8:	mov	rcx, qword ptr [rax]
+0x4000ab:	mov	rdx, qword ptr [rbp - 0x28]
+0x4000af:	mov	rax, qword ptr [rbp - 0x10]
+0x4000b3:	mov	rsi, rdx
+0x4000b6:	mov	rdi, rax
+0x4000b9:	call	rcx
+<Block for 0x400068, 38 bytes>
+0x400068:	mov	eax, 0x63
+0x40006d:	sub	rax, qword ptr [rbp - 0x20]
+0x400071:	mov	rdx, rax
+0x400074:	mov	rcx, qword ptr [rbp - 0x28]
+0x400078:	mov	rax, qword ptr [rbp - 0x20]
+0x40007c:	add	rcx, rax
+0x40007f:	mov	rax, qword ptr [rbp - 0x18]
+0x400083:	mov	rsi, rax
+0x400086:	mov	rdi, rcx
+0x400089:	call	0x500020
+<Block for 0x4000bb, 16 bytes>
+0x4000bb:	nop	
+0x4000bc:	mov	rax, qword ptr [rbp - 8]
+0x4000c0:	xor	rax, qword ptr fs:[0x28]
+0x4000c9:	je	0x4000d0
+<Block for 0x4000d0, 2 bytes>
+0x4000d0:	leave	
+0x4000d1:	ret	
+<Block for 0x4000cb, 5 bytes>
+0x4000cb:	call	0x500030

@@ -1,0 +1,67 @@
+<Block for 0x400159, 82 bytes>
+0x400159:	endbr64	
+0x40015d:	push	rbp
+0x40015e:	mov	rbp, rsp
+0x400161:	sub	rsp, 0x120
+0x400168:	mov	rax, qword ptr fs:[0x28]
+0x400171:	mov	qword ptr [rbp - 8], rax
+0x400175:	xor	eax, eax
+0x400177:	movabs	rax, 0x3d48544150
+0x400181:	mov	edx, 0
+0x400186:	mov	qword ptr [rbp - 0x110], rax
+0x40018d:	mov	qword ptr [rbp - 0x108], rdx
+0x400194:	lea	rdx, [rbp - 0x100]
+0x40019b:	mov	eax, 0
+0x4001a0:	mov	ecx, 0x1d
+0x4001a5:	mov	rdi, rdx
+0x4001a8:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001ab, 35 bytes>
+0x4001ab:	mov	rdx, rdi
+0x4001ae:	mov	word ptr [rdx], ax
+0x4001b1:	add	rdx, 2
+0x4001b5:	lea	rax, [rbp - 0x110]
+0x4001bc:	mov	qword ptr [rbp - 0x118], rax
+0x4001c3:	mov	eax, dword ptr [rip + 0x167]
+0x4001c9:	cmp	eax, 5
+0x4001cc:	je	0x4001dc
+<Block for 0x4001a8, 3 bytes>
+0x4001a8:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001dc, 27 bytes>
+0x4001dc:	mov	rax, qword ptr [rbp - 0x118]
+0x4001e3:	mov	rcx, -1
+0x4001ea:	mov	rdx, rax
+0x4001ed:	mov	eax, 0
+0x4001f2:	mov	rdi, rdx
+0x4001f5:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001ce, 12 bytes>
+0x4001ce:	lea	rdi, [rip + 0x17e]
+0x4001d5:	call	0x500018
+<Block for 0x4001f7, 45 bytes>
+0x4001f7:	mov	rax, rcx
+0x4001fa:	not	rax
+0x4001fd:	lea	rdx, [rax - 1]
+0x400201:	mov	rax, qword ptr [rbp - 0x118]
+0x400208:	add	rax, rdx
+0x40020b:	mov	dword ptr [rax], 0x6e69622f
+0x400211:	mov	byte ptr [rax + 4], 0
+0x400215:	mov	rax, qword ptr [rbp - 0x118]
+0x40021c:	mov	rdi, rax
+0x40021f:	call	0x500028
+<Block for 0x4001f5, 2 bytes>
+0x4001f5:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001da, 2 bytes>
+0x4001da:	jmp	0x400215
+<Block for 0x400224, 16 bytes>
+0x400224:	nop	
+0x400225:	mov	rax, qword ptr [rbp - 8]
+0x400229:	xor	rax, qword ptr fs:[0x28]
+0x400232:	je	0x400239
+<Block for 0x400215, 15 bytes>
+0x400215:	mov	rax, qword ptr [rbp - 0x118]
+0x40021c:	mov	rdi, rax
+0x40021f:	call	0x500028
+<Block for 0x400239, 2 bytes>
+0x400239:	leave	
+0x40023a:	ret	
+<Block for 0x400234, 5 bytes>
+0x400234:	call	0x500030

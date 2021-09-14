@@ -1,0 +1,68 @@
+<Block for 0x400336, 44 bytes>
+0x400336:	endbr64	
+0x40033a:	push	rbp
+0x40033b:	mov	rbp, rsp
+0x40033e:	sub	rsp, 0x40
+0x400342:	mov	rax, qword ptr fs:[0x28]
+0x40034b:	mov	qword ptr [rbp - 8], rax
+0x40034f:	xor	eax, eax
+0x400351:	mov	dword ptr [rbp - 0x38], 0xffffffff
+0x400358:	mov	eax, 5
+0x40035d:	cmp	eax, 5
+0x400360:	je	0x400370
+<Block for 0x400370, 17 bytes>
+0x400370:	mov	dword ptr [rbp - 0x38], 7
+0x400377:	mov	eax, 5
+0x40037c:	cmp	eax, 5
+0x40037f:	jne	0x4003ed
+<Block for 0x400362, 12 bytes>
+0x400362:	lea	rdi, [rip + 0x1c7]
+0x400369:	call	0x500018
+<Block for 0x400381, 46 bytes>
+0x400381:	mov	qword ptr [rbp - 0x30], 0
+0x400389:	mov	qword ptr [rbp - 0x28], 0
+0x400391:	mov	qword ptr [rbp - 0x20], 0
+0x400399:	mov	qword ptr [rbp - 0x18], 0
+0x4003a1:	mov	qword ptr [rbp - 0x10], 0
+0x4003a9:	cmp	dword ptr [rbp - 0x38], 9
+0x4003ad:	jg	0x4003e1
+<Block for 0x4003ed, 16 bytes>
+0x4003ed:	nop	
+0x4003ee:	mov	rax, qword ptr [rbp - 8]
+0x4003f2:	xor	rax, qword ptr fs:[0x28]
+0x4003fb:	je	0x400402
+<Block for 0x40036e, 2 bytes>
+0x40036e:	jmp	0x400377
+<Block for 0x4003af, 22 bytes>
+0x4003af:	mov	eax, dword ptr [rbp - 0x38]
+0x4003b2:	cdqe	
+0x4003b4:	mov	dword ptr [rbp + rax*4 - 0x30], 1
+0x4003bc:	mov	dword ptr [rbp - 0x34], 0
+0x4003c3:	jmp	0x4003d9
+<Block for 0x4003e1, 12 bytes>
+0x4003e1:	lea	rdi, [rip + 0x128]
+0x4003e8:	call	0x500018
+<Block for 0x400402, 2 bytes>
+0x400402:	leave	
+0x400403:	ret	
+<Block for 0x4003fd, 5 bytes>
+0x4003fd:	call	0x500028
+<Block for 0x400377, 10 bytes>
+0x400377:	mov	eax, 5
+0x40037c:	cmp	eax, 5
+0x40037f:	jne	0x4003ed
+<Block for 0x4003d9, 6 bytes>
+0x4003d9:	cmp	dword ptr [rbp - 0x34], 9
+0x4003dd:	jle	0x4003c5
+<Block for 0x4003c5, 16 bytes>
+0x4003c5:	mov	eax, dword ptr [rbp - 0x34]
+0x4003c8:	cdqe	
+0x4003ca:	mov	eax, dword ptr [rbp + rax*4 - 0x30]
+0x4003ce:	mov	edi, eax
+0x4003d0:	call	0x500020
+<Block for 0x4003df, 2 bytes>
+0x4003df:	jmp	0x4003ed
+<Block for 0x4003d5, 10 bytes>
+0x4003d5:	add	dword ptr [rbp - 0x34], 1
+0x4003d9:	cmp	dword ptr [rbp - 0x34], 9
+0x4003dd:	jle	0x4003c5

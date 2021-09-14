@@ -1,0 +1,79 @@
+<Block for 0x400000, 22 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x10
+0x40000c:	mov	eax, 0
+0x400011:	call	0x500000
+<Block for 0x400016, 4 bytes>
+0x400016:	test	eax, eax
+0x400018:	je	0x400070
+<Block for 0x400070, 5 bytes>
+0x400070:	call	0x500008
+<Block for 0x40001a, 5 bytes>
+0x40001a:	call	0x500008
+<Block for 0x400075, 55 bytes>
+0x400075:	mov	edx, eax
+0x400077:	movsxd	rax, edx
+0x40007a:	imul	rax, rax, 0x55555556
+0x400081:	shr	rax, 0x20
+0x400085:	mov	rcx, rax
+0x400088:	mov	eax, edx
+0x40008a:	sar	eax, 0x1f
+0x40008d:	mov	esi, ecx
+0x40008f:	sub	esi, eax
+0x400091:	mov	eax, esi
+0x400093:	mov	dword ptr [rbp - 8], eax
+0x400096:	mov	ecx, dword ptr [rbp - 8]
+0x400099:	mov	eax, ecx
+0x40009b:	add	eax, eax
+0x40009d:	add	eax, ecx
+0x40009f:	sub	edx, eax
+0x4000a1:	mov	eax, edx
+0x4000a3:	mov	dword ptr [rbp - 8], eax
+0x4000a6:	cmp	dword ptr [rbp - 8], 0
+0x4000aa:	jne	0x4000ba
+<Block for 0x40001f, 55 bytes>
+0x40001f:	mov	edx, eax
+0x400021:	movsxd	rax, edx
+0x400024:	imul	rax, rax, 0x55555556
+0x40002b:	shr	rax, 0x20
+0x40002f:	mov	rcx, rax
+0x400032:	mov	eax, edx
+0x400034:	sar	eax, 0x1f
+0x400037:	mov	esi, ecx
+0x400039:	sub	esi, eax
+0x40003b:	mov	eax, esi
+0x40003d:	mov	dword ptr [rbp - 4], eax
+0x400040:	mov	ecx, dword ptr [rbp - 4]
+0x400043:	mov	eax, ecx
+0x400045:	add	eax, eax
+0x400047:	add	eax, ecx
+0x400049:	sub	edx, eax
+0x40004b:	mov	eax, edx
+0x40004d:	mov	dword ptr [rbp - 4], eax
+0x400050:	cmp	dword ptr [rbp - 4], 0
+0x400054:	jne	0x400062
+<Block for 0x4000ac, 12 bytes>
+0x4000ac:	lea	rdi, [rip + 0x145]
+0x4000b3:	call	0x500010
+<Block for 0x4000ba, 12 bytes>
+0x4000ba:	lea	rdi, [rip + 0x10c]
+0x4000c1:	call	0x500010
+<Block for 0x400056, 12 bytes>
+0x400056:	lea	rdi, [rip + 0x170]
+0x40005d:	call	0x500010
+<Block for 0x400062, 12 bytes>
+0x400062:	lea	rdi, [rip + 0x17e]
+0x400069:	call	0x500010
+<Block for 0x4000b8, 2 bytes>
+0x4000b8:	jmp	0x4000c6
+<Block for 0x4000c6, 12 bytes>
+0x4000c6:	lea	rdi, [rip + 0x143]
+0x4000cd:	call	0x500010
+<Block for 0x40006e, 2 bytes>
+0x40006e:	jmp	0x4000d2
+<Block for 0x4000d2, 3 bytes>
+0x4000d2:	nop	
+0x4000d3:	leave	
+0x4000d4:	ret	

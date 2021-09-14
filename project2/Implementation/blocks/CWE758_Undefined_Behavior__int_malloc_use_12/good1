@@ -1,0 +1,66 @@
+<Block for 0x4000ab, 22 bytes>
+0x4000ab:	endbr64	
+0x4000af:	push	rbp
+0x4000b0:	mov	rbp, rsp
+0x4000b3:	sub	rsp, 0x20
+0x4000b7:	mov	eax, 0
+0x4000bc:	call	0x500000
+<Block for 0x4000c1, 4 bytes>
+0x4000c1:	test	eax, eax
+0x4000c3:	je	0x400115
+<Block for 0x400115, 10 bytes>
+0x400115:	mov	edi, 4
+0x40011a:	call	0x500008
+<Block for 0x4000c5, 10 bytes>
+0x4000c5:	mov	edi, 4
+0x4000ca:	call	0x500008
+<Block for 0x40011f, 11 bytes>
+0x40011f:	mov	qword ptr [rbp - 0x10], rax
+0x400123:	cmp	qword ptr [rbp - 0x10], 0
+0x400128:	jne	0x400134
+<Block for 0x4000cf, 11 bytes>
+0x4000cf:	mov	qword ptr [rbp - 8], rax
+0x4000d3:	cmp	qword ptr [rbp - 8], 0
+0x4000d8:	jne	0x4000e4
+<Block for 0x40012a, 10 bytes>
+0x40012a:	mov	edi, 0xffffffff
+0x40012f:	call	0x500010
+<Block for 0x400134, 35 bytes>
+0x400134:	mov	dword ptr [rbp - 0x20], 5
+0x40013b:	mov	rax, qword ptr [rbp - 0x10]
+0x40013f:	mov	edx, dword ptr [rbp - 0x20]
+0x400142:	mov	dword ptr [rax], edx
+0x400144:	mov	rax, qword ptr [rbp - 0x10]
+0x400148:	mov	eax, dword ptr [rax]
+0x40014a:	mov	dword ptr [rbp - 0x1c], eax
+0x40014d:	mov	eax, dword ptr [rbp - 0x1c]
+0x400150:	mov	edi, eax
+0x400152:	call	0x500020
+<Block for 0x4000da, 10 bytes>
+0x4000da:	mov	edi, 0xffffffff
+0x4000df:	call	0x500010
+<Block for 0x4000e4, 35 bytes>
+0x4000e4:	mov	dword ptr [rbp - 0x18], 5
+0x4000eb:	mov	rax, qword ptr [rbp - 8]
+0x4000ef:	mov	edx, dword ptr [rbp - 0x18]
+0x4000f2:	mov	dword ptr [rax], edx
+0x4000f4:	mov	rax, qword ptr [rbp - 8]
+0x4000f8:	mov	eax, dword ptr [rax]
+0x4000fa:	mov	dword ptr [rbp - 0x14], eax
+0x4000fd:	mov	eax, dword ptr [rbp - 0x14]
+0x400100:	mov	edi, eax
+0x400102:	call	0x500020
+<Block for 0x400157, 12 bytes>
+0x400157:	mov	rax, qword ptr [rbp - 0x10]
+0x40015b:	mov	rdi, rax
+0x40015e:	call	0x500018
+<Block for 0x400107, 12 bytes>
+0x400107:	mov	rax, qword ptr [rbp - 8]
+0x40010b:	mov	rdi, rax
+0x40010e:	call	0x500018
+<Block for 0x400163, 3 bytes>
+0x400163:	nop	
+0x400164:	leave	
+0x400165:	ret	
+<Block for 0x400113, 2 bytes>
+0x400113:	jmp	0x400163

@@ -1,0 +1,23 @@
+<Block for 0x40006f, 21 bytes>
+0x40006f:	endbr64	
+0x400073:	push	rbp
+0x400074:	mov	rbp, rsp
+0x400077:	sub	rsp, 0x10
+0x40007b:	mov	dword ptr [rbp - 4], 0
+0x400082:	jmp	0x400090
+<Block for 0x400090, 14 bytes>
+0x400090:	mov	eax, dword ptr [rbp - 4]
+0x400093:	lea	edx, [rax + 1]
+0x400096:	mov	dword ptr [rbp - 4], edx
+0x400099:	cmp	eax, 9
+0x40009c:	jle	0x400084
+<Block for 0x400084, 12 bytes>
+0x400084:	lea	rdi, [rip + 0x52]
+0x40008b:	call	0x500000
+<Block for 0x40009e, 12 bytes>
+0x40009e:	lea	rdi, [rip + 0x53]
+0x4000a5:	call	0x500000
+<Block for 0x4000aa, 3 bytes>
+0x4000aa:	nop	
+0x4000ab:	leave	
+0x4000ac:	ret	

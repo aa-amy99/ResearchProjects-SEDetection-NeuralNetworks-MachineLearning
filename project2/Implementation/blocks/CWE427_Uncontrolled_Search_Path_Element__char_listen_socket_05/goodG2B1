@@ -1,0 +1,67 @@
+<Block for 0x40029f, 82 bytes>
+0x40029f:	endbr64	
+0x4002a3:	push	rbp
+0x4002a4:	mov	rbp, rsp
+0x4002a7:	sub	rsp, 0x120
+0x4002ae:	mov	rax, qword ptr fs:[0x28]
+0x4002b7:	mov	qword ptr [rbp - 8], rax
+0x4002bb:	xor	eax, eax
+0x4002bd:	movabs	rax, 0x3d48544150
+0x4002c7:	mov	edx, 0
+0x4002cc:	mov	qword ptr [rbp - 0x110], rax
+0x4002d3:	mov	qword ptr [rbp - 0x108], rdx
+0x4002da:	lea	rdx, [rbp - 0x100]
+0x4002e1:	mov	eax, 0
+0x4002e6:	mov	ecx, 0x1d
+0x4002eb:	mov	rdi, rdx
+0x4002ee:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4002f1, 34 bytes>
+0x4002f1:	mov	rdx, rdi
+0x4002f4:	mov	word ptr [rdx], ax
+0x4002f7:	add	rdx, 2
+0x4002fb:	lea	rax, [rbp - 0x110]
+0x400302:	mov	qword ptr [rbp - 0x118], rax
+0x400309:	mov	eax, dword ptr [rip + 0x169]
+0x40030f:	test	eax, eax
+0x400311:	je	0x400321
+<Block for 0x4002ee, 3 bytes>
+0x4002ee:	rep stosq	qword ptr [rdi], rax
+<Block for 0x400321, 27 bytes>
+0x400321:	mov	rax, qword ptr [rbp - 0x118]
+0x400328:	mov	rcx, -1
+0x40032f:	mov	rdx, rax
+0x400332:	mov	eax, 0
+0x400337:	mov	rdi, rdx
+0x40033a:	repne scasb	al, byte ptr [rdi]
+<Block for 0x400313, 12 bytes>
+0x400313:	lea	rdi, [rip + 0x162]
+0x40031a:	call	0x500060
+<Block for 0x40033c, 45 bytes>
+0x40033c:	mov	rax, rcx
+0x40033f:	not	rax
+0x400342:	lea	rdx, [rax - 1]
+0x400346:	mov	rax, qword ptr [rbp - 0x118]
+0x40034d:	add	rax, rdx
+0x400350:	mov	dword ptr [rax], 0x6e69622f
+0x400356:	mov	byte ptr [rax + 4], 0
+0x40035a:	mov	rax, qword ptr [rbp - 0x118]
+0x400361:	mov	rdi, rax
+0x400364:	call	0x500050
+<Block for 0x40033a, 2 bytes>
+0x40033a:	repne scasb	al, byte ptr [rdi]
+<Block for 0x40031f, 2 bytes>
+0x40031f:	jmp	0x40035a
+<Block for 0x400369, 16 bytes>
+0x400369:	nop	
+0x40036a:	mov	rax, qword ptr [rbp - 8]
+0x40036e:	xor	rax, qword ptr fs:[0x28]
+0x400377:	je	0x40037e
+<Block for 0x40035a, 15 bytes>
+0x40035a:	mov	rax, qword ptr [rbp - 0x118]
+0x400361:	mov	rdi, rax
+0x400364:	call	0x500050
+<Block for 0x40037e, 2 bytes>
+0x40037e:	leave	
+0x40037f:	ret	
+<Block for 0x400379, 5 bytes>
+0x400379:	call	0x500058

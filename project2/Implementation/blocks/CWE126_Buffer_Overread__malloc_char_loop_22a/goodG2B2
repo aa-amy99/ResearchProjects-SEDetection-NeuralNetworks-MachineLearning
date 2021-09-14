@@ -1,0 +1,65 @@
+<Block for 0x4001c0, 60 bytes>
+0x4001c0:	endbr64	
+0x4001c4:	push	rbp
+0x4001c5:	mov	rbp, rsp
+0x4001c8:	sub	rsp, 0x90
+0x4001cf:	mov	rax, qword ptr fs:[0x28]
+0x4001d8:	mov	qword ptr [rbp - 8], rax
+0x4001dc:	xor	eax, eax
+0x4001de:	mov	qword ptr [rbp - 0x80], 0
+0x4001e6:	mov	dword ptr [rip + 0xd8], 1
+0x4001f0:	mov	rax, qword ptr [rbp - 0x80]
+0x4001f4:	mov	rdi, rax
+0x4001f7:	call	0x500038
+<Block for 0x4001fc, 26 bytes>
+0x4001fc:	mov	qword ptr [rbp - 0x80], rax
+0x400200:	lea	rax, [rbp - 0x70]
+0x400204:	mov	edx, 0x63
+0x400209:	mov	esi, 0x43
+0x40020e:	mov	rdi, rax
+0x400211:	call	0x500008
+<Block for 0x400216, 16 bytes>
+0x400216:	mov	byte ptr [rbp - 0xd], 0
+0x40021a:	lea	rax, [rbp - 0x70]
+0x40021e:	mov	rdi, rax
+0x400221:	call	0x500010
+<Block for 0x400226, 17 bytes>
+0x400226:	mov	qword ptr [rbp - 0x78], rax
+0x40022a:	mov	qword ptr [rbp - 0x88], 0
+0x400235:	jmp	0x400260
+<Block for 0x400260, 13 bytes>
+0x400260:	mov	rax, qword ptr [rbp - 0x88]
+0x400267:	cmp	rax, qword ptr [rbp - 0x78]
+0x40026b:	jb	0x400237
+<Block for 0x400237, 54 bytes>
+0x400237:	mov	rdx, qword ptr [rbp - 0x80]
+0x40023b:	mov	rax, qword ptr [rbp - 0x88]
+0x400242:	add	rax, rdx
+0x400245:	movzx	eax, byte ptr [rax]
+0x400248:	lea	rcx, [rbp - 0x70]
+0x40024c:	mov	rdx, qword ptr [rbp - 0x88]
+0x400253:	add	rdx, rcx
+0x400256:	mov	byte ptr [rdx], al
+0x400258:	add	qword ptr [rbp - 0x88], 1
+0x400260:	mov	rax, qword ptr [rbp - 0x88]
+0x400267:	cmp	rax, qword ptr [rbp - 0x78]
+0x40026b:	jb	0x400237
+<Block for 0x40026d, 16 bytes>
+0x40026d:	mov	byte ptr [rbp - 0xd], 0
+0x400271:	lea	rax, [rbp - 0x70]
+0x400275:	mov	rdi, rax
+0x400278:	call	0x500018
+<Block for 0x40027d, 12 bytes>
+0x40027d:	mov	rax, qword ptr [rbp - 0x80]
+0x400281:	mov	rdi, rax
+0x400284:	call	0x500020
+<Block for 0x400289, 16 bytes>
+0x400289:	nop	
+0x40028a:	mov	rax, qword ptr [rbp - 8]
+0x40028e:	xor	rax, qword ptr fs:[0x28]
+0x400297:	je	0x40029e
+<Block for 0x40029e, 2 bytes>
+0x40029e:	leave	
+0x40029f:	ret	
+<Block for 0x400299, 5 bytes>
+0x400299:	call	0x500028

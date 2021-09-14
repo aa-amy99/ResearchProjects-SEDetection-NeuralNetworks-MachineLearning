@@ -1,0 +1,67 @@
+<Block for 0x400000, 45 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x20
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	lea	rax, [rbp - 0x20]
+0x40001f:	mov	qword ptr [rbp - 0x10], rax
+0x400023:	mov	edi, 0x64
+0x400028:	call	0x500000
+<Block for 0x40002d, 13 bytes>
+0x40002d:	mov	qword ptr [rbp - 0x20], rax
+0x400031:	mov	rax, qword ptr [rbp - 0x20]
+0x400035:	test	rax, rax
+0x400038:	jne	0x400044
+<Block for 0x40003a, 10 bytes>
+0x40003a:	mov	edi, 0xffffffff
+0x40003f:	call	0x500008
+<Block for 0x400044, 57 bytes>
+0x400044:	mov	rax, qword ptr [rbp - 0x20]
+0x400048:	mov	byte ptr [rax], 0
+0x40004b:	mov	rax, qword ptr [rbp - 0x20]
+0x40004f:	movabs	rdx, 0x7453206465786946
+0x400059:	mov	qword ptr [rax], rdx
+0x40005c:	mov	dword ptr [rax + 8], 0x676e6972
+0x400063:	mov	byte ptr [rax + 0xc], 0
+0x400067:	mov	rax, qword ptr [rbp - 0x10]
+0x40006b:	mov	rax, qword ptr [rax]
+0x40006e:	mov	qword ptr [rbp - 0x18], rax
+0x400072:	mov	rax, qword ptr [rbp - 0x18]
+0x400076:	movzx	eax, byte ptr [rax]
+0x400079:	test	al, al
+0x40007b:	je	0x40009d
+<Block for 0x40009d, 12 bytes>
+0x40009d:	mov	rax, qword ptr [rbp - 0x18]
+0x4000a1:	mov	rdi, rax
+0x4000a4:	call	0x500018
+<Block for 0x40007d, 11 bytes>
+0x40007d:	mov	rax, qword ptr [rbp - 0x18]
+0x400081:	movzx	eax, byte ptr [rax]
+0x400084:	cmp	al, 0x53
+0x400086:	jne	0x400096
+<Block for 0x4000a9, 16 bytes>
+0x4000a9:	nop	
+0x4000aa:	mov	rax, qword ptr [rbp - 8]
+0x4000ae:	xor	rax, qword ptr fs:[0x28]
+0x4000b7:	je	0x4000be
+<Block for 0x400088, 12 bytes>
+0x400088:	lea	rdi, [rip + 0x117]
+0x40008f:	call	0x500010
+<Block for 0x400096, 7 bytes>
+0x400096:	add	qword ptr [rbp - 0x18], 1
+0x40009b:	jmp	0x400072
+<Block for 0x4000be, 2 bytes>
+0x4000be:	leave	
+0x4000bf:	ret	
+<Block for 0x4000b9, 5 bytes>
+0x4000b9:	call	0x500020
+<Block for 0x400094, 2 bytes>
+0x400094:	jmp	0x40009d
+<Block for 0x400072, 11 bytes>
+0x400072:	mov	rax, qword ptr [rbp - 0x18]
+0x400076:	movzx	eax, byte ptr [rax]
+0x400079:	test	al, al
+0x40007b:	je	0x40009d

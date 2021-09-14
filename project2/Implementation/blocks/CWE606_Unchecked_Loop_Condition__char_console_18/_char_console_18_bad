@@ -1,0 +1,129 @@
+<Block for 0x400000, 158 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x90
+0x40000f:	mov	rax, qword ptr fs:[0x28]
+0x400018:	mov	qword ptr [rbp - 8], rax
+0x40001c:	xor	eax, eax
+0x40001e:	mov	qword ptr [rbp - 0x70], 0
+0x400026:	mov	qword ptr [rbp - 0x68], 0
+0x40002e:	mov	qword ptr [rbp - 0x60], 0
+0x400036:	mov	qword ptr [rbp - 0x58], 0
+0x40003e:	mov	qword ptr [rbp - 0x50], 0
+0x400046:	mov	qword ptr [rbp - 0x48], 0
+0x40004e:	mov	qword ptr [rbp - 0x40], 0
+0x400056:	mov	qword ptr [rbp - 0x38], 0
+0x40005e:	mov	qword ptr [rbp - 0x30], 0
+0x400066:	mov	qword ptr [rbp - 0x28], 0
+0x40006e:	mov	qword ptr [rbp - 0x20], 0
+0x400076:	mov	qword ptr [rbp - 0x18], 0
+0x40007e:	mov	dword ptr [rbp - 0x10], 0
+0x400085:	lea	rax, [rbp - 0x70]
+0x400089:	mov	qword ptr [rbp - 0x80], rax
+0x40008d:	nop	
+0x40008e:	endbr64	
+0x400092:	mov	rax, qword ptr [rbp - 0x80]
+0x400096:	mov	rdi, rax
+0x400099:	call	0x500000
+<Block for 0x40009e, 23 bytes>
+0x40009e:	mov	qword ptr [rbp - 0x78], rax
+0x4000a2:	mov	eax, 0x64
+0x4000a7:	sub	rax, qword ptr [rbp - 0x78]
+0x4000ab:	cmp	rax, 1
+0x4000af:	jbe	0x400141
+<Block for 0x400141, 36 bytes>
+0x400141:	nop	
+0x400142:	endbr64	
+0x400146:	lea	rdx, [rbp - 0x8c]
+0x40014d:	mov	rax, qword ptr [rbp - 0x80]
+0x400151:	lea	rsi, [rip + 0x36f]
+0x400158:	mov	rdi, rax
+0x40015b:	mov	eax, 0
+0x400160:	call	0x500020
+<Block for 0x4000b5, 44 bytes>
+0x4000b5:	mov	rax, qword ptr [rip + 0xfff4c]
+0x4000bc:	mov	rdx, qword ptr [rbp - 0x78]
+0x4000c0:	mov	ecx, 0x64
+0x4000c5:	sub	ecx, edx
+0x4000c7:	mov	edx, ecx
+0x4000c9:	mov	esi, edx
+0x4000cb:	mov	rcx, qword ptr [rbp - 0x80]
+0x4000cf:	mov	rdx, qword ptr [rbp - 0x78]
+0x4000d3:	add	rcx, rdx
+0x4000d6:	mov	rdx, rax
+0x4000d9:	mov	rdi, rcx
+0x4000dc:	call	0x500010
+<Block for 0x400165, 5 bytes>
+0x400165:	cmp	eax, 1
+0x400168:	jne	0x4001a9
+<Block for 0x4000e1, 5 bytes>
+0x4000e1:	test	rax, rax
+0x4000e4:	je	0x400127
+<Block for 0x40016a, 22 bytes>
+0x40016a:	mov	dword ptr [rbp - 0x84], 0
+0x400174:	mov	dword ptr [rbp - 0x88], 0
+0x40017e:	jmp	0x40018e
+<Block for 0x4001a9, 16 bytes>
+0x4001a9:	nop	
+0x4001aa:	mov	rax, qword ptr [rbp - 8]
+0x4001ae:	xor	rax, qword ptr fs:[0x28]
+0x4001b7:	je	0x4001be
+<Block for 0x400127, 12 bytes>
+0x400127:	lea	rdi, [rip + 0x38a]
+0x40012e:	call	0x500018
+<Block for 0x4000e6, 12 bytes>
+0x4000e6:	mov	rax, qword ptr [rbp - 0x80]
+0x4000ea:	mov	rdi, rax
+0x4000ed:	call	0x500000
+<Block for 0x40018e, 14 bytes>
+0x40018e:	mov	eax, dword ptr [rbp - 0x8c]
+0x400194:	cmp	dword ptr [rbp - 0x88], eax
+0x40019a:	jl	0x400180
+<Block for 0x4001be, 2 bytes>
+0x4001be:	leave	
+0x4001bf:	ret	
+<Block for 0x4001b9, 5 bytes>
+0x4001b9:	call	0x500030
+<Block for 0x400133, 50 bytes>
+0x400133:	mov	rdx, qword ptr [rbp - 0x80]
+0x400137:	mov	rax, qword ptr [rbp - 0x78]
+0x40013b:	add	rax, rdx
+0x40013e:	mov	byte ptr [rax], 0
+0x400141:	nop	
+0x400142:	endbr64	
+0x400146:	lea	rdx, [rbp - 0x8c]
+0x40014d:	mov	rax, qword ptr [rbp - 0x80]
+0x400151:	lea	rsi, [rip + 0x36f]
+0x400158:	mov	rdi, rax
+0x40015b:	mov	eax, 0
+0x400160:	call	0x500020
+<Block for 0x4000f2, 11 bytes>
+0x4000f2:	mov	qword ptr [rbp - 0x78], rax
+0x4000f6:	cmp	qword ptr [rbp - 0x78], 0
+0x4000fb:	je	0x400141
+<Block for 0x400180, 28 bytes>
+0x400180:	add	dword ptr [rbp - 0x84], 1
+0x400187:	add	dword ptr [rbp - 0x88], 1
+0x40018e:	mov	eax, dword ptr [rbp - 0x8c]
+0x400194:	cmp	dword ptr [rbp - 0x88], eax
+0x40019a:	jl	0x400180
+<Block for 0x40019c, 13 bytes>
+0x40019c:	mov	eax, dword ptr [rbp - 0x84]
+0x4001a2:	mov	edi, eax
+0x4001a4:	call	0x500028
+<Block for 0x4000fd, 22 bytes>
+0x4000fd:	mov	rax, qword ptr [rbp - 0x78]
+0x400101:	lea	rdx, [rax - 1]
+0x400105:	mov	rax, qword ptr [rbp - 0x80]
+0x400109:	add	rax, rdx
+0x40010c:	movzx	eax, byte ptr [rax]
+0x40010f:	cmp	al, 0xa
+0x400111:	jne	0x400141
+<Block for 0x400113, 20 bytes>
+0x400113:	mov	rax, qword ptr [rbp - 0x78]
+0x400117:	lea	rdx, [rax - 1]
+0x40011b:	mov	rax, qword ptr [rbp - 0x80]
+0x40011f:	add	rax, rdx
+0x400122:	mov	byte ptr [rax], 0
+0x400125:	jmp	0x400141

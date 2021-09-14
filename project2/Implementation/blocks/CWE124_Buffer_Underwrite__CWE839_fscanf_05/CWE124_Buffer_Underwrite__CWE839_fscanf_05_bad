@@ -1,0 +1,66 @@
+<Block for 0x400000, 44 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x40
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	mov	dword ptr [rbp - 0x38], 0xffffffff
+0x400022:	mov	eax, dword ptr [rip + 0x448]
+0x400028:	test	eax, eax
+0x40002a:	je	0x40004b
+<Block for 0x40004b, 10 bytes>
+0x40004b:	mov	eax, dword ptr [rip + 0x41f]
+0x400051:	test	eax, eax
+0x400053:	je	0x4000c3
+<Block for 0x40002c, 31 bytes>
+0x40002c:	mov	rax, qword ptr [rip + 0xfffcd]
+0x400033:	lea	rdx, [rbp - 0x38]
+0x400037:	lea	rsi, [rip + 0x43a]
+0x40003e:	mov	rdi, rax
+0x400041:	mov	eax, 0
+0x400046:	call	0x500008
+<Block for 0x4000c3, 16 bytes>
+0x4000c3:	nop	
+0x4000c4:	mov	rax, qword ptr [rbp - 8]
+0x4000c8:	xor	rax, qword ptr fs:[0x28]
+0x4000d1:	je	0x4000d8
+<Block for 0x400055, 48 bytes>
+0x400055:	mov	qword ptr [rbp - 0x30], 0
+0x40005d:	mov	qword ptr [rbp - 0x28], 0
+0x400065:	mov	qword ptr [rbp - 0x20], 0
+0x40006d:	mov	qword ptr [rbp - 0x18], 0
+0x400075:	mov	qword ptr [rbp - 0x10], 0
+0x40007d:	mov	eax, dword ptr [rbp - 0x38]
+0x400080:	cmp	eax, 9
+0x400083:	jg	0x4000b7
+<Block for 0x4000d8, 2 bytes>
+0x4000d8:	leave	
+0x4000d9:	ret	
+<Block for 0x4000d3, 5 bytes>
+0x4000d3:	call	0x500020
+<Block for 0x400085, 22 bytes>
+0x400085:	mov	eax, dword ptr [rbp - 0x38]
+0x400088:	cdqe	
+0x40008a:	mov	dword ptr [rbp + rax*4 - 0x30], 1
+0x400092:	mov	dword ptr [rbp - 0x34], 0
+0x400099:	jmp	0x4000af
+<Block for 0x4000b7, 12 bytes>
+0x4000b7:	lea	rdi, [rip + 0x3c2]
+0x4000be:	call	0x500018
+<Block for 0x4000af, 6 bytes>
+0x4000af:	cmp	dword ptr [rbp - 0x34], 9
+0x4000b3:	jle	0x40009b
+<Block for 0x40009b, 16 bytes>
+0x40009b:	mov	eax, dword ptr [rbp - 0x34]
+0x40009e:	cdqe	
+0x4000a0:	mov	eax, dword ptr [rbp + rax*4 - 0x30]
+0x4000a4:	mov	edi, eax
+0x4000a6:	call	0x500010
+<Block for 0x4000b5, 2 bytes>
+0x4000b5:	jmp	0x4000c3
+<Block for 0x4000ab, 10 bytes>
+0x4000ab:	add	dword ptr [rbp - 0x34], 1
+0x4000af:	cmp	dword ptr [rbp - 0x34], 9
+0x4000b3:	jle	0x40009b

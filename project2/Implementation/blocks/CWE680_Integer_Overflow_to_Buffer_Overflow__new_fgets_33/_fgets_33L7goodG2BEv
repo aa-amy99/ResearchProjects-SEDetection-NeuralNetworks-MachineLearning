@@ -1,0 +1,64 @@
+<Block for 0x40010e, 83 bytes>
+0x40010e:	endbr64	
+0x400112:	push	rbp
+0x400113:	mov	rbp, rsp
+0x400116:	sub	rsp, 0x30
+0x40011a:	mov	rax, qword ptr fs:[0x28]
+0x400123:	mov	qword ptr [rbp - 8], rax
+0x400127:	xor	eax, eax
+0x400129:	lea	rax, [rbp - 0x30]
+0x40012d:	mov	qword ptr [rbp - 0x20], rax
+0x400131:	mov	dword ptr [rbp - 0x30], 0xffffffff
+0x400138:	mov	dword ptr [rbp - 0x30], 0x14
+0x40013f:	mov	rax, qword ptr [rbp - 0x20]
+0x400143:	mov	eax, dword ptr [rax]
+0x400145:	mov	dword ptr [rbp - 0x2c], eax
+0x400148:	mov	eax, dword ptr [rbp - 0x2c]
+0x40014b:	cdqe	
+0x40014d:	shl	rax, 2
+0x400151:	mov	qword ptr [rbp - 0x18], rax
+0x400155:	mov	rax, qword ptr [rbp - 0x18]
+0x400159:	mov	rdi, rax
+0x40015c:	call	0x500020
+<Block for 0x400161, 23 bytes>
+0x400161:	mov	qword ptr [rbp - 0x10], rax
+0x400165:	mov	qword ptr [rbp - 0x28], 0
+0x40016d:	mov	eax, dword ptr [rbp - 0x2c]
+0x400170:	cdqe	
+0x400172:	cmp	qword ptr [rbp - 0x28], rax
+0x400176:	jae	0x400198
+<Block for 0x400178, 32 bytes>
+0x400178:	mov	rax, qword ptr [rbp - 0x28]
+0x40017c:	lea	rdx, [rax*4]
+0x400184:	mov	rax, qword ptr [rbp - 0x10]
+0x400188:	add	rax, rdx
+0x40018b:	mov	dword ptr [rax], 0
+0x400191:	add	qword ptr [rbp - 0x28], 1
+0x400196:	jmp	0x40016d
+<Block for 0x400198, 13 bytes>
+0x400198:	mov	rax, qword ptr [rbp - 0x10]
+0x40019c:	mov	eax, dword ptr [rax]
+0x40019e:	mov	edi, eax
+0x4001a0:	call	0x500028
+<Block for 0x40016d, 11 bytes>
+0x40016d:	mov	eax, dword ptr [rbp - 0x2c]
+0x400170:	cdqe	
+0x400172:	cmp	qword ptr [rbp - 0x28], rax
+0x400176:	jae	0x400198
+<Block for 0x4001a5, 7 bytes>
+0x4001a5:	cmp	qword ptr [rbp - 0x10], 0
+0x4001aa:	je	0x4001b8
+<Block for 0x4001b8, 16 bytes>
+0x4001b8:	nop	
+0x4001b9:	mov	rax, qword ptr [rbp - 8]
+0x4001bd:	xor	rax, qword ptr fs:[0x28]
+0x4001c6:	je	0x4001cd
+<Block for 0x4001ac, 12 bytes>
+0x4001ac:	mov	rax, qword ptr [rbp - 0x10]
+0x4001b0:	mov	rdi, rax
+0x4001b3:	call	0x500030
+<Block for 0x4001cd, 2 bytes>
+0x4001cd:	leave	
+0x4001ce:	ret	
+<Block for 0x4001c8, 5 bytes>
+0x4001c8:	call	0x500038

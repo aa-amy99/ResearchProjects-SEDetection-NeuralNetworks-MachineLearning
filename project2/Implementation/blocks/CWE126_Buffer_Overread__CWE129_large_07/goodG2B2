@@ -1,0 +1,50 @@
+<Block for 0x4002b0, 45 bytes>
+0x4002b0:	endbr64	
+0x4002b4:	push	rbp
+0x4002b5:	mov	rbp, rsp
+0x4002b8:	sub	rsp, 0x40
+0x4002bc:	mov	rax, qword ptr fs:[0x28]
+0x4002c5:	mov	qword ptr [rbp - 8], rax
+0x4002c9:	xor	eax, eax
+0x4002cb:	mov	dword ptr [rbp - 0x34], 0xffffffff
+0x4002d2:	mov	eax, dword ptr [rip + 0xb0]
+0x4002d8:	cmp	eax, 5
+0x4002db:	jne	0x4002e4
+<Block for 0x4002dd, 18 bytes>
+0x4002dd:	mov	dword ptr [rbp - 0x34], 7
+0x4002e4:	mov	eax, dword ptr [rip + 0x9e]
+0x4002ea:	cmp	eax, 5
+0x4002ed:	jne	0x40033b
+<Block for 0x4002e4, 11 bytes>
+0x4002e4:	mov	eax, dword ptr [rip + 0x9e]
+0x4002ea:	cmp	eax, 5
+0x4002ed:	jne	0x40033b
+<Block for 0x4002ef, 46 bytes>
+0x4002ef:	mov	qword ptr [rbp - 0x30], 0
+0x4002f7:	mov	qword ptr [rbp - 0x28], 0
+0x4002ff:	mov	qword ptr [rbp - 0x20], 0
+0x400307:	mov	qword ptr [rbp - 0x18], 0
+0x40030f:	mov	qword ptr [rbp - 0x10], 0
+0x400317:	cmp	dword ptr [rbp - 0x34], 0
+0x40031b:	js	0x40032f
+<Block for 0x40033b, 16 bytes>
+0x40033b:	nop	
+0x40033c:	mov	rax, qword ptr [rbp - 8]
+0x400340:	xor	rax, qword ptr fs:[0x28]
+0x400349:	je	0x400350
+<Block for 0x40032f, 12 bytes>
+0x40032f:	lea	rdi, [rip + 0x5a]
+0x400336:	call	0x500008
+<Block for 0x40031d, 16 bytes>
+0x40031d:	mov	eax, dword ptr [rbp - 0x34]
+0x400320:	cdqe	
+0x400322:	mov	eax, dword ptr [rbp + rax*4 - 0x30]
+0x400326:	mov	edi, eax
+0x400328:	call	0x500000
+<Block for 0x400350, 2 bytes>
+0x400350:	leave	
+0x400351:	ret	
+<Block for 0x40034b, 5 bytes>
+0x40034b:	call	0x500010
+<Block for 0x40032d, 2 bytes>
+0x40032d:	jmp	0x40033b

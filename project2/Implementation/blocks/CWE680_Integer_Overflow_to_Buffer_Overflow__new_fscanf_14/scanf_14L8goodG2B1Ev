@@ -1,0 +1,67 @@
+<Block for 0x4000d3, 30 bytes>
+0x4000d3:	endbr64	
+0x4000d7:	push	rbp
+0x4000d8:	mov	rbp, rsp
+0x4000db:	sub	rsp, 0x20
+0x4000df:	mov	dword ptr [rbp - 0x1c], 0xffffffff
+0x4000e6:	mov	eax, dword ptr [rip + 0xfff14]
+0x4000ec:	cmp	eax, 5
+0x4000ef:	je	0x4000ff
+<Block for 0x4000ff, 32 bytes>
+0x4000ff:	mov	dword ptr [rbp - 0x1c], 0x14
+0x400106:	mov	eax, dword ptr [rbp - 0x1c]
+0x400109:	cdqe	
+0x40010b:	shl	rax, 2
+0x40010f:	mov	qword ptr [rbp - 0x10], rax
+0x400113:	mov	rax, qword ptr [rbp - 0x10]
+0x400117:	mov	rdi, rax
+0x40011a:	call	0x500018
+<Block for 0x4000f1, 12 bytes>
+0x4000f1:	lea	rdi, [rip + 0x131]
+0x4000f8:	call	0x500038
+<Block for 0x40011f, 23 bytes>
+0x40011f:	mov	qword ptr [rbp - 8], rax
+0x400123:	mov	qword ptr [rbp - 0x18], 0
+0x40012b:	mov	eax, dword ptr [rbp - 0x1c]
+0x40012e:	cdqe	
+0x400130:	cmp	qword ptr [rbp - 0x18], rax
+0x400134:	jae	0x400156
+<Block for 0x4000fd, 2 bytes>
+0x4000fd:	jmp	0x400106
+<Block for 0x400136, 32 bytes>
+0x400136:	mov	rax, qword ptr [rbp - 0x18]
+0x40013a:	lea	rdx, [rax*4]
+0x400142:	mov	rax, qword ptr [rbp - 8]
+0x400146:	add	rax, rdx
+0x400149:	mov	dword ptr [rax], 0
+0x40014f:	add	qword ptr [rbp - 0x18], 1
+0x400154:	jmp	0x40012b
+<Block for 0x400156, 13 bytes>
+0x400156:	mov	rax, qword ptr [rbp - 8]
+0x40015a:	mov	eax, dword ptr [rax]
+0x40015c:	mov	edi, eax
+0x40015e:	call	0x500020
+<Block for 0x400106, 25 bytes>
+0x400106:	mov	eax, dword ptr [rbp - 0x1c]
+0x400109:	cdqe	
+0x40010b:	shl	rax, 2
+0x40010f:	mov	qword ptr [rbp - 0x10], rax
+0x400113:	mov	rax, qword ptr [rbp - 0x10]
+0x400117:	mov	rdi, rax
+0x40011a:	call	0x500018
+<Block for 0x40012b, 11 bytes>
+0x40012b:	mov	eax, dword ptr [rbp - 0x1c]
+0x40012e:	cdqe	
+0x400130:	cmp	qword ptr [rbp - 0x18], rax
+0x400134:	jae	0x400156
+<Block for 0x400163, 7 bytes>
+0x400163:	cmp	qword ptr [rbp - 8], 0
+0x400168:	je	0x400176
+<Block for 0x400176, 3 bytes>
+0x400176:	nop	
+0x400177:	leave	
+0x400178:	ret	
+<Block for 0x40016a, 12 bytes>
+0x40016a:	mov	rax, qword ptr [rbp - 8]
+0x40016e:	mov	rdi, rax
+0x400171:	call	0x500028

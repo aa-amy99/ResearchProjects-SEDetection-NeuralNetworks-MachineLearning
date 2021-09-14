@@ -1,0 +1,16 @@
+<Block for 0x40021e, 28 bytes>
+0x40021e:	endbr64	
+0x400222:	push	rbp
+0x400223:	mov	rbp, rsp
+0x400226:	sub	rsp, 0x10
+0x40022a:	mov	qword ptr [rbp - 8], rdi
+0x40022e:	mov	rax, qword ptr [rbp - 8]
+0x400232:	mov	rdi, rax
+0x400235:	call	0x4001ac
+<Block for 0x40023a, 17 bytes>
+0x40023a:	lea	rdx, [rip + 0xffdf7]
+0x400241:	mov	rax, qword ptr [rbp - 8]
+0x400245:	mov	qword ptr [rax], rdx
+0x400248:	nop	
+0x400249:	leave	
+0x40024a:	ret	

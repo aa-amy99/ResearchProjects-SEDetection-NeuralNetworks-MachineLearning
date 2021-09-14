@@ -1,0 +1,66 @@
+<Block for 0x400000, 65 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x30
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	mov	dword ptr [rbp - 0x24], 0xffffffff
+0x400022:	mov	rax, qword ptr [rip + 0xfffd7]
+0x400029:	lea	rdx, [rbp - 0x24]
+0x40002d:	lea	rsi, [rip + 0x133]
+0x400034:	mov	rdi, rax
+0x400037:	mov	eax, 0
+0x40003c:	call	0x500008
+<Block for 0x400041, 26 bytes>
+0x400041:	nop	
+0x400042:	mov	eax, dword ptr [rbp - 0x24]
+0x400045:	cdqe	
+0x400047:	shl	rax, 2
+0x40004b:	mov	qword ptr [rbp - 0x18], rax
+0x40004f:	mov	rax, qword ptr [rbp - 0x18]
+0x400053:	mov	rdi, rax
+0x400056:	call	0x500010
+<Block for 0x40005b, 23 bytes>
+0x40005b:	mov	qword ptr [rbp - 0x10], rax
+0x40005f:	mov	qword ptr [rbp - 0x20], 0
+0x400067:	mov	eax, dword ptr [rbp - 0x24]
+0x40006a:	cdqe	
+0x40006c:	cmp	qword ptr [rbp - 0x20], rax
+0x400070:	jae	0x400092
+<Block for 0x400072, 32 bytes>
+0x400072:	mov	rax, qword ptr [rbp - 0x20]
+0x400076:	lea	rdx, [rax*4]
+0x40007e:	mov	rax, qword ptr [rbp - 0x10]
+0x400082:	add	rax, rdx
+0x400085:	mov	dword ptr [rax], 0
+0x40008b:	add	qword ptr [rbp - 0x20], 1
+0x400090:	jmp	0x400067
+<Block for 0x400092, 13 bytes>
+0x400092:	mov	rax, qword ptr [rbp - 0x10]
+0x400096:	mov	eax, dword ptr [rax]
+0x400098:	mov	edi, eax
+0x40009a:	call	0x500018
+<Block for 0x400067, 11 bytes>
+0x400067:	mov	eax, dword ptr [rbp - 0x24]
+0x40006a:	cdqe	
+0x40006c:	cmp	qword ptr [rbp - 0x20], rax
+0x400070:	jae	0x400092
+<Block for 0x40009f, 7 bytes>
+0x40009f:	cmp	qword ptr [rbp - 0x10], 0
+0x4000a4:	je	0x4000b2
+<Block for 0x4000b2, 16 bytes>
+0x4000b2:	nop	
+0x4000b3:	mov	rax, qword ptr [rbp - 8]
+0x4000b7:	xor	rax, qword ptr fs:[0x28]
+0x4000c0:	je	0x4000c7
+<Block for 0x4000a6, 12 bytes>
+0x4000a6:	mov	rax, qword ptr [rbp - 0x10]
+0x4000aa:	mov	rdi, rax
+0x4000ad:	call	0x500020
+<Block for 0x4000c7, 2 bytes>
+0x4000c7:	leave	
+0x4000c8:	ret	
+<Block for 0x4000c2, 5 bytes>
+0x4000c2:	call	0x500028

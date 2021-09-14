@@ -1,0 +1,65 @@
+<Block for 0x400000, 33 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x20
+0x40000c:	mov	qword ptr [rbp - 0x10], 0
+0x400014:	mov	dword ptr [rbp - 0x18], 0
+0x40001b:	cmp	dword ptr [rbp - 0x18], 0
+0x40001f:	jg	0x400091
+<Block for 0x400021, 10 bytes>
+0x400021:	mov	edi, 0x320
+0x400026:	call	0x500000
+<Block for 0x400091, 13 bytes>
+0x400091:	mov	dword ptr [rbp - 0x14], 0
+0x400098:	cmp	dword ptr [rbp - 0x14], 0
+0x40009c:	jg	0x4000b1
+<Block for 0x40002b, 19 bytes>
+0x40002b:	mov	qword ptr [rbp - 0x10], rax
+0x40002f:	mov	qword ptr [rbp - 8], 0
+0x400037:	cmp	qword ptr [rbp - 8], 0x63
+0x40003c:	ja	0x400078
+<Block for 0x40009e, 13 bytes>
+0x40009e:	mov	rax, qword ptr [rbp - 0x10]
+0x4000a2:	mov	eax, dword ptr [rax]
+0x4000a4:	mov	edi, eax
+0x4000a6:	call	0x500010
+<Block for 0x4000b1, 3 bytes>
+0x4000b1:	nop	
+0x4000b2:	leave	
+0x4000b3:	ret	
+<Block for 0x40003e, 58 bytes>
+0x40003e:	mov	rax, qword ptr [rbp - 8]
+0x400042:	lea	rdx, [rax*8]
+0x40004a:	mov	rax, qword ptr [rbp - 0x10]
+0x40004e:	add	rax, rdx
+0x400051:	mov	dword ptr [rax], 1
+0x400057:	mov	rax, qword ptr [rbp - 8]
+0x40005b:	lea	rdx, [rax*8]
+0x400063:	mov	rax, qword ptr [rbp - 0x10]
+0x400067:	add	rax, rdx
+0x40006a:	mov	dword ptr [rax + 4], 2
+0x400071:	add	qword ptr [rbp - 8], 1
+0x400076:	jmp	0x400037
+<Block for 0x400078, 7 bytes>
+0x400078:	cmp	qword ptr [rbp - 0x10], 0
+0x40007d:	je	0x40008b
+<Block for 0x4000ab, 6 bytes>
+0x4000ab:	add	dword ptr [rbp - 0x14], 1
+0x4000af:	jmp	0x400098
+<Block for 0x400037, 7 bytes>
+0x400037:	cmp	qword ptr [rbp - 8], 0x63
+0x40003c:	ja	0x400078
+<Block for 0x40008b, 6 bytes>
+0x40008b:	add	dword ptr [rbp - 0x18], 1
+0x40008f:	jmp	0x40001b
+<Block for 0x40007f, 12 bytes>
+0x40007f:	mov	rax, qword ptr [rbp - 0x10]
+0x400083:	mov	rdi, rax
+0x400086:	call	0x500008
+<Block for 0x400098, 6 bytes>
+0x400098:	cmp	dword ptr [rbp - 0x14], 0
+0x40009c:	jg	0x4000b1
+<Block for 0x40001b, 6 bytes>
+0x40001b:	cmp	dword ptr [rbp - 0x18], 0
+0x40001f:	jg	0x400091

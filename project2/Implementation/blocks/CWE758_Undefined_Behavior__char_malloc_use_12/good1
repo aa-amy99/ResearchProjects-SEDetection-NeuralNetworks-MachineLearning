@@ -1,0 +1,66 @@
+<Block for 0x4000ad, 22 bytes>
+0x4000ad:	endbr64	
+0x4000b1:	push	rbp
+0x4000b2:	mov	rbp, rsp
+0x4000b5:	sub	rsp, 0x20
+0x4000b9:	mov	eax, 0
+0x4000be:	call	0x500000
+<Block for 0x4000c3, 4 bytes>
+0x4000c3:	test	eax, eax
+0x4000c5:	je	0x400117
+<Block for 0x400117, 10 bytes>
+0x400117:	mov	edi, 1
+0x40011c:	call	0x500008
+<Block for 0x4000c7, 10 bytes>
+0x4000c7:	mov	edi, 1
+0x4000cc:	call	0x500008
+<Block for 0x400121, 11 bytes>
+0x400121:	mov	qword ptr [rbp - 0x10], rax
+0x400125:	cmp	qword ptr [rbp - 0x10], 0
+0x40012a:	jne	0x400136
+<Block for 0x4000d1, 11 bytes>
+0x4000d1:	mov	qword ptr [rbp - 8], rax
+0x4000d5:	cmp	qword ptr [rbp - 8], 0
+0x4000da:	jne	0x4000e6
+<Block for 0x40012c, 10 bytes>
+0x40012c:	mov	edi, 0xffffffff
+0x400131:	call	0x500010
+<Block for 0x400136, 35 bytes>
+0x400136:	mov	byte ptr [rbp - 0x14], 5
+0x40013a:	mov	rax, qword ptr [rbp - 0x10]
+0x40013e:	movzx	edx, byte ptr [rbp - 0x14]
+0x400142:	mov	byte ptr [rax], dl
+0x400144:	mov	rax, qword ptr [rbp - 0x10]
+0x400148:	movzx	eax, byte ptr [rax]
+0x40014b:	mov	byte ptr [rbp - 0x13], al
+0x40014e:	movsx	eax, byte ptr [rbp - 0x13]
+0x400152:	mov	edi, eax
+0x400154:	call	0x500020
+<Block for 0x4000dc, 10 bytes>
+0x4000dc:	mov	edi, 0xffffffff
+0x4000e1:	call	0x500010
+<Block for 0x4000e6, 35 bytes>
+0x4000e6:	mov	byte ptr [rbp - 0x12], 5
+0x4000ea:	mov	rax, qword ptr [rbp - 8]
+0x4000ee:	movzx	edx, byte ptr [rbp - 0x12]
+0x4000f2:	mov	byte ptr [rax], dl
+0x4000f4:	mov	rax, qword ptr [rbp - 8]
+0x4000f8:	movzx	eax, byte ptr [rax]
+0x4000fb:	mov	byte ptr [rbp - 0x11], al
+0x4000fe:	movsx	eax, byte ptr [rbp - 0x11]
+0x400102:	mov	edi, eax
+0x400104:	call	0x500020
+<Block for 0x400159, 12 bytes>
+0x400159:	mov	rax, qword ptr [rbp - 0x10]
+0x40015d:	mov	rdi, rax
+0x400160:	call	0x500018
+<Block for 0x400109, 12 bytes>
+0x400109:	mov	rax, qword ptr [rbp - 8]
+0x40010d:	mov	rdi, rax
+0x400110:	call	0x500018
+<Block for 0x400165, 3 bytes>
+0x400165:	nop	
+0x400166:	leave	
+0x400167:	ret	
+<Block for 0x400115, 2 bytes>
+0x400115:	jmp	0x400165

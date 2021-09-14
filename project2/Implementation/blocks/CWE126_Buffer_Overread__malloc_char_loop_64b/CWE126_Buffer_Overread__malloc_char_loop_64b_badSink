@@ -1,0 +1,64 @@
+<Block for 0x400000, 87 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0xa0
+0x40000f:	mov	qword ptr [rbp - 0x98], rdi
+0x400016:	mov	rax, qword ptr fs:[0x28]
+0x40001f:	mov	qword ptr [rbp - 8], rax
+0x400023:	xor	eax, eax
+0x400025:	mov	rax, qword ptr [rbp - 0x98]
+0x40002c:	mov	qword ptr [rbp - 0x88], rax
+0x400033:	mov	rax, qword ptr [rbp - 0x88]
+0x40003a:	mov	rax, qword ptr [rax]
+0x40003d:	mov	qword ptr [rbp - 0x80], rax
+0x400041:	lea	rax, [rbp - 0x70]
+0x400045:	mov	edx, 0x63
+0x40004a:	mov	esi, 0x43
+0x40004f:	mov	rdi, rax
+0x400052:	call	0x500000
+<Block for 0x400057, 16 bytes>
+0x400057:	mov	byte ptr [rbp - 0xd], 0
+0x40005b:	lea	rax, [rbp - 0x70]
+0x40005f:	mov	rdi, rax
+0x400062:	call	0x500008
+<Block for 0x400067, 17 bytes>
+0x400067:	mov	qword ptr [rbp - 0x78], rax
+0x40006b:	mov	qword ptr [rbp - 0x90], 0
+0x400076:	jmp	0x4000a1
+<Block for 0x4000a1, 13 bytes>
+0x4000a1:	mov	rax, qword ptr [rbp - 0x90]
+0x4000a8:	cmp	rax, qword ptr [rbp - 0x78]
+0x4000ac:	jb	0x400078
+<Block for 0x400078, 54 bytes>
+0x400078:	mov	rdx, qword ptr [rbp - 0x80]
+0x40007c:	mov	rax, qword ptr [rbp - 0x90]
+0x400083:	add	rax, rdx
+0x400086:	movzx	eax, byte ptr [rax]
+0x400089:	lea	rcx, [rbp - 0x70]
+0x40008d:	mov	rdx, qword ptr [rbp - 0x90]
+0x400094:	add	rdx, rcx
+0x400097:	mov	byte ptr [rdx], al
+0x400099:	add	qword ptr [rbp - 0x90], 1
+0x4000a1:	mov	rax, qword ptr [rbp - 0x90]
+0x4000a8:	cmp	rax, qword ptr [rbp - 0x78]
+0x4000ac:	jb	0x400078
+<Block for 0x4000ae, 16 bytes>
+0x4000ae:	mov	byte ptr [rbp - 0xd], 0
+0x4000b2:	lea	rax, [rbp - 0x70]
+0x4000b6:	mov	rdi, rax
+0x4000b9:	call	0x500010
+<Block for 0x4000be, 12 bytes>
+0x4000be:	mov	rax, qword ptr [rbp - 0x80]
+0x4000c2:	mov	rdi, rax
+0x4000c5:	call	0x500018
+<Block for 0x4000ca, 16 bytes>
+0x4000ca:	nop	
+0x4000cb:	mov	rax, qword ptr [rbp - 8]
+0x4000cf:	xor	rax, qword ptr fs:[0x28]
+0x4000d8:	je	0x4000df
+<Block for 0x4000df, 2 bytes>
+0x4000df:	leave	
+0x4000e0:	ret	
+<Block for 0x4000da, 5 bytes>
+0x4000da:	call	0x500020

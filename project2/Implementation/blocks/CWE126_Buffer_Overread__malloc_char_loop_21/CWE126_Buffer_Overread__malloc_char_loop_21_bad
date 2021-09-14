@@ -1,0 +1,65 @@
+<Block for 0x400060, 60 bytes>
+0x400060:	endbr64	
+0x400064:	push	rbp
+0x400065:	mov	rbp, rsp
+0x400068:	sub	rsp, 0x90
+0x40006f:	mov	rax, qword ptr fs:[0x28]
+0x400078:	mov	qword ptr [rbp - 8], rax
+0x40007c:	xor	eax, eax
+0x40007e:	mov	qword ptr [rbp - 0x80], 0
+0x400086:	mov	dword ptr [rip + 0x360], 1
+0x400090:	mov	rax, qword ptr [rbp - 0x80]
+0x400094:	mov	rdi, rax
+0x400097:	call	0x400000
+<Block for 0x40009c, 26 bytes>
+0x40009c:	mov	qword ptr [rbp - 0x80], rax
+0x4000a0:	lea	rax, [rbp - 0x70]
+0x4000a4:	mov	edx, 0x63
+0x4000a9:	mov	esi, 0x43
+0x4000ae:	mov	rdi, rax
+0x4000b1:	call	0x500010
+<Block for 0x4000b6, 16 bytes>
+0x4000b6:	mov	byte ptr [rbp - 0xd], 0
+0x4000ba:	lea	rax, [rbp - 0x70]
+0x4000be:	mov	rdi, rax
+0x4000c1:	call	0x500018
+<Block for 0x4000c6, 17 bytes>
+0x4000c6:	mov	qword ptr [rbp - 0x78], rax
+0x4000ca:	mov	qword ptr [rbp - 0x88], 0
+0x4000d5:	jmp	0x400100
+<Block for 0x400100, 13 bytes>
+0x400100:	mov	rax, qword ptr [rbp - 0x88]
+0x400107:	cmp	rax, qword ptr [rbp - 0x78]
+0x40010b:	jb	0x4000d7
+<Block for 0x4000d7, 54 bytes>
+0x4000d7:	mov	rdx, qword ptr [rbp - 0x80]
+0x4000db:	mov	rax, qword ptr [rbp - 0x88]
+0x4000e2:	add	rax, rdx
+0x4000e5:	movzx	eax, byte ptr [rax]
+0x4000e8:	lea	rcx, [rbp - 0x70]
+0x4000ec:	mov	rdx, qword ptr [rbp - 0x88]
+0x4000f3:	add	rdx, rcx
+0x4000f6:	mov	byte ptr [rdx], al
+0x4000f8:	add	qword ptr [rbp - 0x88], 1
+0x400100:	mov	rax, qword ptr [rbp - 0x88]
+0x400107:	cmp	rax, qword ptr [rbp - 0x78]
+0x40010b:	jb	0x4000d7
+<Block for 0x40010d, 16 bytes>
+0x40010d:	mov	byte ptr [rbp - 0xd], 0
+0x400111:	lea	rax, [rbp - 0x70]
+0x400115:	mov	rdi, rax
+0x400118:	call	0x500020
+<Block for 0x40011d, 12 bytes>
+0x40011d:	mov	rax, qword ptr [rbp - 0x80]
+0x400121:	mov	rdi, rax
+0x400124:	call	0x500028
+<Block for 0x400129, 16 bytes>
+0x400129:	nop	
+0x40012a:	mov	rax, qword ptr [rbp - 8]
+0x40012e:	xor	rax, qword ptr fs:[0x28]
+0x400137:	je	0x40013e
+<Block for 0x40013e, 2 bytes>
+0x40013e:	leave	
+0x40013f:	ret	
+<Block for 0x400139, 5 bytes>
+0x400139:	call	0x500030

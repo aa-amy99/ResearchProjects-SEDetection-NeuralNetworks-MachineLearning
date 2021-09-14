@@ -1,0 +1,68 @@
+<Block for 0x400114, 24 bytes>
+0x400114:	endbr64	
+0x400118:	push	rbp
+0x400119:	mov	rbp, rsp
+0x40011c:	sub	rsp, 0x20
+0x400120:	mov	dword ptr [rbp - 0x1c], 0xffffffff
+0x400127:	call	0x500000
+<Block for 0x40012c, 9 bytes>
+0x40012c:	test	eax, eax
+0x40012e:	setne	al
+0x400131:	test	al, al
+0x400133:	je	0x40013e
+<Block for 0x40013e, 32 bytes>
+0x40013e:	mov	dword ptr [rbp - 0x1c], 0x14
+0x400145:	mov	eax, dword ptr [rbp - 0x1c]
+0x400148:	cdqe	
+0x40014a:	shl	rax, 2
+0x40014e:	mov	qword ptr [rbp - 0x10], rax
+0x400152:	mov	rax, qword ptr [rbp - 0x10]
+0x400156:	mov	rdi, rax
+0x400159:	call	0x500028
+<Block for 0x400135, 9 bytes>
+0x400135:	mov	dword ptr [rbp - 0x1c], 0x14
+0x40013c:	jmp	0x400145
+<Block for 0x40015e, 23 bytes>
+0x40015e:	mov	qword ptr [rbp - 8], rax
+0x400162:	mov	qword ptr [rbp - 0x18], 0
+0x40016a:	mov	eax, dword ptr [rbp - 0x1c]
+0x40016d:	cdqe	
+0x40016f:	cmp	qword ptr [rbp - 0x18], rax
+0x400173:	jae	0x400195
+<Block for 0x400145, 25 bytes>
+0x400145:	mov	eax, dword ptr [rbp - 0x1c]
+0x400148:	cdqe	
+0x40014a:	shl	rax, 2
+0x40014e:	mov	qword ptr [rbp - 0x10], rax
+0x400152:	mov	rax, qword ptr [rbp - 0x10]
+0x400156:	mov	rdi, rax
+0x400159:	call	0x500028
+<Block for 0x400175, 32 bytes>
+0x400175:	mov	rax, qword ptr [rbp - 0x18]
+0x400179:	lea	rdx, [rax*4]
+0x400181:	mov	rax, qword ptr [rbp - 8]
+0x400185:	add	rax, rdx
+0x400188:	mov	dword ptr [rax], 0
+0x40018e:	add	qword ptr [rbp - 0x18], 1
+0x400193:	jmp	0x40016a
+<Block for 0x400195, 13 bytes>
+0x400195:	mov	rax, qword ptr [rbp - 8]
+0x400199:	mov	eax, dword ptr [rax]
+0x40019b:	mov	edi, eax
+0x40019d:	call	0x500030
+<Block for 0x40016a, 11 bytes>
+0x40016a:	mov	eax, dword ptr [rbp - 0x1c]
+0x40016d:	cdqe	
+0x40016f:	cmp	qword ptr [rbp - 0x18], rax
+0x400173:	jae	0x400195
+<Block for 0x4001a2, 7 bytes>
+0x4001a2:	cmp	qword ptr [rbp - 8], 0
+0x4001a7:	je	0x4001b5
+<Block for 0x4001b5, 3 bytes>
+0x4001b5:	nop	
+0x4001b6:	leave	
+0x4001b7:	ret	
+<Block for 0x4001a9, 12 bytes>
+0x4001a9:	mov	rax, qword ptr [rbp - 8]
+0x4001ad:	mov	rdi, rax
+0x4001b0:	call	0x500038

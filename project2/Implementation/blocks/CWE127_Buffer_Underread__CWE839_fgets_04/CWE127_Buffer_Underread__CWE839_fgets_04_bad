@@ -1,0 +1,67 @@
+<Block for 0x400000, 43 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x50
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	mov	dword ptr [rbp - 0x44], 0xffffffff
+0x400022:	mov	eax, 1
+0x400027:	test	eax, eax
+0x400029:	je	0x40007a
+<Block for 0x40007a, 9 bytes>
+0x40007a:	mov	eax, 1
+0x40007f:	test	eax, eax
+0x400081:	je	0x4000cf
+<Block for 0x40002b, 45 bytes>
+0x40002b:	mov	qword ptr [rbp - 0x16], 0
+0x400033:	mov	dword ptr [rbp - 0xe], 0
+0x40003a:	mov	word ptr [rbp - 0xa], 0
+0x400040:	mov	rdx, qword ptr [rip + 0xfffb9]
+0x400047:	lea	rax, [rbp - 0x16]
+0x40004b:	mov	esi, 0xe
+0x400050:	mov	rdi, rax
+0x400053:	call	0x500008
+<Block for 0x4000cf, 16 bytes>
+0x4000cf:	nop	
+0x4000d0:	mov	rax, qword ptr [rbp - 8]
+0x4000d4:	xor	rax, qword ptr fs:[0x28]
+0x4000dd:	je	0x4000e4
+<Block for 0x400083, 46 bytes>
+0x400083:	mov	qword ptr [rbp - 0x40], 0
+0x40008b:	mov	qword ptr [rbp - 0x38], 0
+0x400093:	mov	qword ptr [rbp - 0x30], 0
+0x40009b:	mov	qword ptr [rbp - 0x28], 0
+0x4000a3:	mov	qword ptr [rbp - 0x20], 0
+0x4000ab:	cmp	dword ptr [rbp - 0x44], 9
+0x4000af:	jg	0x4000c3
+<Block for 0x400058, 5 bytes>
+0x400058:	test	rax, rax
+0x40005b:	je	0x40006e
+<Block for 0x4000e4, 2 bytes>
+0x4000e4:	leave	
+0x4000e5:	ret	
+<Block for 0x4000df, 5 bytes>
+0x4000df:	call	0x500028
+<Block for 0x4000b1, 16 bytes>
+0x4000b1:	mov	eax, dword ptr [rbp - 0x44]
+0x4000b4:	cdqe	
+0x4000b6:	mov	eax, dword ptr [rbp + rax*4 - 0x40]
+0x4000ba:	mov	edi, eax
+0x4000bc:	call	0x500020
+<Block for 0x4000c3, 12 bytes>
+0x4000c3:	lea	rdi, [rip + 0x39e]
+0x4000ca:	call	0x500018
+<Block for 0x40006e, 12 bytes>
+0x40006e:	lea	rdi, [rip + 0x3e3]
+0x400075:	call	0x500018
+<Block for 0x40005d, 12 bytes>
+0x40005d:	lea	rax, [rbp - 0x16]
+0x400061:	mov	rdi, rax
+0x400064:	call	0x500010
+<Block for 0x4000c1, 2 bytes>
+0x4000c1:	jmp	0x4000cf
+<Block for 0x400069, 5 bytes>
+0x400069:	mov	dword ptr [rbp - 0x44], eax
+0x40006c:	jmp	0x40007a

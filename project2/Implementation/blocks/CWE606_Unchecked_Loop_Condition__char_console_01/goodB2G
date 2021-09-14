@@ -1,0 +1,127 @@
+<Block for 0x4002b8, 153 bytes>
+0x4002b8:	endbr64	
+0x4002bc:	push	rbp
+0x4002bd:	mov	rbp, rsp
+0x4002c0:	sub	rsp, 0x90
+0x4002c7:	mov	rax, qword ptr fs:[0x28]
+0x4002d0:	mov	qword ptr [rbp - 8], rax
+0x4002d4:	xor	eax, eax
+0x4002d6:	mov	qword ptr [rbp - 0x70], 0
+0x4002de:	mov	qword ptr [rbp - 0x68], 0
+0x4002e6:	mov	qword ptr [rbp - 0x60], 0
+0x4002ee:	mov	qword ptr [rbp - 0x58], 0
+0x4002f6:	mov	qword ptr [rbp - 0x50], 0
+0x4002fe:	mov	qword ptr [rbp - 0x48], 0
+0x400306:	mov	qword ptr [rbp - 0x40], 0
+0x40030e:	mov	qword ptr [rbp - 0x38], 0
+0x400316:	mov	qword ptr [rbp - 0x30], 0
+0x40031e:	mov	qword ptr [rbp - 0x28], 0
+0x400326:	mov	qword ptr [rbp - 0x20], 0
+0x40032e:	mov	qword ptr [rbp - 0x18], 0
+0x400336:	mov	dword ptr [rbp - 0x10], 0
+0x40033d:	lea	rax, [rbp - 0x70]
+0x400341:	mov	qword ptr [rbp - 0x80], rax
+0x400345:	mov	rax, qword ptr [rbp - 0x80]
+0x400349:	mov	rdi, rax
+0x40034c:	call	0x500000
+<Block for 0x400351, 23 bytes>
+0x400351:	mov	qword ptr [rbp - 0x78], rax
+0x400355:	mov	eax, 0x64
+0x40035a:	sub	rax, qword ptr [rbp - 0x78]
+0x40035e:	cmp	rax, 1
+0x400362:	jbe	0x4003f4
+<Block for 0x4003f4, 31 bytes>
+0x4003f4:	lea	rdx, [rbp - 0x8c]
+0x4003fb:	mov	rax, qword ptr [rbp - 0x80]
+0x4003ff:	lea	rsi, [rip + 0xa3]
+0x400406:	mov	rdi, rax
+0x400409:	mov	eax, 0
+0x40040e:	call	0x500020
+<Block for 0x400368, 44 bytes>
+0x400368:	mov	rax, qword ptr [rip + 0xffc99]
+0x40036f:	mov	rdx, qword ptr [rbp - 0x78]
+0x400373:	mov	ecx, 0x64
+0x400378:	sub	ecx, edx
+0x40037a:	mov	edx, ecx
+0x40037c:	mov	esi, edx
+0x40037e:	mov	rcx, qword ptr [rbp - 0x80]
+0x400382:	mov	rdx, qword ptr [rbp - 0x78]
+0x400386:	add	rcx, rdx
+0x400389:	mov	rdx, rax
+0x40038c:	mov	rdi, rcx
+0x40038f:	call	0x500010
+<Block for 0x400413, 5 bytes>
+0x400413:	cmp	eax, 1
+0x400416:	jne	0x400464
+<Block for 0x400394, 5 bytes>
+0x400394:	test	rax, rax
+0x400397:	je	0x4003da
+<Block for 0x400418, 13 bytes>
+0x400418:	mov	eax, dword ptr [rbp - 0x8c]
+0x40041e:	cmp	eax, 0x270f
+0x400423:	jg	0x400464
+<Block for 0x400464, 16 bytes>
+0x400464:	nop	
+0x400465:	mov	rax, qword ptr [rbp - 8]
+0x400469:	xor	rax, qword ptr fs:[0x28]
+0x400472:	je	0x400479
+<Block for 0x4003da, 12 bytes>
+0x4003da:	lea	rdi, [rip + 0xb9]
+0x4003e1:	call	0x500018
+<Block for 0x400399, 12 bytes>
+0x400399:	mov	rax, qword ptr [rbp - 0x80]
+0x40039d:	mov	rdi, rax
+0x4003a0:	call	0x500000
+<Block for 0x400425, 22 bytes>
+0x400425:	mov	dword ptr [rbp - 0x84], 0
+0x40042f:	mov	dword ptr [rbp - 0x88], 0
+0x400439:	jmp	0x400449
+<Block for 0x400479, 2 bytes>
+0x400479:	leave	
+0x40047a:	ret	
+<Block for 0x400474, 5 bytes>
+0x400474:	call	0x500030
+<Block for 0x4003e6, 45 bytes>
+0x4003e6:	mov	rdx, qword ptr [rbp - 0x80]
+0x4003ea:	mov	rax, qword ptr [rbp - 0x78]
+0x4003ee:	add	rax, rdx
+0x4003f1:	mov	byte ptr [rax], 0
+0x4003f4:	lea	rdx, [rbp - 0x8c]
+0x4003fb:	mov	rax, qword ptr [rbp - 0x80]
+0x4003ff:	lea	rsi, [rip + 0xa3]
+0x400406:	mov	rdi, rax
+0x400409:	mov	eax, 0
+0x40040e:	call	0x500020
+<Block for 0x4003a5, 11 bytes>
+0x4003a5:	mov	qword ptr [rbp - 0x78], rax
+0x4003a9:	cmp	qword ptr [rbp - 0x78], 0
+0x4003ae:	je	0x4003f4
+<Block for 0x400449, 14 bytes>
+0x400449:	mov	eax, dword ptr [rbp - 0x8c]
+0x40044f:	cmp	dword ptr [rbp - 0x88], eax
+0x400455:	jl	0x40043b
+<Block for 0x4003b0, 22 bytes>
+0x4003b0:	mov	rax, qword ptr [rbp - 0x78]
+0x4003b4:	lea	rdx, [rax - 1]
+0x4003b8:	mov	rax, qword ptr [rbp - 0x80]
+0x4003bc:	add	rax, rdx
+0x4003bf:	movzx	eax, byte ptr [rax]
+0x4003c2:	cmp	al, 0xa
+0x4003c4:	jne	0x4003f4
+<Block for 0x40043b, 28 bytes>
+0x40043b:	add	dword ptr [rbp - 0x84], 1
+0x400442:	add	dword ptr [rbp - 0x88], 1
+0x400449:	mov	eax, dword ptr [rbp - 0x8c]
+0x40044f:	cmp	dword ptr [rbp - 0x88], eax
+0x400455:	jl	0x40043b
+<Block for 0x400457, 13 bytes>
+0x400457:	mov	eax, dword ptr [rbp - 0x84]
+0x40045d:	mov	edi, eax
+0x40045f:	call	0x500028
+<Block for 0x4003c6, 20 bytes>
+0x4003c6:	mov	rax, qword ptr [rbp - 0x78]
+0x4003ca:	lea	rdx, [rax - 1]
+0x4003ce:	mov	rax, qword ptr [rbp - 0x80]
+0x4003d2:	add	rax, rdx
+0x4003d5:	mov	byte ptr [rax], 0
+0x4003d8:	jmp	0x4003f4

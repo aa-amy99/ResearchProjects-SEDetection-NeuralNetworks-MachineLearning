@@ -1,0 +1,65 @@
+<Block for 0x400000, 52 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0xa0
+0x40000f:	mov	qword ptr [rbp - 0x98], rdi
+0x400016:	mov	rax, qword ptr fs:[0x28]
+0x40001f:	mov	qword ptr [rbp - 8], rax
+0x400023:	xor	eax, eax
+0x400025:	mov	rax, qword ptr [rbp - 0x98]
+0x40002c:	mov	rdi, rax
+0x40002f:	call	0x4001b8
+<Block for 0x400034, 29 bytes>
+0x400034:	mov	rax, qword ptr [rax]
+0x400037:	mov	qword ptr [rbp - 0x80], rax
+0x40003b:	lea	rax, [rbp - 0x70]
+0x40003f:	mov	edx, 0x63
+0x400044:	mov	esi, 0x43
+0x400049:	mov	rdi, rax
+0x40004c:	call	0x500000
+<Block for 0x400051, 16 bytes>
+0x400051:	mov	byte ptr [rbp - 0xd], 0
+0x400055:	lea	rax, [rbp - 0x70]
+0x400059:	mov	rdi, rax
+0x40005c:	call	0x500008
+<Block for 0x400061, 28 bytes>
+0x400061:	mov	qword ptr [rbp - 0x78], rax
+0x400065:	mov	qword ptr [rbp - 0x88], 0
+0x400070:	mov	rax, qword ptr [rbp - 0x88]
+0x400077:	cmp	rax, qword ptr [rbp - 0x78]
+0x40007b:	jae	0x4000a8
+<Block for 0x40007d, 43 bytes>
+0x40007d:	mov	rdx, qword ptr [rbp - 0x80]
+0x400081:	mov	rax, qword ptr [rbp - 0x88]
+0x400088:	add	rax, rdx
+0x40008b:	movzx	eax, byte ptr [rax]
+0x40008e:	lea	rcx, [rbp - 0x70]
+0x400092:	mov	rdx, qword ptr [rbp - 0x88]
+0x400099:	add	rdx, rcx
+0x40009c:	mov	byte ptr [rdx], al
+0x40009e:	add	qword ptr [rbp - 0x88], 1
+0x4000a6:	jmp	0x400070
+<Block for 0x4000a8, 16 bytes>
+0x4000a8:	mov	byte ptr [rbp - 0xd], 0
+0x4000ac:	lea	rax, [rbp - 0x70]
+0x4000b0:	mov	rdi, rax
+0x4000b3:	call	0x500010
+<Block for 0x400070, 13 bytes>
+0x400070:	mov	rax, qword ptr [rbp - 0x88]
+0x400077:	cmp	rax, qword ptr [rbp - 0x78]
+0x40007b:	jae	0x4000a8
+<Block for 0x4000b8, 12 bytes>
+0x4000b8:	mov	rax, qword ptr [rbp - 0x80]
+0x4000bc:	mov	rdi, rax
+0x4000bf:	call	0x500018
+<Block for 0x4000c4, 16 bytes>
+0x4000c4:	nop	
+0x4000c5:	mov	rax, qword ptr [rbp - 8]
+0x4000c9:	xor	rax, qword ptr fs:[0x28]
+0x4000d2:	je	0x4000d9
+<Block for 0x4000d9, 2 bytes>
+0x4000d9:	leave	
+0x4000da:	ret	
+<Block for 0x4000d4, 5 bytes>
+0x4000d4:	call	0x500020

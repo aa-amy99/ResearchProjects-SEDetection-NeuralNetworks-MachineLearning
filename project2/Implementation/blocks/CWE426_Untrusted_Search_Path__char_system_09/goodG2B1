@@ -1,0 +1,63 @@
+<Block for 0x4000e5, 148 bytes>
+0x4000e5:	endbr64	
+0x4000e9:	push	rbp
+0x4000ea:	mov	rbp, rsp
+0x4000ed:	add	rsp, -0x80
+0x4000f1:	mov	rax, qword ptr fs:[0x28]
+0x4000fa:	mov	qword ptr [rbp - 8], rax
+0x4000fe:	xor	eax, eax
+0x400100:	mov	qword ptr [rbp - 0x70], 0
+0x400108:	mov	qword ptr [rbp - 0x68], 0
+0x400110:	mov	qword ptr [rbp - 0x60], 0
+0x400118:	mov	qword ptr [rbp - 0x58], 0
+0x400120:	mov	qword ptr [rbp - 0x50], 0
+0x400128:	mov	qword ptr [rbp - 0x48], 0
+0x400130:	mov	qword ptr [rbp - 0x40], 0
+0x400138:	mov	qword ptr [rbp - 0x38], 0
+0x400140:	mov	qword ptr [rbp - 0x30], 0
+0x400148:	mov	qword ptr [rbp - 0x28], 0
+0x400150:	mov	qword ptr [rbp - 0x20], 0
+0x400158:	mov	qword ptr [rbp - 0x18], 0
+0x400160:	mov	dword ptr [rbp - 0x10], 0
+0x400167:	lea	rax, [rbp - 0x70]
+0x40016b:	mov	qword ptr [rbp - 0x78], rax
+0x40016f:	mov	eax, dword ptr [rip + 0xffeb3]
+0x400175:	test	eax, eax
+0x400177:	je	0x400187
+<Block for 0x400187, 43 bytes>
+0x400187:	mov	rax, qword ptr [rbp - 0x78]
+0x40018b:	movabs	rdx, 0x6e69622f7273752f
+0x400195:	movabs	rcx, 0x616c2d20736c2f
+0x40019f:	mov	qword ptr [rax], rdx
+0x4001a2:	mov	qword ptr [rax + 8], rcx
+0x4001a6:	mov	rax, qword ptr [rbp - 0x78]
+0x4001aa:	mov	rdi, rax
+0x4001ad:	call	0x500008
+<Block for 0x400179, 12 bytes>
+0x400179:	lea	rdi, [rip + 0x18c]
+0x400180:	call	0x500010
+<Block for 0x4001b2, 4 bytes>
+0x4001b2:	test	eax, eax
+0x4001b4:	jg	0x4001cc
+<Block for 0x400185, 2 bytes>
+0x400185:	jmp	0x4001a6
+<Block for 0x4001b6, 12 bytes>
+0x4001b6:	lea	rdi, [rip + 0x135]
+0x4001bd:	call	0x500010
+<Block for 0x4001cc, 16 bytes>
+0x4001cc:	nop	
+0x4001cd:	mov	rax, qword ptr [rbp - 8]
+0x4001d1:	xor	rax, qword ptr fs:[0x28]
+0x4001da:	je	0x4001e1
+<Block for 0x4001a6, 12 bytes>
+0x4001a6:	mov	rax, qword ptr [rbp - 0x78]
+0x4001aa:	mov	rdi, rax
+0x4001ad:	call	0x500008
+<Block for 0x4001c2, 10 bytes>
+0x4001c2:	mov	edi, 1
+0x4001c7:	call	0x500018
+<Block for 0x4001e1, 2 bytes>
+0x4001e1:	leave	
+0x4001e2:	ret	
+<Block for 0x4001dc, 5 bytes>
+0x4001dc:	call	0x500020

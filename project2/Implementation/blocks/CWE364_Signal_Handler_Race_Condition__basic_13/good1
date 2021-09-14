@@ -1,0 +1,73 @@
+<Block for 0x400117, 23 bytes>
+0x400117:	endbr64	
+0x40011b:	push	rbp
+0x40011c:	mov	rbp, rsp
+0x40011f:	sub	rsp, 0x10
+0x400123:	mov	eax, dword ptr [rip + 0xffed7]
+0x400129:	cmp	eax, 5
+0x40012c:	je	0x40013f
+<Block for 0x40013f, 23 bytes>
+0x40013f:	mov	qword ptr [rbp - 8], 0
+0x400147:	mov	esi, 0
+0x40014c:	mov	edi, 2
+0x400151:	call	0x500008
+<Block for 0x40012e, 12 bytes>
+0x40012e:	lea	rdi, [rip + 0x1f3]
+0x400135:	call	0x500028
+<Block for 0x400156, 12 bytes>
+0x400156:	mov	rax, qword ptr [rip + 0x1c3]
+0x40015d:	test	rax, rax
+0x400160:	je	0x40017c
+<Block for 0x40013a, 5 bytes>
+0x40013a:	jmp	0x40020a
+<Block for 0x40017c, 10 bytes>
+0x40017c:	mov	edi, 4
+0x400181:	call	0x500018
+<Block for 0x400162, 15 bytes>
+0x400162:	mov	rax, qword ptr [rip + 0x1b7]
+0x400169:	mov	rdi, rax
+0x40016c:	call	0x500010
+<Block for 0x40020a, 3 bytes>
+0x40020a:	nop	
+0x40020b:	leave	
+0x40020c:	ret	
+<Block for 0x400186, 11 bytes>
+0x400186:	mov	qword ptr [rbp - 8], rax
+0x40018a:	cmp	qword ptr [rbp - 8], 0
+0x40018f:	jne	0x40019b
+<Block for 0x400171, 21 bytes>
+0x400171:	mov	qword ptr [rip + 0x1a4], 0
+0x40017c:	mov	edi, 4
+0x400181:	call	0x500018
+<Block for 0x400191, 10 bytes>
+0x400191:	mov	edi, 0xffffffff
+0x400196:	call	0x500020
+<Block for 0x40019b, 41 bytes>
+0x40019b:	mov	rax, qword ptr [rbp - 8]
+0x40019f:	mov	qword ptr [rip + 0x17a], rax
+0x4001a6:	mov	rax, qword ptr [rip + 0x173]
+0x4001ad:	mov	dword ptr [rax], 1
+0x4001b3:	lea	rsi, [rip - 0x193]
+0x4001ba:	mov	edi, 2
+0x4001bf:	call	0x500008
+<Block for 0x4001c4, 15 bytes>
+0x4001c4:	mov	esi, 0
+0x4001c9:	mov	edi, 2
+0x4001ce:	call	0x500008
+<Block for 0x4001d3, 12 bytes>
+0x4001d3:	mov	rax, qword ptr [rip + 0x146]
+0x4001da:	test	rax, rax
+0x4001dd:	je	0x4001f9
+<Block for 0x4001f9, 17 bytes>
+0x4001f9:	lea	rsi, [rip - 0x1d9]
+0x400200:	mov	edi, 2
+0x400205:	call	0x500008
+<Block for 0x4001df, 15 bytes>
+0x4001df:	mov	rax, qword ptr [rip + 0x13a]
+0x4001e6:	mov	rdi, rax
+0x4001e9:	call	0x500010
+<Block for 0x4001ee, 28 bytes>
+0x4001ee:	mov	qword ptr [rip + 0x127], 0
+0x4001f9:	lea	rsi, [rip - 0x1d9]
+0x400200:	mov	edi, 2
+0x400205:	call	0x500008

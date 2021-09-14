@@ -1,0 +1,64 @@
+<Block for 0x4000c1, 83 bytes>
+0x4000c1:	endbr64	
+0x4000c5:	push	rbp
+0x4000c6:	mov	rbp, rsp
+0x4000c9:	sub	rsp, 0x30
+0x4000cd:	mov	rax, qword ptr fs:[0x28]
+0x4000d6:	mov	qword ptr [rbp - 8], rax
+0x4000da:	xor	eax, eax
+0x4000dc:	lea	rax, [rbp - 0x30]
+0x4000e0:	mov	qword ptr [rbp - 0x20], rax
+0x4000e4:	mov	dword ptr [rbp - 0x30], 0xffffffff
+0x4000eb:	mov	dword ptr [rbp - 0x30], 0x14
+0x4000f2:	mov	rax, qword ptr [rbp - 0x20]
+0x4000f6:	mov	eax, dword ptr [rax]
+0x4000f8:	mov	dword ptr [rbp - 0x2c], eax
+0x4000fb:	mov	eax, dword ptr [rbp - 0x2c]
+0x4000fe:	cdqe	
+0x400100:	shl	rax, 2
+0x400104:	mov	qword ptr [rbp - 0x18], rax
+0x400108:	mov	rax, qword ptr [rbp - 0x18]
+0x40010c:	mov	rdi, rax
+0x40010f:	call	0x500000
+<Block for 0x400114, 23 bytes>
+0x400114:	mov	qword ptr [rbp - 0x10], rax
+0x400118:	mov	qword ptr [rbp - 0x28], 0
+0x400120:	mov	eax, dword ptr [rbp - 0x2c]
+0x400123:	cdqe	
+0x400125:	cmp	qword ptr [rbp - 0x28], rax
+0x400129:	jae	0x40014b
+<Block for 0x40012b, 32 bytes>
+0x40012b:	mov	rax, qword ptr [rbp - 0x28]
+0x40012f:	lea	rdx, [rax*4]
+0x400137:	mov	rax, qword ptr [rbp - 0x10]
+0x40013b:	add	rax, rdx
+0x40013e:	mov	dword ptr [rax], 0
+0x400144:	add	qword ptr [rbp - 0x28], 1
+0x400149:	jmp	0x400120
+<Block for 0x40014b, 13 bytes>
+0x40014b:	mov	rax, qword ptr [rbp - 0x10]
+0x40014f:	mov	eax, dword ptr [rax]
+0x400151:	mov	edi, eax
+0x400153:	call	0x500008
+<Block for 0x400120, 11 bytes>
+0x400120:	mov	eax, dword ptr [rbp - 0x2c]
+0x400123:	cdqe	
+0x400125:	cmp	qword ptr [rbp - 0x28], rax
+0x400129:	jae	0x40014b
+<Block for 0x400158, 7 bytes>
+0x400158:	cmp	qword ptr [rbp - 0x10], 0
+0x40015d:	je	0x40016b
+<Block for 0x40016b, 16 bytes>
+0x40016b:	nop	
+0x40016c:	mov	rax, qword ptr [rbp - 8]
+0x400170:	xor	rax, qword ptr fs:[0x28]
+0x400179:	je	0x400180
+<Block for 0x40015f, 12 bytes>
+0x40015f:	mov	rax, qword ptr [rbp - 0x10]
+0x400163:	mov	rdi, rax
+0x400166:	call	0x500010
+<Block for 0x400180, 2 bytes>
+0x400180:	leave	
+0x400181:	ret	
+<Block for 0x40017b, 5 bytes>
+0x40017b:	call	0x500018

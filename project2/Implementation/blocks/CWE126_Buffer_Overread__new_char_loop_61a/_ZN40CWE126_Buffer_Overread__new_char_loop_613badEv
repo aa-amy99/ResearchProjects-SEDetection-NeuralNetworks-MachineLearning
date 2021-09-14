@@ -1,0 +1,67 @@
+<Block for 0x400000, 50 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x90
+0x40000f:	mov	rax, qword ptr fs:[0x28]
+0x400018:	mov	qword ptr [rbp - 8], rax
+0x40001c:	xor	eax, eax
+0x40001e:	mov	qword ptr [rbp - 0x80], 0
+0x400026:	mov	rax, qword ptr [rbp - 0x80]
+0x40002a:	mov	rdi, rax
+0x40002d:	call	0x500000
+<Block for 0x400032, 26 bytes>
+0x400032:	mov	qword ptr [rbp - 0x80], rax
+0x400036:	lea	rax, [rbp - 0x70]
+0x40003a:	mov	edx, 0x63
+0x40003f:	mov	esi, 0x43
+0x400044:	mov	rdi, rax
+0x400047:	call	0x500008
+<Block for 0x40004c, 16 bytes>
+0x40004c:	mov	byte ptr [rbp - 0xd], 0
+0x400050:	lea	rax, [rbp - 0x70]
+0x400054:	mov	rdi, rax
+0x400057:	call	0x500010
+<Block for 0x40005c, 28 bytes>
+0x40005c:	mov	qword ptr [rbp - 0x78], rax
+0x400060:	mov	qword ptr [rbp - 0x88], 0
+0x40006b:	mov	rax, qword ptr [rbp - 0x88]
+0x400072:	cmp	rax, qword ptr [rbp - 0x78]
+0x400076:	jae	0x4000a3
+<Block for 0x400078, 43 bytes>
+0x400078:	mov	rdx, qword ptr [rbp - 0x80]
+0x40007c:	mov	rax, qword ptr [rbp - 0x88]
+0x400083:	add	rax, rdx
+0x400086:	movzx	eax, byte ptr [rax]
+0x400089:	lea	rcx, [rbp - 0x70]
+0x40008d:	mov	rdx, qword ptr [rbp - 0x88]
+0x400094:	add	rdx, rcx
+0x400097:	mov	byte ptr [rdx], al
+0x400099:	add	qword ptr [rbp - 0x88], 1
+0x4000a1:	jmp	0x40006b
+<Block for 0x4000a3, 16 bytes>
+0x4000a3:	mov	byte ptr [rbp - 0xd], 0
+0x4000a7:	lea	rax, [rbp - 0x70]
+0x4000ab:	mov	rdi, rax
+0x4000ae:	call	0x500018
+<Block for 0x40006b, 13 bytes>
+0x40006b:	mov	rax, qword ptr [rbp - 0x88]
+0x400072:	cmp	rax, qword ptr [rbp - 0x78]
+0x400076:	jae	0x4000a3
+<Block for 0x4000b3, 7 bytes>
+0x4000b3:	cmp	qword ptr [rbp - 0x80], 0
+0x4000b8:	je	0x4000c6
+<Block for 0x4000c6, 16 bytes>
+0x4000c6:	nop	
+0x4000c7:	mov	rax, qword ptr [rbp - 8]
+0x4000cb:	xor	rax, qword ptr fs:[0x28]
+0x4000d4:	je	0x4000db
+<Block for 0x4000ba, 12 bytes>
+0x4000ba:	mov	rax, qword ptr [rbp - 0x80]
+0x4000be:	mov	rdi, rax
+0x4000c1:	call	0x500020
+<Block for 0x4000db, 2 bytes>
+0x4000db:	leave	
+0x4000dc:	ret	
+<Block for 0x4000d6, 5 bytes>
+0x4000d6:	call	0x500028

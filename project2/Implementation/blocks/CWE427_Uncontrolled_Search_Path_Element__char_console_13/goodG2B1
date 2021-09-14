@@ -1,0 +1,67 @@
+<Block for 0x40017b, 82 bytes>
+0x40017b:	endbr64	
+0x40017f:	push	rbp
+0x400180:	mov	rbp, rsp
+0x400183:	sub	rsp, 0x120
+0x40018a:	mov	rax, qword ptr fs:[0x28]
+0x400193:	mov	qword ptr [rbp - 8], rax
+0x400197:	xor	eax, eax
+0x400199:	movabs	rax, 0x3d48544150
+0x4001a3:	mov	edx, 0
+0x4001a8:	mov	qword ptr [rbp - 0x110], rax
+0x4001af:	mov	qword ptr [rbp - 0x108], rdx
+0x4001b6:	lea	rdx, [rbp - 0x100]
+0x4001bd:	mov	eax, 0
+0x4001c2:	mov	ecx, 0x1d
+0x4001c7:	mov	rdi, rdx
+0x4001ca:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001cd, 35 bytes>
+0x4001cd:	mov	rdx, rdi
+0x4001d0:	mov	word ptr [rdx], ax
+0x4001d3:	add	rdx, 2
+0x4001d7:	lea	rax, [rbp - 0x110]
+0x4001de:	mov	qword ptr [rbp - 0x118], rax
+0x4001e5:	mov	eax, dword ptr [rip + 0xffe15]
+0x4001eb:	cmp	eax, 5
+0x4001ee:	je	0x4001fe
+<Block for 0x4001ca, 3 bytes>
+0x4001ca:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001fe, 27 bytes>
+0x4001fe:	mov	rax, qword ptr [rbp - 0x118]
+0x400205:	mov	rcx, -1
+0x40020c:	mov	rdx, rax
+0x40020f:	mov	eax, 0
+0x400214:	mov	rdi, rdx
+0x400217:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001f0, 12 bytes>
+0x4001f0:	lea	rdi, [rip + 0x168]
+0x4001f7:	call	0x500020
+<Block for 0x400219, 45 bytes>
+0x400219:	mov	rax, rcx
+0x40021c:	not	rax
+0x40021f:	lea	rdx, [rax - 1]
+0x400223:	mov	rax, qword ptr [rbp - 0x118]
+0x40022a:	add	rax, rdx
+0x40022d:	mov	dword ptr [rax], 0x6e69622f
+0x400233:	mov	byte ptr [rax + 4], 0
+0x400237:	mov	rax, qword ptr [rbp - 0x118]
+0x40023e:	mov	rdi, rax
+0x400241:	call	0x500028
+<Block for 0x400217, 2 bytes>
+0x400217:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001fc, 2 bytes>
+0x4001fc:	jmp	0x400237
+<Block for 0x400246, 16 bytes>
+0x400246:	nop	
+0x400247:	mov	rax, qword ptr [rbp - 8]
+0x40024b:	xor	rax, qword ptr fs:[0x28]
+0x400254:	je	0x40025b
+<Block for 0x400237, 15 bytes>
+0x400237:	mov	rax, qword ptr [rbp - 0x118]
+0x40023e:	mov	rdi, rax
+0x400241:	call	0x500028
+<Block for 0x40025b, 2 bytes>
+0x40025b:	leave	
+0x40025c:	ret	
+<Block for 0x400256, 5 bytes>
+0x400256:	call	0x500030

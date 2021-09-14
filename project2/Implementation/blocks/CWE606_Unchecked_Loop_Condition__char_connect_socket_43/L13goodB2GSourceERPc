@@ -1,0 +1,132 @@
+<Block for 0x4003ae, 53 bytes>
+0x4003ae:	endbr64	
+0x4003b2:	push	rbp
+0x4003b3:	mov	rbp, rsp
+0x4003b6:	sub	rsp, 0x50
+0x4003ba:	mov	qword ptr [rbp - 0x48], rdi
+0x4003be:	mov	rax, qword ptr fs:[0x28]
+0x4003c7:	mov	qword ptr [rbp - 8], rax
+0x4003cb:	xor	eax, eax
+0x4003cd:	mov	dword ptr [rbp - 0x38], 0xffffffff
+0x4003d4:	mov	rax, qword ptr [rbp - 0x48]
+0x4003d8:	mov	rax, qword ptr [rax]
+0x4003db:	mov	rdi, rax
+0x4003de:	call	0x500000
+<Block for 0x4003e3, 24 bytes>
+0x4003e3:	mov	qword ptr [rbp - 0x30], rax
+0x4003e7:	mov	edx, 6
+0x4003ec:	mov	esi, 1
+0x4003f1:	mov	edi, 2
+0x4003f6:	call	0x500008
+<Block for 0x4003fb, 13 bytes>
+0x4003fb:	mov	dword ptr [rbp - 0x38], eax
+0x4003fe:	cmp	dword ptr [rbp - 0x38], -1
+0x400402:	je	0x400506
+<Block for 0x400506, 3 bytes>
+0x400506:	nop	
+0x400507:	jmp	0x40050a
+<Block for 0x400408, 22 bytes>
+0x400408:	lea	rax, [rbp - 0x20]
+0x40040c:	mov	edx, 0x10
+0x400411:	mov	esi, 0
+0x400416:	mov	rdi, rax
+0x400419:	call	0x500010
+<Block for 0x40050a, 6 bytes>
+0x40050a:	cmp	dword ptr [rbp - 0x38], -1
+0x40050e:	je	0x40051a
+<Block for 0x40041e, 18 bytes>
+0x40041e:	mov	word ptr [rbp - 0x20], 2
+0x400424:	lea	rdi, [rip + 0x22e]
+0x40042b:	call	0x500018
+<Block for 0x40051a, 16 bytes>
+0x40051a:	nop	
+0x40051b:	mov	rax, qword ptr [rbp - 8]
+0x40051f:	xor	rax, qword ptr fs:[0x28]
+0x400528:	je	0x40052f
+<Block for 0x400510, 10 bytes>
+0x400510:	mov	eax, dword ptr [rbp - 0x38]
+0x400513:	mov	edi, eax
+0x400515:	call	0x500040
+<Block for 0x400430, 13 bytes>
+0x400430:	mov	dword ptr [rbp - 0x1c], eax
+0x400433:	mov	edi, 0x6987
+0x400438:	call	0x500020
+<Block for 0x40052f, 2 bytes>
+0x40052f:	leave	
+0x400530:	ret	
+<Block for 0x40052a, 5 bytes>
+0x40052a:	call	0x500048
+<Block for 0x40043d, 26 bytes>
+0x40043d:	mov	word ptr [rbp - 0x1e], ax
+0x400441:	lea	rcx, [rbp - 0x20]
+0x400445:	mov	eax, dword ptr [rbp - 0x38]
+0x400448:	mov	edx, 0x10
+0x40044d:	mov	rsi, rcx
+0x400450:	mov	edi, eax
+0x400452:	call	0x500028
+<Block for 0x400457, 14 bytes>
+0x400457:	cmp	eax, -1
+0x40045a:	sete	al
+0x40045d:	test	al, al
+0x40045f:	jne	0x400509
+<Block for 0x400465, 42 bytes>
+0x400465:	mov	eax, 0x63
+0x40046a:	sub	rax, qword ptr [rbp - 0x30]
+0x40046e:	mov	rdx, rax
+0x400471:	mov	rax, qword ptr [rbp - 0x48]
+0x400475:	mov	rcx, qword ptr [rax]
+0x400478:	mov	rax, qword ptr [rbp - 0x30]
+0x40047c:	lea	rsi, [rcx + rax]
+0x400480:	mov	eax, dword ptr [rbp - 0x38]
+0x400483:	mov	ecx, 0
+0x400488:	mov	edi, eax
+0x40048a:	call	0x500030
+<Block for 0x400509, 1 bytes>
+0x400509:	nop	
+<Block for 0x40048f, 9 bytes>
+0x40048f:	mov	dword ptr [rbp - 0x34], eax
+0x400492:	cmp	dword ptr [rbp - 0x34], -1
+0x400496:	je	0x40050a
+<Block for 0x400498, 6 bytes>
+0x400498:	cmp	dword ptr [rbp - 0x34], 0
+0x40049c:	je	0x40050a
+<Block for 0x40049e, 46 bytes>
+0x40049e:	mov	rax, qword ptr [rbp - 0x48]
+0x4004a2:	mov	rax, qword ptr [rax]
+0x4004a5:	mov	edx, dword ptr [rbp - 0x34]
+0x4004a8:	movsxd	rcx, edx
+0x4004ab:	mov	rdx, qword ptr [rbp - 0x30]
+0x4004af:	add	rdx, rcx
+0x4004b2:	add	rax, rdx
+0x4004b5:	mov	byte ptr [rax], 0
+0x4004b8:	mov	rax, qword ptr [rbp - 0x48]
+0x4004bc:	mov	rax, qword ptr [rax]
+0x4004bf:	mov	esi, 0xd
+0x4004c4:	mov	rdi, rax
+0x4004c7:	call	0x500038
+<Block for 0x4004cc, 11 bytes>
+0x4004cc:	mov	qword ptr [rbp - 0x28], rax
+0x4004d0:	cmp	qword ptr [rbp - 0x28], 0
+0x4004d5:	je	0x4004de
+<Block for 0x4004de, 20 bytes>
+0x4004de:	mov	rax, qword ptr [rbp - 0x48]
+0x4004e2:	mov	rax, qword ptr [rax]
+0x4004e5:	mov	esi, 0xa
+0x4004ea:	mov	rdi, rax
+0x4004ed:	call	0x500038
+<Block for 0x4004d7, 27 bytes>
+0x4004d7:	mov	rax, qword ptr [rbp - 0x28]
+0x4004db:	mov	byte ptr [rax], 0
+0x4004de:	mov	rax, qword ptr [rbp - 0x48]
+0x4004e2:	mov	rax, qword ptr [rax]
+0x4004e5:	mov	esi, 0xa
+0x4004ea:	mov	rdi, rax
+0x4004ed:	call	0x500038
+<Block for 0x4004f2, 11 bytes>
+0x4004f2:	mov	qword ptr [rbp - 0x28], rax
+0x4004f6:	cmp	qword ptr [rbp - 0x28], 0
+0x4004fb:	je	0x40050a
+<Block for 0x4004fd, 9 bytes>
+0x4004fd:	mov	rax, qword ptr [rbp - 0x28]
+0x400501:	mov	byte ptr [rax], 0
+0x400504:	jmp	0x40050a

@@ -1,0 +1,64 @@
+<Block for 0x400000, 84 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x40
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	lea	rax, [rbp - 0x20]
+0x40001f:	mov	qword ptr [rbp - 0x20], rax
+0x400023:	lea	rax, [rbp - 0x20]
+0x400027:	mov	qword ptr [rbp - 0x18], rax
+0x40002b:	mov	rax, qword ptr [rbp - 0x20]
+0x40002f:	mov	qword ptr [rbp - 0x30], rax
+0x400033:	mov	rax, qword ptr [rbp - 0x18]
+0x400037:	mov	qword ptr [rbp - 0x28], rax
+0x40003b:	lea	rax, [rbp - 0x30]
+0x40003f:	mov	qword ptr [rbp - 0x20], rax
+0x400043:	lea	rax, [rbp - 0x30]
+0x400047:	mov	qword ptr [rbp - 0x18], rax
+0x40004b:	mov	dword ptr [rbp - 0x34], 0
+0x400052:	jmp	0x40008b
+<Block for 0x40008b, 6 bytes>
+0x40008b:	cmp	dword ptr [rbp - 0x34], 0
+0x40008f:	jle	0x400054
+<Block for 0x400054, 24 bytes>
+0x400054:	mov	rdx, qword ptr [rip + 0xfffa5]
+0x40005b:	lea	rax, [rbp - 0x30]
+0x40005f:	mov	esi, 0x10
+0x400064:	mov	rdi, rax
+0x400067:	call	0x500008
+<Block for 0x400091, 73 bytes>
+0x400091:	mov	rax, qword ptr [rbp - 0x28]
+0x400095:	mov	qword ptr [rip + 0x10c], rax
+0x40009c:	mov	rax, qword ptr [rbp - 0x30]
+0x4000a0:	mov	qword ptr [rip + 0x109], rax
+0x4000a7:	mov	rax, qword ptr [rip + 0xfa]
+0x4000ae:	mov	rdx, qword ptr [rip + 0xfb]
+0x4000b5:	mov	qword ptr [rax], rdx
+0x4000b8:	mov	rax, qword ptr [rip + 0xf1]
+0x4000bf:	mov	rdx, qword ptr [rip + 0xe2]
+0x4000c6:	mov	qword ptr [rax + 8], rdx
+0x4000ca:	nop	
+0x4000cb:	mov	rax, qword ptr [rbp - 8]
+0x4000cf:	xor	rax, qword ptr fs:[0x28]
+0x4000d8:	je	0x4000df
+<Block for 0x40006c, 5 bytes>
+0x40006c:	test	rax, rax
+0x40006f:	jne	0x400087
+<Block for 0x4000df, 2 bytes>
+0x4000df:	leave	
+0x4000e0:	ret	
+<Block for 0x4000da, 5 bytes>
+0x4000da:	call	0x500020
+<Block for 0x400071, 12 bytes>
+0x400071:	lea	rdi, [rip + 0x140]
+0x400078:	call	0x500010
+<Block for 0x400087, 10 bytes>
+0x400087:	add	dword ptr [rbp - 0x34], 1
+0x40008b:	cmp	dword ptr [rbp - 0x34], 0
+0x40008f:	jle	0x400054
+<Block for 0x40007d, 10 bytes>
+0x40007d:	mov	edi, 1
+0x400082:	call	0x500018

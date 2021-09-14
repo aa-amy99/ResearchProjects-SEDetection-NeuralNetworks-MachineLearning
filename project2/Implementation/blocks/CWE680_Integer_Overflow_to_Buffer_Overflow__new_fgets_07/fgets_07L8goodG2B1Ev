@@ -1,0 +1,67 @@
+<Block for 0x400108, 30 bytes>
+0x400108:	endbr64	
+0x40010c:	push	rbp
+0x40010d:	mov	rbp, rsp
+0x400110:	sub	rsp, 0x20
+0x400114:	mov	dword ptr [rbp - 0x1c], 0xffffffff
+0x40011b:	mov	eax, dword ptr [rip + 0x13b]
+0x400121:	cmp	eax, 5
+0x400124:	je	0x400134
+<Block for 0x400134, 32 bytes>
+0x400134:	mov	dword ptr [rbp - 0x1c], 0x14
+0x40013b:	mov	eax, dword ptr [rbp - 0x1c]
+0x40013e:	cdqe	
+0x400140:	shl	rax, 2
+0x400144:	mov	qword ptr [rbp - 0x10], rax
+0x400148:	mov	rax, qword ptr [rbp - 0x10]
+0x40014c:	mov	rdi, rax
+0x40014f:	call	0x500020
+<Block for 0x400126, 12 bytes>
+0x400126:	lea	rdi, [rip + 0x143]
+0x40012d:	call	0x500018
+<Block for 0x400154, 23 bytes>
+0x400154:	mov	qword ptr [rbp - 8], rax
+0x400158:	mov	qword ptr [rbp - 0x18], 0
+0x400160:	mov	eax, dword ptr [rbp - 0x1c]
+0x400163:	cdqe	
+0x400165:	cmp	qword ptr [rbp - 0x18], rax
+0x400169:	jae	0x40018b
+<Block for 0x400132, 2 bytes>
+0x400132:	jmp	0x40013b
+<Block for 0x40016b, 32 bytes>
+0x40016b:	mov	rax, qword ptr [rbp - 0x18]
+0x40016f:	lea	rdx, [rax*4]
+0x400177:	mov	rax, qword ptr [rbp - 8]
+0x40017b:	add	rax, rdx
+0x40017e:	mov	dword ptr [rax], 0
+0x400184:	add	qword ptr [rbp - 0x18], 1
+0x400189:	jmp	0x400160
+<Block for 0x40018b, 13 bytes>
+0x40018b:	mov	rax, qword ptr [rbp - 8]
+0x40018f:	mov	eax, dword ptr [rax]
+0x400191:	mov	edi, eax
+0x400193:	call	0x500028
+<Block for 0x40013b, 25 bytes>
+0x40013b:	mov	eax, dword ptr [rbp - 0x1c]
+0x40013e:	cdqe	
+0x400140:	shl	rax, 2
+0x400144:	mov	qword ptr [rbp - 0x10], rax
+0x400148:	mov	rax, qword ptr [rbp - 0x10]
+0x40014c:	mov	rdi, rax
+0x40014f:	call	0x500020
+<Block for 0x400160, 11 bytes>
+0x400160:	mov	eax, dword ptr [rbp - 0x1c]
+0x400163:	cdqe	
+0x400165:	cmp	qword ptr [rbp - 0x18], rax
+0x400169:	jae	0x40018b
+<Block for 0x400198, 7 bytes>
+0x400198:	cmp	qword ptr [rbp - 8], 0
+0x40019d:	je	0x4001ab
+<Block for 0x4001ab, 3 bytes>
+0x4001ab:	nop	
+0x4001ac:	leave	
+0x4001ad:	ret	
+<Block for 0x40019f, 12 bytes>
+0x40019f:	mov	rax, qword ptr [rbp - 8]
+0x4001a3:	mov	rdi, rax
+0x4001a6:	call	0x500030

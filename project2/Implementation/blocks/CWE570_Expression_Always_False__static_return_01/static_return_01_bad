@@ -1,0 +1,16 @@
+<Block for 0x40000f, 18 bytes>
+0x40000f:	endbr64	
+0x400013:	push	rbp
+0x400014:	mov	rbp, rsp
+0x400017:	mov	eax, 0
+0x40001c:	call	0x400000
+<Block for 0x400021, 4 bytes>
+0x400021:	test	eax, eax
+0x400023:	je	0x400031
+<Block for 0x400031, 3 bytes>
+0x400031:	nop	
+0x400032:	pop	rbp
+0x400033:	ret	
+<Block for 0x400025, 12 bytes>
+0x400025:	lea	rdi, [rip + 0x58]
+0x40002c:	call	0x500000

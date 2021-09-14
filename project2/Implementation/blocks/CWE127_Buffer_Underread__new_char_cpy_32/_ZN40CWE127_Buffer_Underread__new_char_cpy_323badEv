@@ -1,0 +1,64 @@
+<Block for 0x400000, 96 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x100
+0x40000f:	mov	rax, qword ptr fs:[0x28]
+0x400018:	mov	qword ptr [rbp - 8], rax
+0x40001c:	xor	eax, eax
+0x40001e:	lea	rax, [rbp - 0x100]
+0x400025:	mov	qword ptr [rbp - 0xf8], rax
+0x40002c:	lea	rax, [rbp - 0x100]
+0x400033:	mov	qword ptr [rbp - 0xf0], rax
+0x40003a:	mov	qword ptr [rbp - 0x100], 0
+0x400045:	mov	rax, qword ptr [rbp - 0xf8]
+0x40004c:	mov	rax, qword ptr [rax]
+0x40004f:	mov	qword ptr [rbp - 0xe8], rax
+0x400056:	mov	edi, 0x64
+0x40005b:	call	0x500000
+<Block for 0x400060, 32 bytes>
+0x400060:	mov	qword ptr [rbp - 0xe0], rax
+0x400067:	mov	rax, qword ptr [rbp - 0xe0]
+0x40006e:	mov	edx, 0x63
+0x400073:	mov	esi, 0x41
+0x400078:	mov	rdi, rax
+0x40007b:	call	0x500008
+<Block for 0x400080, 91 bytes>
+0x400080:	mov	rax, qword ptr [rbp - 0xe0]
+0x400087:	add	rax, 0x63
+0x40008b:	mov	byte ptr [rax], 0
+0x40008e:	mov	rax, qword ptr [rbp - 0xe0]
+0x400095:	sub	rax, 8
+0x400099:	mov	qword ptr [rbp - 0xe8], rax
+0x4000a0:	mov	rax, qword ptr [rbp - 0xf8]
+0x4000a7:	mov	rdx, qword ptr [rbp - 0xe8]
+0x4000ae:	mov	qword ptr [rax], rdx
+0x4000b1:	mov	rax, qword ptr [rbp - 0xf0]
+0x4000b8:	mov	rax, qword ptr [rax]
+0x4000bb:	mov	qword ptr [rbp - 0xd8], rax
+0x4000c2:	lea	rax, [rbp - 0xd0]
+0x4000c9:	mov	edx, 0xc7
+0x4000ce:	mov	esi, 0x43
+0x4000d3:	mov	rdi, rax
+0x4000d6:	call	0x500008
+<Block for 0x4000db, 29 bytes>
+0x4000db:	mov	byte ptr [rbp - 9], 0
+0x4000df:	mov	rdx, qword ptr [rbp - 0xd8]
+0x4000e6:	lea	rax, [rbp - 0xd0]
+0x4000ed:	mov	rsi, rdx
+0x4000f0:	mov	rdi, rax
+0x4000f3:	call	0x500010
+<Block for 0x4000f8, 15 bytes>
+0x4000f8:	lea	rax, [rbp - 0xd0]
+0x4000ff:	mov	rdi, rax
+0x400102:	call	0x500018
+<Block for 0x400107, 16 bytes>
+0x400107:	nop	
+0x400108:	mov	rax, qword ptr [rbp - 8]
+0x40010c:	xor	rax, qword ptr fs:[0x28]
+0x400115:	je	0x40011c
+<Block for 0x40011c, 2 bytes>
+0x40011c:	leave	
+0x40011d:	ret	
+<Block for 0x400117, 5 bytes>
+0x400117:	call	0x500020

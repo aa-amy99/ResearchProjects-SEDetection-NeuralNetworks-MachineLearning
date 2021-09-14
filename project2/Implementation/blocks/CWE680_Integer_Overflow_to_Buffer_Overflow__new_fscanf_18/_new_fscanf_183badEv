@@ -1,0 +1,67 @@
+<Block for 0x400000, 70 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x30
+0x40000c:	mov	rax, qword ptr fs:[0x28]
+0x400015:	mov	qword ptr [rbp - 8], rax
+0x400019:	xor	eax, eax
+0x40001b:	mov	dword ptr [rbp - 0x24], 0xffffffff
+0x400022:	nop	
+0x400023:	endbr64	
+0x400027:	mov	rax, qword ptr [rip + 0xfffd2]
+0x40002e:	lea	rdx, [rbp - 0x24]
+0x400032:	lea	rsi, [rip + 0x136]
+0x400039:	mov	rdi, rax
+0x40003c:	mov	eax, 0
+0x400041:	call	0x500008
+<Block for 0x400046, 25 bytes>
+0x400046:	mov	eax, dword ptr [rbp - 0x24]
+0x400049:	cdqe	
+0x40004b:	shl	rax, 2
+0x40004f:	mov	qword ptr [rbp - 0x18], rax
+0x400053:	mov	rax, qword ptr [rbp - 0x18]
+0x400057:	mov	rdi, rax
+0x40005a:	call	0x500010
+<Block for 0x40005f, 23 bytes>
+0x40005f:	mov	qword ptr [rbp - 0x10], rax
+0x400063:	mov	qword ptr [rbp - 0x20], 0
+0x40006b:	mov	eax, dword ptr [rbp - 0x24]
+0x40006e:	cdqe	
+0x400070:	cmp	qword ptr [rbp - 0x20], rax
+0x400074:	jae	0x400096
+<Block for 0x400076, 32 bytes>
+0x400076:	mov	rax, qword ptr [rbp - 0x20]
+0x40007a:	lea	rdx, [rax*4]
+0x400082:	mov	rax, qword ptr [rbp - 0x10]
+0x400086:	add	rax, rdx
+0x400089:	mov	dword ptr [rax], 0
+0x40008f:	add	qword ptr [rbp - 0x20], 1
+0x400094:	jmp	0x40006b
+<Block for 0x400096, 13 bytes>
+0x400096:	mov	rax, qword ptr [rbp - 0x10]
+0x40009a:	mov	eax, dword ptr [rax]
+0x40009c:	mov	edi, eax
+0x40009e:	call	0x500018
+<Block for 0x40006b, 11 bytes>
+0x40006b:	mov	eax, dword ptr [rbp - 0x24]
+0x40006e:	cdqe	
+0x400070:	cmp	qword ptr [rbp - 0x20], rax
+0x400074:	jae	0x400096
+<Block for 0x4000a3, 7 bytes>
+0x4000a3:	cmp	qword ptr [rbp - 0x10], 0
+0x4000a8:	je	0x4000b6
+<Block for 0x4000b6, 16 bytes>
+0x4000b6:	nop	
+0x4000b7:	mov	rax, qword ptr [rbp - 8]
+0x4000bb:	xor	rax, qword ptr fs:[0x28]
+0x4000c4:	je	0x4000cb
+<Block for 0x4000aa, 12 bytes>
+0x4000aa:	mov	rax, qword ptr [rbp - 0x10]
+0x4000ae:	mov	rdi, rax
+0x4000b1:	call	0x500020
+<Block for 0x4000cb, 2 bytes>
+0x4000cb:	leave	
+0x4000cc:	ret	
+<Block for 0x4000c6, 5 bytes>
+0x4000c6:	call	0x500028

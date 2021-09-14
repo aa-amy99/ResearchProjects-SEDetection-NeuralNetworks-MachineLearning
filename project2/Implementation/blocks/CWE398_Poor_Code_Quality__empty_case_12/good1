@@ -1,0 +1,78 @@
+<Block for 0x4000ba, 22 bytes>
+0x4000ba:	endbr64	
+0x4000be:	push	rbp
+0x4000bf:	mov	rbp, rsp
+0x4000c2:	sub	rsp, 0x10
+0x4000c6:	mov	eax, 0
+0x4000cb:	call	0x500000
+<Block for 0x4000d0, 4 bytes>
+0x4000d0:	test	eax, eax
+0x4000d2:	je	0x40012b
+<Block for 0x40012b, 5 bytes>
+0x40012b:	call	0x500008
+<Block for 0x4000d4, 5 bytes>
+0x4000d4:	call	0x500008
+<Block for 0x400130, 55 bytes>
+0x400130:	mov	edx, eax
+0x400132:	movsxd	rax, edx
+0x400135:	imul	rax, rax, 0x55555556
+0x40013c:	shr	rax, 0x20
+0x400140:	mov	rcx, rax
+0x400143:	mov	eax, edx
+0x400145:	sar	eax, 0x1f
+0x400148:	mov	esi, ecx
+0x40014a:	sub	esi, eax
+0x40014c:	mov	eax, esi
+0x40014e:	mov	dword ptr [rbp - 8], eax
+0x400151:	mov	ecx, dword ptr [rbp - 8]
+0x400154:	mov	eax, ecx
+0x400156:	add	eax, eax
+0x400158:	add	eax, ecx
+0x40015a:	sub	edx, eax
+0x40015c:	mov	eax, edx
+0x40015e:	mov	dword ptr [rbp - 8], eax
+0x400161:	cmp	dword ptr [rbp - 8], 0
+0x400165:	jne	0x400174
+<Block for 0x4000d9, 55 bytes>
+0x4000d9:	mov	edx, eax
+0x4000db:	movsxd	rax, edx
+0x4000de:	imul	rax, rax, 0x55555556
+0x4000e5:	shr	rax, 0x20
+0x4000e9:	mov	rcx, rax
+0x4000ec:	mov	eax, edx
+0x4000ee:	sar	eax, 0x1f
+0x4000f1:	mov	esi, ecx
+0x4000f3:	sub	esi, eax
+0x4000f5:	mov	eax, esi
+0x4000f7:	mov	dword ptr [rbp - 4], eax
+0x4000fa:	mov	ecx, dword ptr [rbp - 4]
+0x4000fd:	mov	eax, ecx
+0x4000ff:	add	eax, eax
+0x400101:	add	eax, ecx
+0x400103:	sub	edx, eax
+0x400105:	mov	eax, edx
+0x400107:	mov	dword ptr [rbp - 4], eax
+0x40010a:	cmp	dword ptr [rbp - 4], 0
+0x40010e:	jne	0x40011d
+<Block for 0x400167, 12 bytes>
+0x400167:	lea	rdi, [rip + 0x3b]
+0x40016e:	call	0x500010
+<Block for 0x400174, 12 bytes>
+0x400174:	lea	rdi, [rip + 0x48]
+0x40017b:	call	0x500010
+<Block for 0x400110, 12 bytes>
+0x400110:	lea	rdi, [rip + 0x92]
+0x400117:	call	0x500010
+<Block for 0x40011d, 12 bytes>
+0x40011d:	lea	rdi, [rip + 0x9f]
+0x400124:	call	0x500010
+<Block for 0x400173, 1 bytes>
+0x400173:	nop	
+<Block for 0x400180, 3 bytes>
+0x400180:	nop	
+0x400181:	leave	
+0x400182:	ret	
+<Block for 0x40011c, 1 bytes>
+0x40011c:	nop	
+<Block for 0x400129, 2 bytes>
+0x400129:	jmp	0x400180

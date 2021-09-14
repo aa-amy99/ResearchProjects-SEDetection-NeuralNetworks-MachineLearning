@@ -1,0 +1,73 @@
+<Block for 0x400000, 17 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x10
+0x40000c:	call	0x500000
+<Block for 0x400011, 9 bytes>
+0x400011:	test	eax, eax
+0x400013:	setne	al
+0x400016:	test	al, al
+0x400018:	je	0x400024
+<Block for 0x400024, 10 bytes>
+0x400024:	mov	edi, 8
+0x400029:	call	0x500008
+<Block for 0x40001a, 10 bytes>
+0x40001a:	mov	qword ptr [rbp - 0x10], 0
+0x400022:	jmp	0x40004f
+<Block for 0x40002e, 38 bytes>
+0x40002e:	mov	qword ptr [rbp - 8], rax
+0x400032:	mov	rax, qword ptr [rbp - 8]
+0x400036:	mov	dword ptr [rax], 0
+0x40003c:	mov	rax, qword ptr [rbp - 8]
+0x400040:	mov	dword ptr [rax + 4], 0
+0x400047:	mov	rax, qword ptr [rbp - 8]
+0x40004b:	mov	qword ptr [rbp - 0x10], rax
+0x40004f:	call	0x500000
+<Block for 0x40004f, 5 bytes>
+0x40004f:	call	0x500000
+<Block for 0x400054, 9 bytes>
+0x400054:	test	eax, eax
+0x400056:	setne	al
+0x400059:	test	al, al
+0x40005b:	je	0x400082
+<Block for 0x400082, 7 bytes>
+0x400082:	cmp	qword ptr [rbp - 0x10], 0
+0x400087:	je	0x4000ae
+<Block for 0x40005d, 13 bytes>
+0x40005d:	mov	rax, qword ptr [rbp - 0x10]
+0x400061:	mov	eax, dword ptr [rax]
+0x400063:	mov	edi, eax
+0x400065:	call	0x500010
+<Block for 0x4000ae, 12 bytes>
+0x4000ae:	lea	rdi, [rip + 0x197]
+0x4000b5:	call	0x500020
+<Block for 0x400089, 13 bytes>
+0x400089:	mov	rax, qword ptr [rbp - 0x10]
+0x40008d:	mov	eax, dword ptr [rax]
+0x40008f:	mov	edi, eax
+0x400091:	call	0x500010
+<Block for 0x40006a, 9 bytes>
+0x40006a:	mov	rax, qword ptr [rbp - 0x10]
+0x40006e:	test	rax, rax
+0x400071:	je	0x4000ba
+<Block for 0x4000ba, 3 bytes>
+0x4000ba:	nop	
+0x4000bb:	leave	
+0x4000bc:	ret	
+<Block for 0x400096, 9 bytes>
+0x400096:	mov	rax, qword ptr [rbp - 0x10]
+0x40009a:	test	rax, rax
+0x40009d:	je	0x4000ba
+<Block for 0x400073, 13 bytes>
+0x400073:	mov	esi, 8
+0x400078:	mov	rdi, rax
+0x40007b:	call	0x500018
+<Block for 0x40009f, 13 bytes>
+0x40009f:	mov	esi, 8
+0x4000a4:	mov	rdi, rax
+0x4000a7:	call	0x500018
+<Block for 0x400080, 2 bytes>
+0x400080:	jmp	0x4000ba
+<Block for 0x4000ac, 2 bytes>
+0x4000ac:	jmp	0x4000ba

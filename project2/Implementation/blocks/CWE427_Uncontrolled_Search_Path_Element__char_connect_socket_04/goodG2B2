@@ -1,0 +1,62 @@
+<Block for 0x40031b, 82 bytes>
+0x40031b:	endbr64	
+0x40031f:	push	rbp
+0x400320:	mov	rbp, rsp
+0x400323:	sub	rsp, 0x120
+0x40032a:	mov	rax, qword ptr fs:[0x28]
+0x400333:	mov	qword ptr [rbp - 8], rax
+0x400337:	xor	eax, eax
+0x400339:	movabs	rax, 0x3d48544150
+0x400343:	mov	edx, 0
+0x400348:	mov	qword ptr [rbp - 0x110], rax
+0x40034f:	mov	qword ptr [rbp - 0x108], rdx
+0x400356:	lea	rdx, [rbp - 0x100]
+0x40035d:	mov	eax, 0
+0x400362:	mov	ecx, 0x1d
+0x400367:	mov	rdi, rdx
+0x40036a:	rep stosq	qword ptr [rdi], rax
+<Block for 0x40036d, 33 bytes>
+0x40036d:	mov	rdx, rdi
+0x400370:	mov	word ptr [rdx], ax
+0x400373:	add	rdx, 2
+0x400377:	lea	rax, [rbp - 0x110]
+0x40037e:	mov	qword ptr [rbp - 0x118], rax
+0x400385:	mov	eax, 1
+0x40038a:	test	eax, eax
+0x40038c:	je	0x4003c7
+<Block for 0x40036a, 3 bytes>
+0x40036a:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4003c7, 15 bytes>
+0x4003c7:	mov	rax, qword ptr [rbp - 0x118]
+0x4003ce:	mov	rdi, rax
+0x4003d1:	call	0x500048
+<Block for 0x40038e, 27 bytes>
+0x40038e:	mov	rax, qword ptr [rbp - 0x118]
+0x400395:	mov	rcx, -1
+0x40039c:	mov	rdx, rax
+0x40039f:	mov	eax, 0
+0x4003a4:	mov	rdi, rdx
+0x4003a7:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4003d6, 16 bytes>
+0x4003d6:	nop	
+0x4003d7:	mov	rax, qword ptr [rbp - 8]
+0x4003db:	xor	rax, qword ptr fs:[0x28]
+0x4003e4:	je	0x4003eb
+<Block for 0x4003a9, 45 bytes>
+0x4003a9:	mov	rax, rcx
+0x4003ac:	not	rax
+0x4003af:	lea	rdx, [rax - 1]
+0x4003b3:	mov	rax, qword ptr [rbp - 0x118]
+0x4003ba:	add	rax, rdx
+0x4003bd:	mov	dword ptr [rax], 0x6e69622f
+0x4003c3:	mov	byte ptr [rax + 4], 0
+0x4003c7:	mov	rax, qword ptr [rbp - 0x118]
+0x4003ce:	mov	rdi, rax
+0x4003d1:	call	0x500048
+<Block for 0x4003a7, 2 bytes>
+0x4003a7:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4003eb, 2 bytes>
+0x4003eb:	leave	
+0x4003ec:	ret	
+<Block for 0x4003e6, 5 bytes>
+0x4003e6:	call	0x500050

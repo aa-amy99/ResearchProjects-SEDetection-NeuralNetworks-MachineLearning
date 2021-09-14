@@ -1,0 +1,25 @@
+<Block for 0x400178, 42 bytes>
+0x400178:	endbr64	
+0x40017c:	push	rbp
+0x40017d:	mov	rbp, rsp
+0x400180:	mov	qword ptr [rbp - 8], rdi
+0x400184:	mov	rax, qword ptr [rbp - 8]
+0x400188:	mov	rdx, qword ptr [rax]
+0x40018b:	mov	rax, rdx
+0x40018e:	mov	rcx, -1
+0x400195:	mov	rsi, rax
+0x400198:	mov	eax, 0
+0x40019d:	mov	rdi, rsi
+0x4001a0:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001a2, 26 bytes>
+0x4001a2:	mov	rax, rcx
+0x4001a5:	not	rax
+0x4001a8:	sub	rax, 1
+0x4001ac:	add	rax, rdx
+0x4001af:	mov	dword ptr [rax], 0x6e69622f
+0x4001b5:	mov	byte ptr [rax + 4], 0
+0x4001b9:	nop	
+0x4001ba:	pop	rbp
+0x4001bb:	ret	
+<Block for 0x4001a0, 2 bytes>
+0x4001a0:	repne scasb	al, byte ptr [rdi]

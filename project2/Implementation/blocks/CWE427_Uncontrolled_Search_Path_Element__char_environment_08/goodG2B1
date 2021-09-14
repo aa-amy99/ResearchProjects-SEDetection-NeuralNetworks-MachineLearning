@@ -1,0 +1,69 @@
+<Block for 0x400121, 82 bytes>
+0x400121:	endbr64	
+0x400125:	push	rbp
+0x400126:	mov	rbp, rsp
+0x400129:	sub	rsp, 0x120
+0x400130:	mov	rax, qword ptr fs:[0x28]
+0x400139:	mov	qword ptr [rbp - 8], rax
+0x40013d:	xor	eax, eax
+0x40013f:	movabs	rax, 0x3d48544150
+0x400149:	mov	edx, 0
+0x40014e:	mov	qword ptr [rbp - 0x110], rax
+0x400155:	mov	qword ptr [rbp - 0x108], rdx
+0x40015c:	lea	rdx, [rbp - 0x100]
+0x400163:	mov	eax, 0
+0x400168:	mov	ecx, 0x1d
+0x40016d:	mov	rdi, rdx
+0x400170:	rep stosq	qword ptr [rdi], rax
+<Block for 0x400173, 34 bytes>
+0x400173:	mov	rdx, rdi
+0x400176:	mov	word ptr [rdx], ax
+0x400179:	add	rdx, 2
+0x40017d:	lea	rax, [rbp - 0x110]
+0x400184:	mov	qword ptr [rbp - 0x118], rax
+0x40018b:	mov	eax, 0
+0x400190:	call	0x40000f
+<Block for 0x400170, 3 bytes>
+0x400170:	rep stosq	qword ptr [rdi], rax
+<Block for 0x400195, 4 bytes>
+0x400195:	test	eax, eax
+0x400197:	je	0x4001a7
+<Block for 0x4001a7, 27 bytes>
+0x4001a7:	mov	rax, qword ptr [rbp - 0x118]
+0x4001ae:	mov	rcx, -1
+0x4001b5:	mov	rdx, rax
+0x4001b8:	mov	eax, 0
+0x4001bd:	mov	rdi, rdx
+0x4001c0:	repne scasb	al, byte ptr [rdi]
+<Block for 0x400199, 12 bytes>
+0x400199:	lea	rdi, [rip + 0x160]
+0x4001a0:	call	0x500028
+<Block for 0x4001c2, 45 bytes>
+0x4001c2:	mov	rax, rcx
+0x4001c5:	not	rax
+0x4001c8:	lea	rdx, [rax - 1]
+0x4001cc:	mov	rax, qword ptr [rbp - 0x118]
+0x4001d3:	add	rax, rdx
+0x4001d6:	mov	dword ptr [rax], 0x6e69622f
+0x4001dc:	mov	byte ptr [rax + 4], 0
+0x4001e0:	mov	rax, qword ptr [rbp - 0x118]
+0x4001e7:	mov	rdi, rax
+0x4001ea:	call	0x500018
+<Block for 0x4001c0, 2 bytes>
+0x4001c0:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001a5, 2 bytes>
+0x4001a5:	jmp	0x4001e0
+<Block for 0x4001ef, 16 bytes>
+0x4001ef:	nop	
+0x4001f0:	mov	rax, qword ptr [rbp - 8]
+0x4001f4:	xor	rax, qword ptr fs:[0x28]
+0x4001fd:	je	0x400204
+<Block for 0x4001e0, 15 bytes>
+0x4001e0:	mov	rax, qword ptr [rbp - 0x118]
+0x4001e7:	mov	rdi, rax
+0x4001ea:	call	0x500018
+<Block for 0x400204, 2 bytes>
+0x400204:	leave	
+0x400205:	ret	
+<Block for 0x4001ff, 5 bytes>
+0x4001ff:	call	0x500020

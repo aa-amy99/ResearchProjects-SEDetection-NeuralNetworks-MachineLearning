@@ -1,0 +1,35 @@
+<Block for 0x4000c2, 23 bytes>
+0x4000c2:	endbr64	
+0x4000c6:	push	rbp
+0x4000c7:	mov	rbp, rsp
+0x4000ca:	sub	rsp, 0x10
+0x4000ce:	mov	eax, dword ptr [rip + 0xfff2c]
+0x4000d4:	cmp	eax, 5
+0x4000d7:	jne	0x400120
+<Block for 0x4000d9, 14 bytes>
+0x4000d9:	mov	byte ptr [rbp - 0xa], 5
+0x4000dd:	mov	edi, 1
+0x4000e2:	call	0x500008
+<Block for 0x400120, 3 bytes>
+0x400120:	nop	
+0x400121:	leave	
+0x400122:	ret	
+<Block for 0x4000e7, 35 bytes>
+0x4000e7:	mov	qword ptr [rbp - 8], rax
+0x4000eb:	mov	rax, qword ptr [rbp - 8]
+0x4000ef:	movzx	edx, byte ptr [rbp - 0xa]
+0x4000f3:	mov	byte ptr [rax], dl
+0x4000f5:	mov	rax, qword ptr [rbp - 8]
+0x4000f9:	movzx	eax, byte ptr [rax]
+0x4000fc:	mov	byte ptr [rbp - 9], al
+0x4000ff:	movsx	eax, byte ptr [rbp - 9]
+0x400103:	mov	edi, eax
+0x400105:	call	0x500018
+<Block for 0x40010a, 9 bytes>
+0x40010a:	mov	rax, qword ptr [rbp - 8]
+0x40010e:	test	rax, rax
+0x400111:	je	0x400120
+<Block for 0x400113, 13 bytes>
+0x400113:	mov	esi, 1
+0x400118:	mov	rdi, rax
+0x40011b:	call	0x500010

@@ -1,0 +1,67 @@
+<Block for 0x400158, 82 bytes>
+0x400158:	endbr64	
+0x40015c:	push	rbp
+0x40015d:	mov	rbp, rsp
+0x400160:	sub	rsp, 0x120
+0x400167:	mov	rax, qword ptr fs:[0x28]
+0x400170:	mov	qword ptr [rbp - 8], rax
+0x400174:	xor	eax, eax
+0x400176:	movabs	rax, 0x3d48544150
+0x400180:	mov	edx, 0
+0x400185:	mov	qword ptr [rbp - 0x110], rax
+0x40018c:	mov	qword ptr [rbp - 0x108], rdx
+0x400193:	lea	rdx, [rbp - 0x100]
+0x40019a:	mov	eax, 0
+0x40019f:	mov	ecx, 0x1d
+0x4001a4:	mov	rdi, rdx
+0x4001a7:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001aa, 34 bytes>
+0x4001aa:	mov	rdx, rdi
+0x4001ad:	mov	word ptr [rdx], ax
+0x4001b0:	add	rdx, 2
+0x4001b4:	lea	rax, [rbp - 0x110]
+0x4001bb:	mov	qword ptr [rbp - 0x118], rax
+0x4001c2:	mov	eax, dword ptr [rip + 0xffe78]
+0x4001c8:	test	eax, eax
+0x4001ca:	je	0x4001da
+<Block for 0x4001a7, 3 bytes>
+0x4001a7:	rep stosq	qword ptr [rdi], rax
+<Block for 0x4001da, 27 bytes>
+0x4001da:	mov	rax, qword ptr [rbp - 0x118]
+0x4001e1:	mov	rcx, -1
+0x4001e8:	mov	rdx, rax
+0x4001eb:	mov	eax, 0
+0x4001f0:	mov	rdi, rdx
+0x4001f3:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001cc, 12 bytes>
+0x4001cc:	lea	rdi, [rip + 0x177]
+0x4001d3:	call	0x500020
+<Block for 0x4001f5, 45 bytes>
+0x4001f5:	mov	rax, rcx
+0x4001f8:	not	rax
+0x4001fb:	lea	rdx, [rax - 1]
+0x4001ff:	mov	rax, qword ptr [rbp - 0x118]
+0x400206:	add	rax, rdx
+0x400209:	mov	dword ptr [rax], 0x6e69622f
+0x40020f:	mov	byte ptr [rax + 4], 0
+0x400213:	mov	rax, qword ptr [rbp - 0x118]
+0x40021a:	mov	rdi, rax
+0x40021d:	call	0x500030
+<Block for 0x4001f3, 2 bytes>
+0x4001f3:	repne scasb	al, byte ptr [rdi]
+<Block for 0x4001d8, 2 bytes>
+0x4001d8:	jmp	0x400213
+<Block for 0x400222, 16 bytes>
+0x400222:	nop	
+0x400223:	mov	rax, qword ptr [rbp - 8]
+0x400227:	xor	rax, qword ptr fs:[0x28]
+0x400230:	je	0x400237
+<Block for 0x400213, 15 bytes>
+0x400213:	mov	rax, qword ptr [rbp - 0x118]
+0x40021a:	mov	rdi, rax
+0x40021d:	call	0x500030
+<Block for 0x400237, 2 bytes>
+0x400237:	leave	
+0x400238:	ret	
+<Block for 0x400232, 5 bytes>
+0x400232:	call	0x500038

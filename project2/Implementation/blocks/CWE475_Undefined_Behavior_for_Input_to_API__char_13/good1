@@ -1,0 +1,63 @@
+<Block for 0x400113, 38 bytes>
+0x400113:	endbr64	
+0x400117:	push	rbp
+0x400118:	mov	rbp, rsp
+0x40011b:	add	rsp, -0x80
+0x40011f:	mov	rax, qword ptr fs:[0x28]
+0x400128:	mov	qword ptr [rbp - 8], rax
+0x40012c:	xor	eax, eax
+0x40012e:	mov	eax, dword ptr [rip + 0xffecc]
+0x400134:	cmp	eax, 5
+0x400137:	je	0x40014a
+<Block for 0x40014a, 198 bytes>
+0x40014a:	mov	qword ptr [rbp - 0x70], 0
+0x400152:	mov	qword ptr [rbp - 0x68], 0
+0x40015a:	mov	qword ptr [rbp - 0x60], 0
+0x400162:	mov	qword ptr [rbp - 0x58], 0
+0x40016a:	mov	qword ptr [rbp - 0x50], 0
+0x400172:	mov	qword ptr [rbp - 0x48], 0
+0x40017a:	mov	qword ptr [rbp - 0x40], 0
+0x400182:	mov	qword ptr [rbp - 0x38], 0
+0x40018a:	mov	qword ptr [rbp - 0x30], 0
+0x400192:	mov	qword ptr [rbp - 0x28], 0
+0x40019a:	mov	qword ptr [rbp - 0x20], 0
+0x4001a2:	mov	qword ptr [rbp - 0x18], 0
+0x4001aa:	mov	dword ptr [rbp - 0x10], 0
+0x4001b1:	lea	rax, [rbp - 0x70]
+0x4001b5:	mov	qword ptr [rbp - 0x78], rax
+0x4001b9:	mov	rax, qword ptr [rbp - 0x78]
+0x4001bd:	movabs	rdx, 0x6867666564636261
+0x4001c7:	movabs	rcx, 0x706f6e6d6c6b6a69
+0x4001d1:	mov	qword ptr [rax], rdx
+0x4001d4:	mov	qword ptr [rax + 8], rcx
+0x4001d8:	movabs	rsi, 0x7877767574737271
+0x4001e2:	mov	qword ptr [rax + 0x10], rsi
+0x4001e6:	mov	word ptr [rax + 0x18], 0x7a79
+0x4001ec:	mov	byte ptr [rax + 0x1a], 0
+0x4001f0:	mov	rax, qword ptr [rbp - 0x78]
+0x4001f4:	lea	rcx, [rax + 4]
+0x4001f8:	mov	rax, qword ptr [rbp - 0x78]
+0x4001fc:	add	rax, 6
+0x400200:	mov	edx, 0xa
+0x400205:	mov	rsi, rcx
+0x400208:	mov	rdi, rax
+0x40020b:	call	0x500020
+<Block for 0x400139, 12 bytes>
+0x400139:	lea	rdi, [rip + 0x225]
+0x400140:	call	0x500010
+<Block for 0x400210, 12 bytes>
+0x400210:	mov	rax, qword ptr [rbp - 0x78]
+0x400214:	mov	rdi, rax
+0x400217:	call	0x500010
+<Block for 0x400145, 5 bytes>
+0x400145:	jmp	0x40021c
+<Block for 0x40021c, 16 bytes>
+0x40021c:	nop	
+0x40021d:	mov	rax, qword ptr [rbp - 8]
+0x400221:	xor	rax, qword ptr fs:[0x28]
+0x40022a:	je	0x400231
+<Block for 0x400231, 2 bytes>
+0x400231:	leave	
+0x400232:	ret	
+<Block for 0x40022c, 5 bytes>
+0x40022c:	call	0x500018

@@ -1,0 +1,64 @@
+<Block for 0x4000e1, 87 bytes>
+0x4000e1:	endbr64	
+0x4000e5:	push	rbp
+0x4000e6:	mov	rbp, rsp
+0x4000e9:	sub	rsp, 0xa0
+0x4000f0:	mov	qword ptr [rbp - 0x98], rdi
+0x4000f7:	mov	rax, qword ptr fs:[0x28]
+0x400100:	mov	qword ptr [rbp - 8], rax
+0x400104:	xor	eax, eax
+0x400106:	mov	rax, qword ptr [rbp - 0x98]
+0x40010d:	mov	qword ptr [rbp - 0x88], rax
+0x400114:	mov	rax, qword ptr [rbp - 0x88]
+0x40011b:	mov	rax, qword ptr [rax]
+0x40011e:	mov	qword ptr [rbp - 0x80], rax
+0x400122:	lea	rax, [rbp - 0x70]
+0x400126:	mov	edx, 0x63
+0x40012b:	mov	esi, 0x43
+0x400130:	mov	rdi, rax
+0x400133:	call	0x500000
+<Block for 0x400138, 16 bytes>
+0x400138:	mov	byte ptr [rbp - 0xd], 0
+0x40013c:	lea	rax, [rbp - 0x70]
+0x400140:	mov	rdi, rax
+0x400143:	call	0x500008
+<Block for 0x400148, 17 bytes>
+0x400148:	mov	qword ptr [rbp - 0x78], rax
+0x40014c:	mov	qword ptr [rbp - 0x90], 0
+0x400157:	jmp	0x400182
+<Block for 0x400182, 13 bytes>
+0x400182:	mov	rax, qword ptr [rbp - 0x90]
+0x400189:	cmp	rax, qword ptr [rbp - 0x78]
+0x40018d:	jb	0x400159
+<Block for 0x400159, 54 bytes>
+0x400159:	mov	rdx, qword ptr [rbp - 0x80]
+0x40015d:	mov	rax, qword ptr [rbp - 0x90]
+0x400164:	add	rax, rdx
+0x400167:	movzx	eax, byte ptr [rax]
+0x40016a:	lea	rcx, [rbp - 0x70]
+0x40016e:	mov	rdx, qword ptr [rbp - 0x90]
+0x400175:	add	rdx, rcx
+0x400178:	mov	byte ptr [rdx], al
+0x40017a:	add	qword ptr [rbp - 0x90], 1
+0x400182:	mov	rax, qword ptr [rbp - 0x90]
+0x400189:	cmp	rax, qword ptr [rbp - 0x78]
+0x40018d:	jb	0x400159
+<Block for 0x40018f, 16 bytes>
+0x40018f:	mov	byte ptr [rbp - 0xd], 0
+0x400193:	lea	rax, [rbp - 0x70]
+0x400197:	mov	rdi, rax
+0x40019a:	call	0x500010
+<Block for 0x40019f, 12 bytes>
+0x40019f:	mov	rax, qword ptr [rbp - 0x80]
+0x4001a3:	mov	rdi, rax
+0x4001a6:	call	0x500018
+<Block for 0x4001ab, 16 bytes>
+0x4001ab:	nop	
+0x4001ac:	mov	rax, qword ptr [rbp - 8]
+0x4001b0:	xor	rax, qword ptr fs:[0x28]
+0x4001b9:	je	0x4001c0
+<Block for 0x4001c0, 2 bytes>
+0x4001c0:	leave	
+0x4001c1:	ret	
+<Block for 0x4001bb, 5 bytes>
+0x4001bb:	call	0x500020

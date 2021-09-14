@@ -1,0 +1,60 @@
+<Block for 0x40014a, 60 bytes>
+0x40014a:	endbr64	
+0x40014e:	push	rbp
+0x40014f:	mov	rbp, rsp
+0x400152:	push	rbx
+0x400153:	sub	rsp, 0x88
+0x40015a:	mov	qword ptr [rbp - 0x88], rdi
+0x400161:	mov	rax, qword ptr fs:[0x28]
+0x40016a:	mov	qword ptr [rbp - 0x18], rax
+0x40016e:	xor	eax, eax
+0x400170:	lea	rax, [rbp - 0x80]
+0x400174:	mov	edx, 0x63
+0x400179:	mov	esi, 0x43
+0x40017e:	mov	rdi, rax
+0x400181:	call	0x500000
+<Block for 0x400186, 128 bytes>
+0x400186:	mov	byte ptr [rbp - 0x1d], 0
+0x40018a:	mov	rax, qword ptr [rbp - 0x88]
+0x400191:	mov	rcx, qword ptr [rax]
+0x400194:	mov	rbx, qword ptr [rax + 8]
+0x400198:	mov	qword ptr [rbp - 0x80], rcx
+0x40019c:	mov	qword ptr [rbp - 0x78], rbx
+0x4001a0:	mov	rcx, qword ptr [rax + 0x10]
+0x4001a4:	mov	rbx, qword ptr [rax + 0x18]
+0x4001a8:	mov	qword ptr [rbp - 0x70], rcx
+0x4001ac:	mov	qword ptr [rbp - 0x68], rbx
+0x4001b0:	mov	rcx, qword ptr [rax + 0x20]
+0x4001b4:	mov	rbx, qword ptr [rax + 0x28]
+0x4001b8:	mov	qword ptr [rbp - 0x60], rcx
+0x4001bc:	mov	qword ptr [rbp - 0x58], rbx
+0x4001c0:	mov	rcx, qword ptr [rax + 0x30]
+0x4001c4:	mov	rbx, qword ptr [rax + 0x38]
+0x4001c8:	mov	qword ptr [rbp - 0x50], rcx
+0x4001cc:	mov	qword ptr [rbp - 0x48], rbx
+0x4001d0:	mov	rcx, qword ptr [rax + 0x40]
+0x4001d4:	mov	rbx, qword ptr [rax + 0x48]
+0x4001d8:	mov	qword ptr [rbp - 0x40], rcx
+0x4001dc:	mov	qword ptr [rbp - 0x38], rbx
+0x4001e0:	mov	rcx, qword ptr [rax + 0x50]
+0x4001e4:	mov	rbx, qword ptr [rax + 0x58]
+0x4001e8:	mov	qword ptr [rbp - 0x30], rcx
+0x4001ec:	mov	qword ptr [rbp - 0x28], rbx
+0x4001f0:	mov	eax, dword ptr [rax + 0x60]
+0x4001f3:	mov	dword ptr [rbp - 0x20], eax
+0x4001f6:	mov	byte ptr [rbp - 0x1d], 0
+0x4001fa:	lea	rax, [rbp - 0x80]
+0x4001fe:	mov	rdi, rax
+0x400201:	call	0x500008
+<Block for 0x400206, 16 bytes>
+0x400206:	nop	
+0x400207:	mov	rax, qword ptr [rbp - 0x18]
+0x40020b:	xor	rax, qword ptr fs:[0x28]
+0x400214:	je	0x40021b
+<Block for 0x40021b, 10 bytes>
+0x40021b:	add	rsp, 0x88
+0x400222:	pop	rbx
+0x400223:	pop	rbp
+0x400224:	ret	
+<Block for 0x400216, 5 bytes>
+0x400216:	call	0x500010

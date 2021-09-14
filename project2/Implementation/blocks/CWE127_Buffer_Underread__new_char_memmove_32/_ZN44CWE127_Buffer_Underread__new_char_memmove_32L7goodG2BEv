@@ -1,0 +1,65 @@
+<Block for 0x40010c, 96 bytes>
+0x40010c:	endbr64	
+0x400110:	push	rbp
+0x400111:	mov	rbp, rsp
+0x400114:	sub	rsp, 0xa0
+0x40011b:	mov	rax, qword ptr fs:[0x28]
+0x400124:	mov	qword ptr [rbp - 8], rax
+0x400128:	xor	eax, eax
+0x40012a:	lea	rax, [rbp - 0xa0]
+0x400131:	mov	qword ptr [rbp - 0x98], rax
+0x400138:	lea	rax, [rbp - 0xa0]
+0x40013f:	mov	qword ptr [rbp - 0x90], rax
+0x400146:	mov	qword ptr [rbp - 0xa0], 0
+0x400151:	mov	rax, qword ptr [rbp - 0x98]
+0x400158:	mov	rax, qword ptr [rax]
+0x40015b:	mov	qword ptr [rbp - 0x88], rax
+0x400162:	mov	edi, 0x64
+0x400167:	call	0x500000
+<Block for 0x40016c, 26 bytes>
+0x40016c:	mov	qword ptr [rbp - 0x80], rax
+0x400170:	mov	rax, qword ptr [rbp - 0x80]
+0x400174:	mov	edx, 0x63
+0x400179:	mov	esi, 0x41
+0x40017e:	mov	rdi, rax
+0x400181:	call	0x500008
+<Block for 0x400186, 75 bytes>
+0x400186:	mov	rax, qword ptr [rbp - 0x80]
+0x40018a:	add	rax, 0x63
+0x40018e:	mov	byte ptr [rax], 0
+0x400191:	mov	rax, qword ptr [rbp - 0x80]
+0x400195:	mov	qword ptr [rbp - 0x88], rax
+0x40019c:	mov	rax, qword ptr [rbp - 0x98]
+0x4001a3:	mov	rdx, qword ptr [rbp - 0x88]
+0x4001aa:	mov	qword ptr [rax], rdx
+0x4001ad:	mov	rax, qword ptr [rbp - 0x90]
+0x4001b4:	mov	rax, qword ptr [rax]
+0x4001b7:	mov	qword ptr [rbp - 0x78], rax
+0x4001bb:	lea	rax, [rbp - 0x70]
+0x4001bf:	mov	edx, 0x63
+0x4001c4:	mov	esi, 0x43
+0x4001c9:	mov	rdi, rax
+0x4001cc:	call	0x500008
+<Block for 0x4001d1, 28 bytes>
+0x4001d1:	mov	byte ptr [rbp - 0xd], 0
+0x4001d5:	mov	rcx, qword ptr [rbp - 0x78]
+0x4001d9:	lea	rax, [rbp - 0x70]
+0x4001dd:	mov	edx, 0x64
+0x4001e2:	mov	rsi, rcx
+0x4001e5:	mov	rdi, rax
+0x4001e8:	call	0x500010
+<Block for 0x4001ed, 16 bytes>
+0x4001ed:	mov	byte ptr [rbp - 0xd], 0
+0x4001f1:	lea	rax, [rbp - 0x70]
+0x4001f5:	mov	rdi, rax
+0x4001f8:	call	0x500018
+<Block for 0x4001fd, 16 bytes>
+0x4001fd:	nop	
+0x4001fe:	mov	rax, qword ptr [rbp - 8]
+0x400202:	xor	rax, qword ptr fs:[0x28]
+0x40020b:	je	0x400212
+<Block for 0x400212, 2 bytes>
+0x400212:	leave	
+0x400213:	ret	
+<Block for 0x40020d, 5 bytes>
+0x40020d:	call	0x500020

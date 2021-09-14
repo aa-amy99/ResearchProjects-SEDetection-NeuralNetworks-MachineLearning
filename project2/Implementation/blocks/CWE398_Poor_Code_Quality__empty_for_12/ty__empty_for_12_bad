@@ -1,0 +1,45 @@
+<Block for 0x400000, 22 bytes>
+0x400000:	endbr64	
+0x400004:	push	rbp
+0x400005:	mov	rbp, rsp
+0x400008:	sub	rsp, 0x10
+0x40000c:	mov	eax, 0
+0x400011:	call	0x500000
+<Block for 0x400016, 4 bytes>
+0x400016:	test	eax, eax
+0x400018:	je	0x40003b
+<Block for 0x40003b, 9 bytes>
+0x40003b:	mov	dword ptr [rbp - 4], 0
+0x400042:	jmp	0x400054
+<Block for 0x40001a, 9 bytes>
+0x40001a:	mov	dword ptr [rbp - 8], 0
+0x400021:	jmp	0x400027
+<Block for 0x400054, 6 bytes>
+0x400054:	cmp	dword ptr [rbp - 4], 9
+0x400058:	jle	0x400044
+<Block for 0x400027, 6 bytes>
+0x400027:	cmp	dword ptr [rbp - 8], 9
+0x40002b:	jle	0x400023
+<Block for 0x400044, 12 bytes>
+0x400044:	lea	rdi, [rip + 0xb9]
+0x40004b:	call	0x500008
+<Block for 0x40005a, 12 bytes>
+0x40005a:	lea	rdi, [rip + 0xbc]
+0x400061:	call	0x500008
+<Block for 0x400023, 10 bytes>
+0x400023:	add	dword ptr [rbp - 8], 1
+0x400027:	cmp	dword ptr [rbp - 8], 9
+0x40002b:	jle	0x400023
+<Block for 0x40002d, 12 bytes>
+0x40002d:	lea	rdi, [rip + 0xbf]
+0x400034:	call	0x500008
+<Block for 0x400050, 10 bytes>
+0x400050:	add	dword ptr [rbp - 4], 1
+0x400054:	cmp	dword ptr [rbp - 4], 9
+0x400058:	jle	0x400044
+<Block for 0x400066, 3 bytes>
+0x400066:	nop	
+0x400067:	leave	
+0x400068:	ret	
+<Block for 0x400039, 2 bytes>
+0x400039:	jmp	0x400066
